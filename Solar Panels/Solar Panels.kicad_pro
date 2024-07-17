@@ -178,8 +178,8 @@
       ],
       "track_widths": [
         0.0,
-        0.0,
-        0.14
+        0.2,
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -445,7 +445,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Research Power Converter.kicad_pro",
+    "filename": "Solar Panels.kicad_pro",
     "version": 1
   },
   "net_settings": {
