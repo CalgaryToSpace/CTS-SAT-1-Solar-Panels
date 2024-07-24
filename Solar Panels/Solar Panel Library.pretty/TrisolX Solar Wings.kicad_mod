@@ -1,0 +1,140 @@
+(footprint "TrisolX Solar Wings"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0fa8625f-0f3c-4c1f-8873-d974d46bb28f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TrisolX Solar Wings"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a27523a6-9299-420b-a3d3-490bf3c50c72")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "12b5eab8-139d-455f-80e8-c9309112681d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "86af3c4b-ac0a-408e-a68d-3f584f0ffe9e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17c7e077-4fca-4587-a074-db6a0cc67b84")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.5 -18.19)
+		(end -3.5 8.23)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0b34b135-b4a8-4fbf-80dc-e5f16cf66c98")
+	)
+	(fp_line
+		(start -3.5 8.23)
+		(end 3.87 8.23)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5716691e-2931-428e-9e16-a42757cf1a70")
+	)
+	(fp_line
+		(start 1.83 -13.63)
+		(end -3.5 -18.19)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "976061a6-d35f-4e93-8b12-8692668ae8a6")
+	)
+	(fp_line
+		(start 3.86 -8.29)
+		(end 1.83 -13.63)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8f29324d-0604-4084-b34f-6cdbb1d5c056")
+	)
+	(fp_line
+		(start 3.87 8.23)
+		(end 3.86 -8.29)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "12756d4b-788b-4b88-944b-c72e62d15d7c")
+	)
+	(pad "1" smd rect
+		(at 0.25 0 270)
+		(size 7.5 4.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "e7cb6cab-57f3-4527-b430-86a8389795b5")
+	)
+	(pad "2" thru_hole rect
+		(at -2.5 9.31 270)
+		(size 1.308 1.308)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "6b6974c4-9cc0-4b89-9424-3fe72db0b37a")
+	)
+)
