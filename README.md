@@ -16,5 +16,12 @@ Solar panel PCB designs for the CTS-SAT-1 3U cubesat
 
 ![1.25U Solar Panel - Bottom](docs/Trisolx%20Solar%20Panel%20-%201.25U%20Bottom%20Render.png)
 
+## Bill of Materials
+* PMEG10020AELPX diode in a SOD128 package
+
+## Specific Notes and Specs
+* Coarse star tracker requires a place to epoxy to the panels with a 4.5mm x 10mm rectangle (silk screen box).
+* TBC: 4-Layer Circuit Board: back side must be all GND so that it does not short out with the frame.
+
 ## License
 This project is licensed under the [CERN OHL v2 Permissive](https://choosealicense.com/licenses/cern-ohl-p-2.0/) license. We appreciate attribution and links back, but you are free to do what you wish with this project.
