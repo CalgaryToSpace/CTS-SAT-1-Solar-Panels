@@ -3619,6 +3619,25 @@
 		)
 		(uuid "65604667-34dd-4573-b516-e774ee66005a")
 	)
+	(text_box "Assuming diodes operate at maximum forward voltage and solar cells operate at maximum power, voltage at VDC should be approximately 6.22 volts\n"
+		(exclude_from_sim no)
+		(at 25.4 22.86 0)
+		(size 34.29 7.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "e45877ca-4b7e-48ab-b7a8-f9eafa55c2a3")
+	)
 	(text "Power\n\n"
 		(exclude_from_sim no)
 		(at 166.624 113.284 0)
