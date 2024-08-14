@@ -452,9 +452,12 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "Solar Panel Library"
+      "Solar Panel Library",
+      "Solar Panels Library"
     ],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Solar Panel"
+    ]
   },
   "meta": {
     "filename": "Solar Panels.kicad_pro",
@@ -610,8 +613,8 @@
   },
   "sheets": [
     [
-      "a9ef5d2b-7ce1-4231-ba73-009f8d0b2537",
-      "Root"
+      "2d09e942-e62e-4d1d-b7bd-24169f5bea3a",
+      ""
     ]
   ],
   "text_variables": {}
