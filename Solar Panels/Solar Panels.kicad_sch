@@ -2498,7 +2498,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 127) (xy 73.66 129.54)
+			(xy 77.47 140.97) (xy 77.47 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2618,7 +2618,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 139.7) (xy 73.66 142.24)
+			(xy 77.47 153.67) (xy 77.47 156.21)
 		)
 		(stroke
 			(width 0)
@@ -2668,7 +2668,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 127) (xy 50.8 129.54)
+			(xy 54.61 140.97) (xy 54.61 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2738,7 +2738,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 139.7) (xy 50.8 142.24)
+			(xy 54.61 153.67) (xy 54.61 156.21)
 		)
 		(stroke
 			(width 0)
@@ -2748,7 +2748,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 127) (xy 26.67 129.54)
+			(xy 30.48 140.97) (xy 30.48 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2758,7 +2758,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 170.18) (xy 26.67 172.72)
+			(xy 30.48 184.15) (xy 30.48 186.69)
 		)
 		(stroke
 			(width 0)
@@ -2798,7 +2798,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 127) (xy 100.33 129.54)
+			(xy 104.14 140.97) (xy 104.14 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2828,7 +2828,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 156.21) (xy 99.06 158.75)
+			(xy 104.14 171.45) (xy 104.14 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2928,7 +2928,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 139.7) (xy 26.67 142.24)
+			(xy 30.48 153.67) (xy 30.48 156.21)
 		)
 		(stroke
 			(width 0)
@@ -2968,7 +2968,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 157.48) (xy 73.66 160.02)
+			(xy 77.47 171.45) (xy 77.47 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2988,7 +2988,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 139.7) (xy 100.33 142.24)
+			(xy 104.14 153.67) (xy 104.14 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3015,16 +3015,6 @@
 			(type default)
 		)
 		(uuid "8a93d9a3-9283-4aaf-af58-8a439ec99442")
-	)
-	(wire
-		(pts
-			(xy 24.13 31.75) (xy 63.5 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c670f05-356c-4971-a729-9e4cea45781d")
 	)
 	(wire
 		(pts
@@ -3108,7 +3098,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 157.48) (xy 26.67 160.02)
+			(xy 30.48 171.45) (xy 30.48 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3188,7 +3178,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 168.91) (xy 99.06 171.45)
+			(xy 104.14 184.15) (xy 104.14 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3308,7 +3298,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 170.18) (xy 73.66 172.72)
+			(xy 77.47 184.15) (xy 77.47 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3398,7 +3388,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 157.48) (xy 50.8 160.02)
+			(xy 54.61 171.45) (xy 54.61 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3418,7 +3408,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 31.75) (xy 24.13 38.1)
+			(xy 24.13 34.29) (xy 24.13 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3468,7 +3458,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 170.18) (xy 50.8 172.72)
+			(xy 54.61 184.15) (xy 54.61 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3562,9 +3552,9 @@
 		)
 		(uuid ef687753-f040-4999-9339-fbca9352906b)
 	)
-	(text_box "\nDiodes above the 3 solar cells connected to VDC are blocking diodes which is intended to be used as a way to prevent the battery from discharging while allowing current to flow. Meanwhile, diodes that are parallel to the cells are bypass diodes used in case one of the cells is \"faulty\" to allow an alternate way for current to flow.\n \n"
+	(text_box "Diodes above the 3 solar cells connected to VDC are blocking diodes which is intended to be used as a way to prevent the battery from discharging while allowing current to flow.\n\nDiode(s) that are parallel to the cells are bypass diodes used in case one of the cells is \"faulty\" to allow an alternate way for current to flow.\n"
 		(exclude_from_sim no)
-		(at 81.28 22.86 0)
+		(at 120.65 22.86 0)
 		(size 54.61 13.97)
 		(stroke
 			(width 0)
@@ -3580,25 +3570,6 @@
 			(justify left top)
 		)
 		(uuid "08539b46-0ed2-440c-8732-5f7cc7beaae9")
-	)
-	(text_box "\nMechanical Mounting Holes for the PCB\n"
-		(exclude_from_sim no)
-		(at 24.13 182.88 0)
-		(size 35.56 6.35)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "278725b4-f1fc-41a7-976a-2e8a74f244d7")
 	)
 	(text_box "Connector that is used to connect the solar panels to the EPS. \n"
 		(exclude_from_sim no)
@@ -3621,7 +3592,7 @@
 	)
 	(text_box "Assuming diodes operate at maximum forward voltage (770mv) and solar cells operate at maximum power (2.33 volts), voltage at VDC should be approximately 6.22 volts\n"
 		(exclude_from_sim no)
-		(at 22.86 22.86 0)
+		(at 81.28 22.86 0)
 		(size 38.1 7.62)
 		(stroke
 			(width 0)
@@ -3638,32 +3609,38 @@
 		)
 		(uuid "e45877ca-4b7e-48ab-b7a8-f9eafa55c2a3")
 	)
-	(text "Power\n\n"
+	(text "Power Connctor"
 		(exclude_from_sim no)
-		(at 166.624 113.284 0)
+		(at 191.008 162.814 0)
 		(effects
 			(font
 				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
 			)
 		)
 		(uuid "085f77a3-a39b-4fb2-9f26-dbcb87b53367")
 	)
-	(text "Mounting Holes\n\n\n"
+	(text "Mounting Holes"
 		(exclude_from_sim no)
-		(at 41.402 116.332 0)
+		(at 46.736 126.238 0)
 		(effects
 			(font
 				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
 			)
 		)
 		(uuid "1107e867-77a3-4a72-bd48-e90592027967")
 	)
-	(text "Solar Panels\n\n"
+	(text "Solar Cells"
 		(exclude_from_sim no)
-		(at 37.592 21.59 0)
+		(at 55.118 27.178 0)
 		(effects
 			(font
 				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
 			)
 		)
 		(uuid "fcc58471-eee4-4faa-bade-5a92fff84197")
@@ -3879,7 +3856,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 100.33 134.62 270)
+		(at 104.14 148.59 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3888,7 +3865,7 @@
 		(fields_autoplaced yes)
 		(uuid "0844d929-acf4-41ae-b469-dadd70379589")
 		(property "Reference" "JP4"
-			(at 102.87 133.3499 90)
+			(at 106.68 147.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3897,7 +3874,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 102.87 135.8899 90)
+			(at 106.68 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3906,7 +3883,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 100.33 134.62 0)
+			(at 104.14 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3915,7 +3892,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 134.62 0)
+			(at 104.14 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3924,7 +3901,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 100.33 134.62 0)
+			(at 104.14 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4020,7 +3997,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 142.24 0)
+		(at 77.47 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4029,7 +4006,7 @@
 		(fields_autoplaced yes)
 		(uuid "12c07895-7f4a-4f12-be07-f8ca03dce91a")
 		(property "Reference" "#PWR08"
-			(at 73.66 148.59 0)
+			(at 77.47 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4038,7 +4015,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 147.32 0)
+			(at 77.47 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4046,7 +4023,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 142.24 0)
+			(at 77.47 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4055,7 +4032,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 142.24 0)
+			(at 77.47 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4064,7 +4041,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 142.24 0)
+			(at 77.47 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4364,7 +4341,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 99.06 163.83 270)
+		(at 104.14 179.07 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -4373,7 +4350,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c662bcb-54ae-473b-9e4a-2c113e41a3bc")
 		(property "Reference" "JP8"
-			(at 101.6 162.5599 90)
+			(at 106.68 177.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4382,7 +4359,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 101.6 165.0999 90)
+			(at 106.68 180.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4391,7 +4368,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 99.06 163.83 0)
+			(at 104.14 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4400,7 +4377,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 163.83 0)
+			(at 104.14 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4409,7 +4386,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 99.06 163.83 0)
+			(at 104.14 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4572,7 +4549,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 99.06 153.67 0)
+		(at 104.14 168.91 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4581,7 +4558,7 @@
 		(fields_autoplaced yes)
 		(uuid "386041e0-d11d-4d6e-8d08-22614efa3771")
 		(property "Reference" "H8"
-			(at 101.6 151.1299 0)
+			(at 106.68 166.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4590,7 +4567,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 101.6 153.6699 0)
+			(at 106.68 168.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4599,7 +4576,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 99.06 153.67 0)
+			(at 104.14 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4608,7 +4585,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 153.67 0)
+			(at 104.14 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4617,7 +4594,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 99.06 153.67 0)
+			(at 104.14 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4639,7 +4616,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 26.67 172.72 0)
+		(at 30.48 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4648,7 +4625,7 @@
 		(fields_autoplaced yes)
 		(uuid "388dab4a-810a-4d92-bed9-77df8556a5d8")
 		(property "Reference" "#PWR010"
-			(at 26.67 179.07 0)
+			(at 30.48 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,7 +4634,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.67 177.8 0)
+			(at 30.48 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4665,7 +4642,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 172.72 0)
+			(at 30.48 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4674,7 +4651,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 172.72 0)
+			(at 30.48 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4683,7 +4660,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 172.72 0)
+			(at 30.48 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4774,7 +4751,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 26.67 134.62 270)
+		(at 30.48 148.59 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -4783,7 +4760,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f1fc421-a4d4-4af5-bf7c-b171a4d87a3b")
 		(property "Reference" "JP1"
-			(at 29.21 133.3499 90)
+			(at 33.02 147.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,7 +4769,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 29.21 135.8899 90)
+			(at 33.02 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4801,7 +4778,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 26.67 134.62 0)
+			(at 30.48 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4810,7 +4787,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 134.62 0)
+			(at 30.48 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4819,7 +4796,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 26.67 134.62 0)
+			(at 30.48 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4913,7 +4890,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 172.72 0)
+		(at 54.61 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4922,7 +4899,7 @@
 		(fields_autoplaced yes)
 		(uuid "4793e23c-02d8-4243-b531-92757e69dbcf")
 		(property "Reference" "#PWR011"
-			(at 50.8 179.07 0)
+			(at 54.61 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4931,7 +4908,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 177.8 0)
+			(at 54.61 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4939,7 +4916,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 172.72 0)
+			(at 54.61 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,7 +4925,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 172.72 0)
+			(at 54.61 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4957,7 +4934,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 172.72 0)
+			(at 54.61 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5255,7 +5232,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 171.45 0)
+		(at 104.14 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5264,7 +5241,7 @@
 		(fields_autoplaced yes)
 		(uuid "5cc2b052-bda1-468a-8ff6-e4c77f8d7c95")
 		(property "Reference" "#PWR013"
-			(at 99.06 177.8 0)
+			(at 104.14 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5273,7 +5250,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 176.53 0)
+			(at 104.14 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5281,7 +5258,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 171.45 0)
+			(at 104.14 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5290,7 +5267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 171.45 0)
+			(at 104.14 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5299,7 +5276,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 171.45 0)
+			(at 104.14 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5528,7 +5505,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 26.67 124.46 0)
+		(at 30.48 138.43 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5537,7 +5514,7 @@
 		(fields_autoplaced yes)
 		(uuid "695a0ac5-6a30-4709-8ec8-1055c7340a39")
 		(property "Reference" "H1"
-			(at 29.21 121.9199 0)
+			(at 33.02 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5546,7 +5523,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 29.21 124.4599 0)
+			(at 33.02 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5555,7 +5532,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 26.67 124.46 0)
+			(at 30.48 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5564,7 +5541,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 124.46 0)
+			(at 30.48 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5573,7 +5550,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 26.67 124.46 0)
+			(at 30.48 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5595,7 +5572,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 50.8 154.94 0)
+		(at 54.61 168.91 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5604,7 +5581,7 @@
 		(fields_autoplaced yes)
 		(uuid "6981760c-fabe-45ba-961b-2bd5d039af6d")
 		(property "Reference" "H6"
-			(at 53.34 152.3999 0)
+			(at 57.15 166.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5613,7 +5590,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 53.34 154.9399 0)
+			(at 57.15 168.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5622,7 +5599,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 50.8 154.94 0)
+			(at 54.61 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5631,7 +5608,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 154.94 0)
+			(at 54.61 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5640,7 +5617,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 50.8 154.94 0)
+			(at 54.61 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5662,7 +5639,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 100.33 124.46 0)
+		(at 104.14 138.43 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5671,7 +5648,7 @@
 		(fields_autoplaced yes)
 		(uuid "6c7d0b48-80e5-4518-bc73-584a25ed4341")
 		(property "Reference" "H4"
-			(at 102.87 121.9199 0)
+			(at 106.68 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5680,7 +5657,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 102.87 124.4599 0)
+			(at 106.68 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5689,7 +5666,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 100.33 124.46 0)
+			(at 104.14 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5698,7 +5675,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 124.46 0)
+			(at 104.14 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5707,7 +5684,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 100.33 124.46 0)
+			(at 104.14 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5871,7 +5848,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 73.66 154.94 0)
+		(at 77.47 168.91 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5880,7 +5857,7 @@
 		(fields_autoplaced yes)
 		(uuid "78f51cc8-678d-4f70-9f18-139cd92eee1e")
 		(property "Reference" "H7"
-			(at 76.2 152.3999 0)
+			(at 80.01 166.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5889,7 +5866,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 76.2 154.9399 0)
+			(at 80.01 168.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5898,7 +5875,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 73.66 154.94 0)
+			(at 77.47 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5907,7 +5884,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 154.94 0)
+			(at 77.47 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5916,7 +5893,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 73.66 154.94 0)
+			(at 77.47 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5938,7 +5915,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 50.8 165.1 270)
+		(at 54.61 179.07 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -5947,7 +5924,7 @@
 		(fields_autoplaced yes)
 		(uuid "80dc7916-9632-486c-92c0-d1f34bf04f2b")
 		(property "Reference" "JP6"
-			(at 53.34 163.8299 90)
+			(at 57.15 177.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5956,7 +5933,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 53.34 166.3699 90)
+			(at 57.15 180.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5965,7 +5942,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 50.8 165.1 0)
+			(at 54.61 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5974,7 +5951,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 165.1 0)
+			(at 54.61 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5983,7 +5960,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 50.8 165.1 0)
+			(at 54.61 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6146,7 +6123,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 26.67 154.94 0)
+		(at 30.48 168.91 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6155,7 +6132,7 @@
 		(fields_autoplaced yes)
 		(uuid "8344b53e-1e84-4b1e-a62a-a892042d7dc0")
 		(property "Reference" "H5"
-			(at 29.21 152.3999 0)
+			(at 33.02 166.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6164,7 +6141,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 29.21 154.9399 0)
+			(at 33.02 168.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6173,7 +6150,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 26.67 154.94 0)
+			(at 30.48 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6182,7 +6159,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 154.94 0)
+			(at 30.48 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6191,7 +6168,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 26.67 154.94 0)
+			(at 30.48 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6284,7 +6261,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 26.67 142.24 0)
+		(at 30.48 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6293,7 +6270,7 @@
 		(fields_autoplaced yes)
 		(uuid "88df3362-6885-4893-aac1-b01ae4c4bdaa")
 		(property "Reference" "#PWR06"
-			(at 26.67 148.59 0)
+			(at 30.48 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6302,7 +6279,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.67 147.32 0)
+			(at 30.48 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6310,7 +6287,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 142.24 0)
+			(at 30.48 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6319,7 +6296,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 142.24 0)
+			(at 30.48 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6328,7 +6305,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 142.24 0)
+			(at 30.48 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6419,7 +6396,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 73.66 124.46 0)
+		(at 77.47 138.43 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6428,7 +6405,7 @@
 		(fields_autoplaced yes)
 		(uuid "90ee8502-cb4b-43e0-b3d3-beded3dc5593")
 		(property "Reference" "H3"
-			(at 76.2 121.9199 0)
+			(at 80.01 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6437,7 +6414,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 76.2 124.4599 0)
+			(at 80.01 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6446,7 +6423,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 73.66 124.46 0)
+			(at 77.47 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6455,7 +6432,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 124.46 0)
+			(at 77.47 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6464,7 +6441,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 73.66 124.46 0)
+			(at 77.47 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6552,7 +6529,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 172.72 0)
+		(at 77.47 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6561,7 +6538,7 @@
 		(fields_autoplaced yes)
 		(uuid "97209e3e-9bba-4794-9f87-67f12e899bb2")
 		(property "Reference" "#PWR012"
-			(at 73.66 179.07 0)
+			(at 77.47 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6570,7 +6547,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 177.8 0)
+			(at 77.47 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6578,7 +6555,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 172.72 0)
+			(at 77.47 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6587,7 +6564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 172.72 0)
+			(at 77.47 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6596,7 +6573,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 172.72 0)
+			(at 77.47 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6889,7 +6866,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 26.67 165.1 270)
+		(at 30.48 179.07 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -6898,7 +6875,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f6366af-4a1e-4df9-8adc-0f82a9974ea3")
 		(property "Reference" "JP5"
-			(at 29.21 163.8299 90)
+			(at 33.02 177.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6907,7 +6884,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 29.21 166.3699 90)
+			(at 33.02 180.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6916,7 +6893,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 26.67 165.1 0)
+			(at 30.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6925,7 +6902,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 165.1 0)
+			(at 30.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6934,7 +6911,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 26.67 165.1 0)
+			(at 30.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7030,7 +7007,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 142.24 0)
+		(at 104.14 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7039,7 +7016,7 @@
 		(fields_autoplaced yes)
 		(uuid "adef5306-553a-4f43-959c-52121256ecb8")
 		(property "Reference" "#PWR09"
-			(at 100.33 148.59 0)
+			(at 104.14 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7048,7 +7025,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 147.32 0)
+			(at 104.14 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7056,7 +7033,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 142.24 0)
+			(at 104.14 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7065,7 +7042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 142.24 0)
+			(at 104.14 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7074,7 +7051,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 142.24 0)
+			(at 104.14 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7581,7 +7558,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 73.66 165.1 270)
+		(at 77.47 179.07 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7590,7 +7567,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc917f9a-59b0-4987-9621-5b1802d420d8")
 		(property "Reference" "JP7"
-			(at 76.2 163.8299 90)
+			(at 80.01 177.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7599,7 +7576,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 76.2 166.3699 90)
+			(at 80.01 180.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7608,7 +7585,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 73.66 165.1 0)
+			(at 77.47 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7617,7 +7594,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 165.1 0)
+			(at 77.47 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7626,7 +7603,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 73.66 165.1 0)
+			(at 77.47 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7816,7 +7793,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 50.8 134.62 270)
+		(at 54.61 148.59 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7825,7 +7802,7 @@
 		(fields_autoplaced yes)
 		(uuid "e12315c0-d722-4802-9fe5-00cb3ee20bca")
 		(property "Reference" "JP2"
-			(at 53.34 133.3499 90)
+			(at 57.15 147.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7834,7 +7811,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 53.34 135.8899 90)
+			(at 57.15 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7843,7 +7820,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 50.8 134.62 0)
+			(at 54.61 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7852,7 +7829,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 134.62 0)
+			(at 54.61 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7861,7 +7838,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 50.8 134.62 0)
+			(at 54.61 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8021,7 +7998,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 50.8 124.46 0)
+		(at 54.61 138.43 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -8030,7 +8007,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5b24c5c-8e2a-418a-9cbe-18756a5e5c9f")
 		(property "Reference" "H2"
-			(at 53.34 121.9199 0)
+			(at 57.15 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8039,7 +8016,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 53.34 124.4599 0)
+			(at 57.15 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8048,7 +8025,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 50.8 124.46 0)
+			(at 54.61 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8057,7 +8034,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 124.46 0)
+			(at 54.61 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8066,7 +8043,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 50.8 124.46 0)
+			(at 54.61 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8157,7 +8134,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 73.66 134.62 270)
+		(at 77.47 148.59 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8166,7 +8143,7 @@
 		(fields_autoplaced yes)
 		(uuid "e91865e7-c759-4b77-9f74-cf3f4902e077")
 		(property "Reference" "JP3"
-			(at 76.2 133.3499 90)
+			(at 80.01 147.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8175,7 +8152,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 76.2 135.8899 90)
+			(at 80.01 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8184,7 +8161,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 73.66 134.62 0)
+			(at 77.47 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8193,7 +8170,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 134.62 0)
+			(at 77.47 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8202,7 +8179,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 73.66 134.62 0)
+			(at 77.47 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8227,7 +8204,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 142.24 0)
+		(at 54.61 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8236,7 +8213,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4ae2592-bd83-4df8-aa0e-94ffa4176d72")
 		(property "Reference" "#PWR07"
-			(at 50.8 148.59 0)
+			(at 54.61 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8245,7 +8222,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 147.32 0)
+			(at 54.61 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8253,7 +8230,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 142.24 0)
+			(at 54.61 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8262,7 +8239,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 142.24 0)
+			(at 54.61 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8271,7 +8248,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 142.24 0)
+			(at 54.61 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8433,7 +8410,7 @@
 	)
 	(symbol
 		(lib_id "power:+VDC")
-		(at 63.5 31.75 0)
+		(at 24.13 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8442,7 +8419,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb7f5dcf-6867-42f2-be4a-6fdd5539da32")
 		(property "Reference" "#PWR04"
-			(at 63.5 34.29 0)
+			(at 24.13 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8451,7 +8428,7 @@
 			)
 		)
 		(property "Value" "+VDC"
-			(at 63.5 24.13 0)
+			(at 24.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8459,7 +8436,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 31.75 0)
+			(at 24.13 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8468,7 +8445,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 31.75 0)
+			(at 24.13 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8477,7 +8454,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 63.5 31.75 0)
+			(at 24.13 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
