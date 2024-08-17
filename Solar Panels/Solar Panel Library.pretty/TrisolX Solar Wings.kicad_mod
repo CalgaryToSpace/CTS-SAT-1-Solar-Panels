@@ -71,7 +71,7 @@
 	(attr smd)
 	(fp_line
 		(start -3.5 -18.19)
-		(end -3.5 8.23)
+		(end -3.5 10.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -80,8 +80,28 @@
 		(uuid "0b34b135-b4a8-4fbf-80dc-e5f16cf66c98")
 	)
 	(fp_line
-		(start -3.5 8.23)
+		(start -3.5 10.2)
+		(end -1.6 10.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "af8e6645-7bb3-49d0-873b-6d5f9c97f7c3")
+	)
+	(fp_line
+		(start -1.6 8.23)
 		(end 3.87 8.23)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5716691e-2931-428e-9e16-a42757cf1a70")
+	)
+	(fp_line
+		(start -1.6 10.2)
+		(end -1.6 8.23)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -160,54 +180,24 @@
 		(uuid "af411f1e-6226-41ef-a294-6b8e015dd779")
 	)
 	(fp_line
-		(start -3.7 8.2)
-		(end -3.7 8.3)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "5f0e35c4-3f05-45b3-96ab-c47662145085")
-	)
-	(fp_line
-		(start -3.7 8.3)
-		(end -3.5 8.3)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "c7b8cff3-f5a1-4610-ae3e-280e0ea520f8")
-	)
-	(fp_line
-		(start -3.6 -18.4)
-		(end -3.7 8.2)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "5cdfcbbb-3857-4ca7-9692-f04cb53aefad")
-	)
-	(fp_line
-		(start -3.5 8.3)
-		(end -3.5 10.2)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "c5c6b58f-5a1d-4904-922e-e98b6496d048")
-	)
-	(fp_line
-		(start -3.5 10.2)
-		(end -1.6 10.2)
+		(start -3.7 10.25)
+		(end -1.6 10.25)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "F.CrtYd")
 		(uuid "419c7e73-c6f9-4094-9e2a-261e385ca253")
+	)
+	(fp_line
+		(start -3.6 -18.4)
+		(end -3.7 10.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "5cdfcbbb-3857-4ca7-9692-f04cb53aefad")
 	)
 	(fp_line
 		(start -1.6 8.3)
@@ -220,7 +210,7 @@
 		(uuid "70ae58f5-102f-4ca9-b72d-383d9a3df318")
 	)
 	(fp_line
-		(start -1.6 10.2)
+		(start -1.6 10.25)
 		(end -1.6 8.3)
 		(stroke
 			(width 0.05)
@@ -259,15 +249,25 @@
 		(layer "F.CrtYd")
 		(uuid "503de22c-71e8-4742-a029-202541588cae")
 	)
-	(pad "1" smd roundrect
-		(at -0.25 -3.25 270)
-		(size 19.5 3.5)
+	(pad "1" smd custom
+		(at 0.5 -1 270)
+		(size 10 3.35)
 		(layers "F.Cu" "F.Paste" "F.Mask")
-		(roundrect_rratio 0.2)
-		(chamfer_ratio 0.3)
-		(chamfer top_left)
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -14.5 3) (xy 8 3) (xy 8 -2.5) (xy -7.5 -2.5) (xy -12 -0.5)
+				)
+				(width 0.2)
+				(fill yes)
+			)
+		)
 		(uuid "e7cb6cab-57f3-4527-b430-86a8389795b5")
 	)
 	(pad "2" thru_hole rect
