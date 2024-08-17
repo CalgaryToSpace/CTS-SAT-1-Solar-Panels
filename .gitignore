@@ -16,19 +16,19 @@ __Previews
 *.htm
 *.$$$
 
-#useless dirs
+# Useless dirs
 Project\ Outputs
 Project\ Logs
 Project Outputs for*
 
-#History
+# History
 History
 
-#Exports, but not manual ones
-exports/*
+# Exports, but not manual ones
+exports/
 !exports/manual
 
-#Python stuff
+# Python Stuff
 scripts/__pycache__/
 *.bak
 *.dwl
