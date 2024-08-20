@@ -3305,7 +3305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 175.26 65.786 90)
 			(effects
 				(font
@@ -3375,7 +3375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 60.96 137.16 0)
 			(effects
 				(font
@@ -3511,7 +3511,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 93.98 65.786 90)
 			(effects
 				(font
@@ -3647,7 +3647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 114.3 44.45 0)
 			(effects
 				(font
@@ -3735,7 +3735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 72.39 78.486 90)
 			(effects
 				(font
@@ -3805,7 +3805,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 135.89 65.786 90)
 			(effects
 				(font
@@ -3875,7 +3875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 72.39 65.786 90)
 			(effects
 				(font
@@ -3945,7 +3945,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 29.21 158.75 0)
 			(effects
 				(font
@@ -4012,7 +4012,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 60.96 170.18 0)
 			(effects
 				(font
@@ -4082,7 +4082,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 175.26 54.356 90)
 			(effects
 				(font
@@ -4152,7 +4152,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 135.89 54.356 90)
 			(effects
 				(font
@@ -4222,7 +4222,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 156.21 78.486 90)
 			(effects
 				(font
@@ -4292,7 +4292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 29.21 137.16 0)
 			(effects
 				(font
@@ -4362,7 +4362,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 114.3 78.486 90)
 			(effects
 				(font
@@ -4432,7 +4432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 52.07 78.486 90)
 			(effects
 				(font
@@ -4502,7 +4502,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 156.21 54.356 90)
 			(effects
 				(font
@@ -4572,7 +4572,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 194.31 44.45 0)
 			(effects
 				(font
@@ -4660,7 +4660,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 52.07 44.45 0)
 			(effects
 				(font
@@ -4748,7 +4748,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 93.98 44.45 0)
 			(effects
 				(font
@@ -4836,7 +4836,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 93.98 54.356 90)
 			(effects
 				(font
@@ -4906,7 +4906,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 215.9 58.42 0)
 			(effects
 				(font
@@ -4994,7 +4994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 93.98 78.486 90)
 			(effects
 				(font
@@ -5130,7 +5130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 52.07 65.786 90)
 			(effects
 				(font
@@ -5200,7 +5200,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 114.3 54.356 90)
 			(effects
 				(font
@@ -5270,7 +5270,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 60.96 125.73 0)
 			(effects
 				(font
@@ -5337,7 +5337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 194.31 65.786 90)
 			(effects
 				(font
@@ -5473,7 +5473,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 175.26 44.45 0)
 			(effects
 				(font
@@ -5561,7 +5561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CON_5040500891"
+		(property "Footprint" "Solar Panels Library:CON_5040500891"
 			(at 148.59 132.08 0)
 			(effects
 				(font
@@ -5657,7 +5657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 194.31 54.356 90)
 			(effects
 				(font
@@ -5727,7 +5727,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 194.31 78.486 90)
 			(effects
 				(font
@@ -5797,7 +5797,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 156.21 44.45 0)
 			(effects
 				(font
@@ -6016,7 +6016,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 114.3 65.786 90)
 			(effects
 				(font
@@ -6218,7 +6218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 33.02 44.45 0)
 			(effects
 				(font
@@ -6306,7 +6306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 33.02 54.356 90)
 			(effects
 				(font
@@ -6376,7 +6376,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 72.39 44.45 0)
 			(effects
 				(font
@@ -6464,7 +6464,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 60.96 158.75 0)
 			(effects
 				(font
@@ -6531,7 +6531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 175.26 78.486 90)
 			(effects
 				(font
@@ -6601,7 +6601,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 52.07 54.356 90)
 			(effects
 				(font
@@ -6671,7 +6671,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 135.89 78.486 90)
 			(effects
 				(font
@@ -6741,7 +6741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 33.02 78.486 90)
 			(effects
 				(font
@@ -6811,7 +6811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 29.21 170.18 0)
 			(effects
 				(font
@@ -6881,7 +6881,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 156.21 65.786 90)
 			(effects
 				(font
@@ -6951,7 +6951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 33.02 65.786 90)
 			(effects
 				(font
@@ -7021,7 +7021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
 			(at 135.89 44.45 0)
 			(effects
 				(font
@@ -7174,7 +7174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 29.21 125.73 0)
 			(effects
 				(font
@@ -7241,7 +7241,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Solar Panels Library:Trisolx Wings"
 			(at 72.39 54.356 90)
 			(effects
 				(font
