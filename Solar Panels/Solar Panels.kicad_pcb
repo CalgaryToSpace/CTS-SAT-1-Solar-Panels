@@ -9,7 +9,7 @@
 	(paper "USLetter")
 	(title_block
 		(title "TriSolX 1.25U Solar Panel")
-		(date "2024-08-17")
+		(date "2024-08-26")
 		(rev "1")
 		(company "CalgaryToSpace")
 	)
@@ -16817,7 +16817,7 @@
 		)
 	)
 	(gr_text "THIS SIDE IS NEGATIVE\n(orient toward MPI faceplate)"
-		(at 35.8 105.3 0)
+		(at 32 98 0)
 		(layer "Cmts.User")
 		(uuid "f15520c5-01f6-4a18-9280-4916ce1fefe2")
 		(effects
@@ -16828,6 +16828,74 @@
 			)
 			(justify left bottom)
 		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "Dwgs.User")
+		(uuid "7f9d2b56-b5e5-40c4-9707-fac7d8d54e85")
+		(pts
+			(xy 85.75 74.75) (xy 85.81 157.25)
+		)
+		(height -15.5)
+		(orientation 1)
+		(gr_text "82.50 mm"
+			(at 69.1 116 90)
+			(layer "Dwgs.User")
+			(uuid "7f9d2b56-b5e5-40c4-9707-fac7d8d54e85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 2)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "Dwgs.User")
+		(uuid "ff5039fa-9566-4d8e-95a2-7972dd7b222f")
+		(pts
+			(xy 75 148) (xy 188 148)
+		)
+		(height 18)
+		(orientation 0)
+		(gr_text "113.00 mm"
+			(at 131.5 164.85 0)
+			(layer "Dwgs.User")
+			(uuid "ff5039fa-9566-4d8e-95a2-7972dd7b222f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 2)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
 	)
 	(via
 		(at 183.1 108.1)
