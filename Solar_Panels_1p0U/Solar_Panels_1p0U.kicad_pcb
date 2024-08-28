@@ -9,9 +9,10 @@
 	(paper "USLetter")
 	(title_block
 		(title "SolarPanels")
-		(date "2024-08-13")
-		(rev "0.1")
-		(company "CalgarytoSpace")
+		(date "2024-08-27")
+		(rev "1")
+		(company "CalgaryToSpace")
+		(comment 1 "In its current Rev 1 state, this design is ordered as a mass model only.")
 	)
 	(layers
 		(0 "F.Cu" signal)

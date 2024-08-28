@@ -47,7 +47,8 @@ scripts/__pycache__/
 *auto_saved_files*
 replicate_layout.log
 ~*.lck
-
+production/
+pcbway_production/
 
 # Temporary files
 *.000

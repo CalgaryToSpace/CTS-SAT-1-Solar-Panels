@@ -460,7 +460,7 @@
     ]
   },
   "meta": {
-    "filename": "Solar Panels.kicad_pro",
+    "filename": "Solar_Panels_1p0U.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -601,7 +601,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "../",
+    "plot_directory": "exports/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -614,7 +614,7 @@
   "sheets": [
     [
       "2d09e942-e62e-4d1d-b7bd-24169f5bea3a",
-      ""
+      "Root"
     ]
   ],
   "text_variables": {}
