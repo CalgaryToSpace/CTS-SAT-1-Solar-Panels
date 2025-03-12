@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "2d09e942-e62e-4d1d-b7bd-24169f5bea3a")
 	(paper "USLetter")
 	(title_block
@@ -13,9 +13,13 @@
 	)
 	(lib_symbols
 		(symbol "Device:D"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -113,10 +117,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -125,10 +129,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -174,11 +178,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Solar_Cell"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -237,6 +246,30 @@
 				)
 			)
 			(symbol "Solar_Cell_0_1"
+				(polyline
+					(pts
+						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 2.286) (xy -3.556 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -2.032 1.778)
 					(end 2.032 1.524)
@@ -261,7 +294,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 2.286) (xy -3.556 3.81)
+						(xy -0.762 3.556) (xy -0.762 2.794) (xy -1.524 2.794)
 					)
 					(stroke
 						(width 0)
@@ -285,7 +318,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 1.778) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -297,7 +330,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -325,30 +358,6 @@
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 3.556) (xy -0.762 2.794) (xy -1.524 2.794)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -394,11 +403,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Jumper:Jumper_2_Open"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom yes)
 			(on_board yes)
@@ -489,9 +503,9 @@
 			)
 			(symbol "Jumper_2_Open_0_1"
 				(arc
-					(start 1.524 1.27)
+					(start -1.524 1.27)
 					(mid 0 1.778)
-					(end -1.524 1.27)
+					(end 1.524 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -539,11 +553,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
@@ -641,6 +660,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Solar Panel:5040500891"
 			(pin_names
@@ -723,18 +743,6 @@
 			(symbol "5040500891_1_1"
 				(polyline
 					(pts
-						(xy 5.08 -25.4) (xy 12.7 -25.4)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 5.08 2.54) (xy 5.08 -25.4)
 					)
 					(stroke
@@ -747,319 +755,7 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -22.86) (xy 5.08 -22.86)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -22.86) (xy 8.89 -23.7067)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -22.86) (xy 8.89 -22.0133)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -20.32) (xy 5.08 -20.32)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -20.32) (xy 8.89 -21.1667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -20.32) (xy 8.89 -19.4733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -17.78) (xy 5.08 -17.78)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -17.78) (xy 8.89 -18.6267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -17.78) (xy 8.89 -16.9333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -15.24) (xy 5.08 -15.24)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -15.24) (xy 8.89 -16.0867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -15.24) (xy 8.89 -14.3933)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -12.7) (xy 5.08 -12.7)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -12.7) (xy 8.89 -13.5467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -12.7) (xy 8.89 -11.8533)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 8.89 -11.0067)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 8.89 -9.3133)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -8.4667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -6.7733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -5.9267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -4.2333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -3.3867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -1.6933)
+						(xy 5.08 -25.4) (xy 12.7 -25.4)
 					)
 					(stroke
 						(width 0.127)
@@ -1083,18 +779,6 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 0) (xy 8.89 -0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 10.16 0) (xy 8.89 0.8467)
 					)
 					(stroke
@@ -1107,7 +791,331 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -25.4) (xy 12.7 2.54)
+						(xy 10.16 0) (xy 8.89 -0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -1.6933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -3.3867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -4.2333)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -5.9267)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -6.7733)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -8.4667)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -10.16) (xy 5.08 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -10.16) (xy 8.89 -9.3133)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -10.16) (xy 8.89 -11.0067)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -12.7) (xy 5.08 -12.7)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -12.7) (xy 8.89 -11.8533)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -12.7) (xy 8.89 -13.5467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -15.24) (xy 5.08 -15.24)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -15.24) (xy 8.89 -14.3933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -15.24) (xy 8.89 -16.0867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -17.78) (xy 5.08 -17.78)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -17.78) (xy 8.89 -16.9333)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -17.78) (xy 8.89 -18.6267)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -20.32) (xy 5.08 -20.32)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -20.32) (xy 8.89 -19.4733)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -20.32) (xy 8.89 -21.1667)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -22.86) (xy 5.08 -22.86)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -22.86) (xy 8.89 -22.0133)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -22.86) (xy 8.89 -23.7067)
 					)
 					(stroke
 						(width 0.127)
@@ -1129,6 +1137,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 12.7 -25.4) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin unspecified line
 					(at 0 0 0)
 					(length 5.08)
@@ -1140,24 +1160,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -22.86 0)
-					(length 5.08)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1309,20 +1311,26 @@
 						)
 					)
 				)
-			)
-			(symbol "5040500891_1_2"
-				(polyline
-					(pts
-						(xy 5.08 -25.4) (xy 12.7 -25.4)
+				(pin unspecified line
+					(at 0 -22.86 0)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
+			)
+			(symbol "5040500891_1_2"
 				(polyline
 					(pts
 						(xy 5.08 2.54) (xy 5.08 -25.4)
@@ -1337,319 +1345,7 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -22.86) (xy 5.08 -22.86)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -22.86) (xy 8.89 -23.7067)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -22.86) (xy 8.89 -22.0133)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -20.32) (xy 5.08 -20.32)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -20.32) (xy 8.89 -21.1667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -20.32) (xy 8.89 -19.4733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -17.78) (xy 5.08 -17.78)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -17.78) (xy 8.89 -18.6267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -17.78) (xy 8.89 -16.9333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -15.24) (xy 5.08 -15.24)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -15.24) (xy 8.89 -16.0867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -15.24) (xy 8.89 -14.3933)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -12.7) (xy 5.08 -12.7)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -12.7) (xy 8.89 -13.5467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -12.7) (xy 8.89 -11.8533)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 8.89 -11.0067)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 8.89 -9.3133)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 8.89 -8.4667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 8.89 -6.7733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 8.89 -5.9267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 8.89 -4.2333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -3.3867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -1.6933)
+						(xy 5.08 -25.4) (xy 12.7 -25.4)
 					)
 					(stroke
 						(width 0.127)
@@ -1673,18 +1369,6 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 0) (xy 8.89 -0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 7.62 0) (xy 8.89 0.8467)
 					)
 					(stroke
@@ -1697,7 +1381,331 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -25.4) (xy 12.7 2.54)
+						(xy 7.62 0) (xy 8.89 -0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 8.89 -1.6933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 8.89 -3.3867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 8.89 -4.2333)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 8.89 -5.9267)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 8.89 -6.7733)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 8.89 -8.4667)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -10.16) (xy 5.08 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -10.16) (xy 8.89 -9.3133)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -10.16) (xy 8.89 -11.0067)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -12.7) (xy 5.08 -12.7)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -12.7) (xy 8.89 -11.8533)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -12.7) (xy 8.89 -13.5467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -15.24) (xy 5.08 -15.24)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -15.24) (xy 8.89 -14.3933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -15.24) (xy 8.89 -16.0867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -17.78) (xy 5.08 -17.78)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -17.78) (xy 8.89 -16.9333)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -17.78) (xy 8.89 -18.6267)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -20.32) (xy 5.08 -20.32)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -20.32) (xy 8.89 -19.4733)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -20.32) (xy 8.89 -21.1667)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -22.86) (xy 5.08 -22.86)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -22.86) (xy 8.89 -22.0133)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -22.86) (xy 8.89 -23.7067)
 					)
 					(stroke
 						(width 0.127)
@@ -1719,6 +1727,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 12.7 -25.4) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin unspecified line
 					(at 0 0 0)
 					(length 5.08)
@@ -1730,24 +1750,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -22.86 0)
-					(length 5.08)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1899,13 +1901,36 @@
 						)
 					)
 				)
+				(pin unspecified line
+					(at 0 -22.86 0)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+VDC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1975,12 +2000,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27)
-					)
+				(circle
+					(center 0 3.175)
+					(radius 1.905)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1999,11 +2023,12 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 3.175)
-					(radius 1.905)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -2031,12 +2056,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2127,7 +2157,134 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 25.4 120.65)
+		(end 109.22 185.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 668ba3b8-bc29-41aa-aaeb-2bb182f23363)
+	)
+	(rectangle
+		(start 24.13 27.94)
+		(end 232.41 106.68)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b520001a-5d7d-44f7-9f37-1b4cf6f9a315)
+	)
+	(rectangle
+		(start 118.11 120.65)
+		(end 181.61 165.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e5a1b673-f392-421c-bfa0-1abb6ed73909)
+	)
+	(text "Power"
+		(exclude_from_sim no)
+		(at 125.73 116.586 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "597ee886-b181-43b0-9157-bb77c379eb70")
+	)
+	(text "Solar Panels\n"
+		(exclude_from_sim no)
+		(at 41.91 24.638 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "7752848c-d720-4143-8c53-ef13aba7a0a8")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 46.736 116.332 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "d0a984b6-6afd-4ffb-8732-5d4bdeed3e6d")
+	)
+	(text_box "Mechanical Mounting Holes for the PCB\n"
+		(exclude_from_sim no)
+		(at 71.12 144.78 0)
+		(size 25.4 2.54)
+		(margins 0.5715 0.5715 0.5715 0.5715)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left top)
+		)
+		(uuid "0a1488c8-2f5b-417f-8cea-f648470d1a24")
+	)
+	(text_box "Diodes above the 3 solar cells connected to VDC are blocking diodes which is intended to be used as a way to prevent the battery from discharging while allowing current to flow. Meanwhile, diodes that are parallel to the cells are bypass diodes used in case one of the panels is \"faulty\" to allow an alternate way for current to flow."
+		(exclude_from_sim no)
+		(at 38.1 30.48 0)
+		(size 49.53 7.62)
+		(margins 0.5715 0.5715 0.5715 0.5715)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left top)
+		)
+		(uuid "8f011a96-9a39-4136-b853-b256a672b621")
+	)
+	(text_box "Connector that is used to connect the solar panels to the EPS.\n"
+		(exclude_from_sim no)
+		(at 148.59 123.19 0)
+		(size 25.4 3.81)
+		(margins 0.5715 0.5715 0.5715 0.5715)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left top)
+		)
+		(uuid "cbe2cbb9-33cb-421e-a5e6-aab5b9ff6d0b")
 	)
 	(junction
 		(at 52.07 90.17)
@@ -2152,12 +2309,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "397249e6-7391-4382-9eb9-04a5eb0338ba")
-	)
-	(junction
-		(at 194.31 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "45ff5fb7-187f-44c8-b206-91e6e8468e34")
 	)
 	(junction
 		(at 156.21 40.64)
@@ -2212,12 +2363,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "815ac54c-760c-4b22-a2f7-70687e89ea29")
-	)
-	(junction
-		(at 194.31 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84369784-f690-4807-b959-1f422d93fbf1")
 	)
 	(junction
 		(at 33.02 40.64)
@@ -2304,16 +2449,6 @@
 			(type default)
 		)
 		(uuid "04a9cba3-0904-4db1-bb09-61a0aeed0f0a")
-	)
-	(wire
-		(pts
-			(xy 194.31 40.64) (xy 215.9 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06943324-f6b6-4e1a-a3ae-c5a48af72d06")
 	)
 	(wire
 		(pts
@@ -2417,16 +2552,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 90.17) (xy 194.31 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2296eb70-3bbf-4c14-8fbd-3d7af751b9ed")
-	)
-	(wire
-		(pts
 			(xy 114.3 58.42) (xy 114.3 62.23)
 		)
 		(stroke
@@ -2454,16 +2579,6 @@
 			(type default)
 		)
 		(uuid "24dc0a9b-641e-4a11-a9df-29720936c64d")
-	)
-	(wire
-		(pts
-			(xy 194.31 69.85) (xy 194.31 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "252434fc-dfe5-4ab5-9ee5-9f239e108d93")
 	)
 	(wire
 		(pts
@@ -2547,16 +2662,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 48.26) (xy 194.31 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d871fa7-1d15-4e34-96a7-8ccfb167fb5a")
-	)
-	(wire
-		(pts
 			(xy 175.26 40.64) (xy 194.31 40.64)
 		)
 		(stroke
@@ -2617,7 +2722,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 62.23) (xy 215.9 90.17)
+			(xy 194.31 68.58) (xy 194.31 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2747,7 +2852,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 90.17) (xy 194.31 90.17)
+			(xy 175.26 90.17) (xy 194.31 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2797,7 +2902,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 40.64) (xy 215.9 54.61)
+			(xy 194.31 40.64) (xy 194.31 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3117,16 +3222,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 58.42) (xy 194.31 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "faa8be1b-56c2-4fe3-a0a9-cfdc15813fd7")
-	)
-	(wire
-		(pts
 			(xy 175.26 69.85) (xy 175.26 74.93)
 		)
 		(stroke
@@ -3137,16 +3232,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 90.17) (xy 194.31 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fce9f396-5197-4611-bef9-4f08389c1ea4")
-	)
-	(wire
-		(pts
 			(xy 135.89 40.64) (xy 156.21 40.64)
 		)
 		(stroke
@@ -3154,129 +3239,6 @@
 			(type default)
 		)
 		(uuid "fcf4aa49-177d-419f-8060-6b9220f9af4e")
-	)
-	(rectangle
-		(start 25.4 120.65)
-		(end 109.22 185.42)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 668ba3b8-bc29-41aa-aaeb-2bb182f23363)
-	)
-	(rectangle
-		(start 24.13 27.94)
-		(end 232.41 106.68)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid b520001a-5d7d-44f7-9f37-1b4cf6f9a315)
-	)
-	(rectangle
-		(start 118.11 120.65)
-		(end 181.61 165.1)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid e5a1b673-f392-421c-bfa0-1abb6ed73909)
-	)
-	(text_box "Mechanical Mounting Holes for the PCB\n"
-		(exclude_from_sim no)
-		(at 71.12 144.78 0)
-		(size 25.4 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left top)
-		)
-		(uuid "0a1488c8-2f5b-417f-8cea-f648470d1a24")
-	)
-	(text_box "Diodes above the 3 solar cells connected to VDC are blocking diodes which is intended to be used as a way to prevent the battery from discharging while allowing current to flow. Meanwhile, diodes that are parallel to the cells are bypass diodes used in case one of the panels is \"faulty\" to allow an alternate way for current to flow."
-		(exclude_from_sim no)
-		(at 38.1 30.48 0)
-		(size 49.53 7.62)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left top)
-		)
-		(uuid "8f011a96-9a39-4136-b853-b256a672b621")
-	)
-	(text_box "Connector that is used to connect the solar panels to the EPS.\n"
-		(exclude_from_sim no)
-		(at 148.59 123.19 0)
-		(size 25.4 3.81)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left top)
-		)
-		(uuid "cbe2cbb9-33cb-421e-a5e6-aab5b9ff6d0b")
-	)
-	(text "Power"
-		(exclude_from_sim no)
-		(at 125.73 116.586 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-			)
-		)
-		(uuid "597ee886-b181-43b0-9157-bb77c379eb70")
-	)
-	(text "Solar Panels\n"
-		(exclude_from_sim no)
-		(at 41.91 24.638 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-			)
-		)
-		(uuid "7752848c-d720-4143-8c53-ef13aba7a0a8")
-	)
-	(text "Mounting Holes"
-		(exclude_from_sim no)
-		(at 46.736 116.332 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-			)
-		)
-		(uuid "d0a984b6-6afd-4ffb-8732-5d4bdeed3e6d")
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
@@ -3306,7 +3268,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 175.26 65.786 90)
 			(effects
 				(font
@@ -3512,7 +3474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 93.98 65.786 90)
 			(effects
 				(font
@@ -3736,7 +3698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 72.39 78.486 90)
 			(effects
 				(font
@@ -3806,7 +3768,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 135.89 65.786 90)
 			(effects
 				(font
@@ -3876,7 +3838,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 72.39 65.786 90)
 			(effects
 				(font
@@ -4083,7 +4045,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 175.26 54.356 90)
 			(effects
 				(font
@@ -4153,7 +4115,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 135.89 54.356 90)
 			(effects
 				(font
@@ -4223,7 +4185,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 156.21 78.486 90)
 			(effects
 				(font
@@ -4363,7 +4325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 114.3 78.486 90)
 			(effects
 				(font
@@ -4433,7 +4395,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 52.07 78.486 90)
 			(effects
 				(font
@@ -4503,7 +4465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 156.21 54.356 90)
 			(effects
 				(font
@@ -4540,94 +4502,6 @@
 			(project "Solar Panels"
 				(path "/2d09e942-e62e-4d1d-b7bd-24169f5bea3a"
 					(reference "SC19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 194.31 44.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5eef0746-c055-4279-b1b6-74d34b9b59a4")
-		(property "Reference" "D9"
-			(at 196.85 43.1799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D"
-			(at 196.85 45.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
-			(at 194.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 194.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 194.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 194.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 194.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "06836775-e7d5-468c-8b0b-74542445fc66")
-		)
-		(pin "1"
-			(uuid "aeca7c2b-cc27-4774-b956-b3b460e2bd4a")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/2d09e942-e62e-4d1d-b7bd-24169f5bea3a"
-					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -4837,7 +4711,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 93.98 54.356 90)
 			(effects
 				(font
@@ -4881,7 +4755,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 215.9 58.42 270)
+		(at 194.31 64.77 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4890,7 +4764,7 @@
 		(fields_autoplaced yes)
 		(uuid "7406b2c3-5171-41d4-b335-7b4d909f9e97")
 		(property "Reference" "D10"
-			(at 218.44 57.1499 90)
+			(at 196.85 63.4999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4899,7 +4773,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 218.44 59.6899 90)
+			(at 196.85 66.0399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4908,7 +4782,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panels Library:PMEG10020AELPX"
-			(at 215.9 58.42 0)
+			(at 194.31 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4917,7 +4791,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 58.42 0)
+			(at 194.31 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4926,7 +4800,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 215.9 58.42 0)
+			(at 194.31 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4935,7 +4809,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 215.9 58.42 0)
+			(at 194.31 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4944,7 +4818,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 215.9 58.42 0)
+			(at 194.31 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4995,7 +4869,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 93.98 78.486 90)
 			(effects
 				(font
@@ -5131,7 +5005,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 52.07 65.786 90)
 			(effects
 				(font
@@ -5201,7 +5075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 114.3 54.356 90)
 			(effects
 				(font
@@ -5305,76 +5179,6 @@
 			(project "Solar Panels"
 				(path "/2d09e942-e62e-4d1d-b7bd-24169f5bea3a"
 					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 194.31 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "979ae67c-7830-4530-92cb-be85593dbc11")
-		(property "Reference" "SC26"
-			(at 198.12 63.8809 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 198.12 66.4209 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
-			(at 194.31 65.786 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 194.31 65.786 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 194.31 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9bd8ba04-e2f4-4d72-8180-027b524a3960")
-		)
-		(pin "2"
-			(uuid "2f7f49b7-1a5b-41b1-bbc5-7ad9fb2665e0")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/2d09e942-e62e-4d1d-b7bd-24169f5bea3a"
-					(reference "SC26")
 					(unit 1)
 				)
 			)
@@ -5631,146 +5435,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 194.31 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a99dc5d7-ff5c-46dc-9946-c068dec23d12")
-		(property "Reference" "SC25"
-			(at 198.12 52.4509 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 198.12 54.9909 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
-			(at 194.31 54.356 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 194.31 54.356 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 194.31 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d136c9d0-6ce3-4356-b0dd-b93362f7a19b")
-		)
-		(pin "2"
-			(uuid "b20a7208-684f-416c-a611-25a023cf279b")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/2d09e942-e62e-4d1d-b7bd-24169f5bea3a"
-					(reference "SC25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 194.31 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa7e929e-f85a-451d-97ad-b287fcb90e39")
-		(property "Reference" "SC27"
-			(at 198.12 76.5809 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 198.12 79.1209 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
-			(at 194.31 78.486 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 194.31 78.486 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 194.31 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "91fcb279-26cb-433a-af05-ebdede1472b3")
-		)
-		(pin "2"
-			(uuid "1725dadb-775f-4518-88f0-d3752a4f85af")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/2d09e942-e62e-4d1d-b7bd-24169f5bea3a"
-					(reference "SC27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 156.21 44.45 270)
 		(unit 1)
@@ -6017,7 +5681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 114.3 65.786 90)
 			(effects
 				(font
@@ -6307,7 +5971,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 33.02 54.356 90)
 			(effects
 				(font
@@ -6532,7 +6196,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 175.26 78.486 90)
 			(effects
 				(font
@@ -6602,7 +6266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 52.07 54.356 90)
 			(effects
 				(font
@@ -6672,7 +6336,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 135.89 78.486 90)
 			(effects
 				(font
@@ -6742,7 +6406,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 33.02 78.486 90)
 			(effects
 				(font
@@ -6882,7 +6546,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 156.21 65.786 90)
 			(effects
 				(font
@@ -6952,7 +6616,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 33.02 65.786 90)
 			(effects
 				(font
@@ -7242,7 +6906,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panels Library:Trisolx Wings"
+		(property "Footprint" "Solar Panels Library:TrisolX Solar Wings"
 			(at 72.39 54.356 90)
 			(effects
 				(font
@@ -7289,4 +6953,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
