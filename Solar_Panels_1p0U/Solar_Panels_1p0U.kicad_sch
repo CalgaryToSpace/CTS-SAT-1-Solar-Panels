@@ -4763,7 +4763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7406b2c3-5171-41d4-b335-7b4d909f9e97")
-		(property "Reference" "D10"
+		(property "Reference" "D9"
 			(at 196.85 63.4999 90)
 			(effects
 				(font
@@ -4835,7 +4835,7 @@
 		(instances
 			(project "Solar Panels"
 				(path "/2d09e942-e62e-4d1d-b7bd-24169f5bea3a"
-					(reference "D10")
+					(reference "D9")
 					(unit 1)
 				)
 			)
