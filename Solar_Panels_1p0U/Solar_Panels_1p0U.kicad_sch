@@ -6,10 +6,10 @@
 	(paper "USLetter")
 	(title_block
 		(title "1U Solar Panels")
-		(date "2024-08-27")
-		(rev "1")
+		(date "2025-03-29")
+		(rev "2")
 		(company "CalgarytoSpace")
-		(comment 1 "In its current Rev 1 state, this design is ordered as a mass model only.")
+		(comment 1 "In its current Rev 2 state, this design is ordered for flight")
 	)
 	(lib_symbols
 		(symbol "Device:D"
