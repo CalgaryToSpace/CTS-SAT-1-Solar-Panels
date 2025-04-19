@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "a9ef5d2b-7ce1-4231-ba73-009f8d0b2537")
 	(paper "USLetter")
 	(title_block
@@ -13,7 +13,9 @@
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -80,14 +82,14 @@
 			)
 			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -102,14 +104,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -149,10 +151,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic_MountingPin:Conn_01x08_MountingPin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -220,63 +225,19 @@
 			)
 			(symbol "Conn_01x08_MountingPin_1_1"
 				(rectangle
-					(start -1.27 -10.033)
-					(end 0 -10.287)
+					(start -1.27 8.89)
+					(end 1.27 -11.43)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+					(start -1.27 7.747)
+					(end 0 7.493)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -297,8 +258,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 7.747)
-					(end 0 7.493)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -308,14 +269,58 @@
 					)
 				)
 				(rectangle
-					(start -1.27 8.89)
-					(end 1.27 -11.43)
+					(start -1.27 0.127)
+					(end 0 -0.127)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -501,11 +506,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Solar_Cell"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -564,6 +574,30 @@
 				)
 			)
 			(symbol "Solar_Cell_0_1"
+				(polyline
+					(pts
+						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 2.286) (xy -3.556 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -2.032 1.778)
 					(end 2.032 1.524)
@@ -588,7 +622,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 2.286) (xy -3.556 3.81)
+						(xy -0.762 3.556) (xy -0.762 2.794) (xy -1.524 2.794)
 					)
 					(stroke
 						(width 0)
@@ -612,7 +646,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 1.778) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -624,7 +658,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -652,30 +686,6 @@
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 3.556) (xy -0.762 2.794) (xy -1.524 2.794)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -721,11 +731,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Jumper:Jumper_2_Open"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom yes)
 			(on_board yes)
@@ -816,9 +831,9 @@
 			)
 			(symbol "Jumper_2_Open_0_1"
 				(arc
-					(start 1.524 1.27)
+					(start -1.524 1.27)
 					(mid 0 1.778)
-					(end -1.524 1.27)
+					(end 1.524 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -866,6 +881,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Lib:S3B_R1_00001"
 			(pin_names
@@ -972,18 +988,6 @@
 				)
 				(polyline
 					(pts
-						(xy 3.81 -1.905) (xy 6.35 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 3.81 1.905) (xy 3.81 -1.905)
 					)
 					(stroke
@@ -996,7 +1000,7 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 -1.905) (xy 6.35 1.905)
+						(xy 3.81 -1.905) (xy 6.35 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -1030,22 +1034,16 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 6.35 -1.905) (xy 6.35 1.905)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin unspecified line
@@ -1066,35 +1064,29 @@
 						)
 					)
 				)
+				(pin unspecified line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(symbol "S3B_R1_00001_1_2"
 				(polyline
 					(pts
 						(xy -1.905 3.81) (xy 1.905 3.81)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 3.4798)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.175) (xy 0 3.81)
 					)
 					(stroke
 						(width 0.2032)
@@ -1130,7 +1122,19 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 3.81) (xy 0 6.35)
+						(xy 0 3.175) (xy 0 3.81)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 3.4798)
 					)
 					(stroke
 						(width 0.2032)
@@ -1143,6 +1147,18 @@
 				(polyline
 					(pts
 						(xy 1.905 6.35) (xy -1.905 6.35)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 3.81) (xy 0 6.35)
 					)
 					(stroke
 						(width 0.2032)
@@ -1189,11 +1205,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
@@ -1291,12 +1312,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+VDC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1366,12 +1392,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27)
-					)
+				(circle
+					(center 0 3.175)
+					(radius 1.905)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1390,11 +1415,12 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 3.175)
-					(radius 1.905)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1422,12 +1448,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1518,7 +1549,140 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 15.24 21.59)
+		(end 262.89 102.87)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 489c92b3-610c-4ab8-b72a-c5a766cafe40)
+	)
+	(rectangle
+		(start 17.78 114.3)
+		(end 152.4 201.93)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7ff35718-2a88-4a9e-986a-896947932e15)
+	)
+	(rectangle
+		(start 158.75 105.41)
+		(end 247.65 170.18)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ef687753-f040-4999-9339-fbca9352906b)
+	)
+	(text "Power\nConnector"
+		(exclude_from_sim no)
+		(at 174.244 112.776 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "085f77a3-a39b-4fb2-9f26-dbcb87b53367")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 46.736 126.238 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "1107e867-77a3-4a72-bd48-e90592027967")
+	)
+	(text "Solar Cells"
+		(exclude_from_sim no)
+		(at 55.118 27.178 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "fcc58471-eee4-4faa-bade-5a92fff84197")
+	)
+	(text_box "Diodes above the 3 solar cells connected to VDC are blocking diodes which is intended to be used as a way to prevent the battery from discharging while allowing current to flow.\n\nDiode(s) that are parallel to the cells are bypass diodes used in case one of the cells is \"faulty\" to allow an alternate way for current to flow.\n"
+		(exclude_from_sim no)
+		(at 120.65 22.86 0)
+		(size 54.61 13.97)
+		(margins 0.762 0.762 0.762 0.762)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "08539b46-0ed2-440c-8732-5f7cc7beaae9")
+	)
+	(text_box "Connector: Solar panels to the EPS's MPPT inputs.\n\nPico-Lock (1.5mm Pitch)\n   Connector on PCB: Molex 504050-0891.\n   Mates with cable Molex 504051-0801.\n\nPins 1, 2, 5, and 6 are +V, and the rest are GND.\n\nExtra connectors are for options and debugging. Only 1 will be used."
+		(exclude_from_sim no)
+		(at 194.31 106.68 0)
+		(size 46.99 20.32)
+		(margins 0.762 0.762 0.762 0.762)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "65604667-34dd-4573-b516-e774ee66005a")
+	)
+	(text_box "Assuming diodes operate at maximum forward voltage (770mv) and solar cells operate at maximum power (2.33 volts), voltage at VDC should be approximately 6.22 volts\n"
+		(exclude_from_sim no)
+		(at 81.28 22.86 0)
+		(size 38.1 7.62)
+		(margins 0.762 0.762 0.762 0.762)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "e45877ca-4b7e-48ab-b7a8-f9eafa55c2a3")
 	)
 	(junction
 		(at 69.85 38.1)
@@ -1555,12 +1719,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1b509c7e-b0f2-4b2a-af86-85a3a48f59b0")
-	)
-	(junction
-		(at 182.88 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c490fba-d43b-4fc0-ab2d-17f724e0f7ad")
 	)
 	(junction
 		(at 208.28 149.86)
@@ -1617,12 +1775,6 @@
 		(uuid "562a02cb-28bf-41d0-ba0b-84a9daee6f81")
 	)
 	(junction
-		(at 182.88 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59671b8e-ef54-401e-be20-d4fcd4bc00ba")
-	)
-	(junction
 		(at 208.28 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1633,24 +1785,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b6a0aa8-cdac-45ba-b9c4-6761e3bb844e")
-	)
-	(junction
-		(at 182.88 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7c6a862c-8bf6-4309-b8f6-bcb2ab889a1d")
-	)
-	(junction
-		(at 236.22 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82a4d383-b10a-42e1-8025-98371db5043e")
-	)
-	(junction
-		(at 186.69 162.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "854ce76d-49d0-481e-a3b2-01b2e0e6a3b9")
 	)
 	(junction
 		(at 228.6 162.56)
@@ -1677,12 +1811,6 @@
 		(uuid "a83ecd97-cb58-4854-91a9-82b1b72ec435")
 	)
 	(junction
-		(at 236.22 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aa608585-f11a-4b7a-8d18-473390be3bd8")
-	)
-	(junction
 		(at 69.85 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1693,18 +1821,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae1a4a15-3e91-46fc-adc4-7dedd14cdd94")
-	)
-	(junction
-		(at 186.69 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b27cb1b1-228d-4479-9017-8fab7c113119")
-	)
-	(junction
-		(at 186.69 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b33263e4-5803-43dc-9453-ebcb2dc7774d")
 	)
 	(junction
 		(at 92.71 38.1)
@@ -1779,12 +1895,6 @@
 		(uuid "cf981a20-0044-4644-91b9-04202f656da4")
 	)
 	(junction
-		(at 186.69 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3ce85da-0e0b-49df-aa4a-2b8af0735022")
-	)
-	(junction
 		(at 166.37 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1820,16 +1930,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 154.94) (xy 182.88 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "024aee8c-dc79-4850-a7be-730b67671a46")
-	)
-	(wire
-		(pts
 			(xy 204.47 144.78) (xy 213.36 144.78)
 		)
 		(stroke
@@ -1837,16 +1937,6 @@
 			(type default)
 		)
 		(uuid "09bc99a6-4fd7-4d74-abcf-a775b3b4e979")
-	)
-	(wire
-		(pts
-			(xy 182.88 142.24) (xy 191.77 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a363078-efd3-46f2-a3fc-ae10f1c8cace")
 	)
 	(wire
 		(pts
@@ -2030,16 +2120,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 139.7) (xy 182.88 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "295180f0-faf5-4135-b478-f21ceabe4e28")
-	)
-	(wire
-		(pts
 			(xy 167.64 127) (xy 170.18 127)
 		)
 		(stroke
@@ -2057,26 +2137,6 @@
 			(type default)
 		)
 		(uuid "2dbcbd63-8f2c-459c-a7b8-40bb942de8a6")
-	)
-	(wire
-		(pts
-			(xy 191.77 154.94) (xy 182.88 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e2f7108-6d79-4cf7-8f3a-a21a0992ef5f")
-	)
-	(wire
-		(pts
-			(xy 186.69 160.02) (xy 186.69 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e9e94b8-37cd-4c9c-9a38-340d829ef10d")
 	)
 	(wire
 		(pts
@@ -2107,16 +2167,6 @@
 			(type default)
 		)
 		(uuid "3274a4da-8d12-4584-a5cd-10b859c7fc09")
-	)
-	(wire
-		(pts
-			(xy 186.69 160.02) (xy 191.77 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32fac051-e7a9-48bb-8ff7-7411e1a66318")
 	)
 	(wire
 		(pts
@@ -2210,16 +2260,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 162.56) (xy 191.77 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e5011aa-019e-4d40-9339-d6ec657cf0a5")
-	)
-	(wire
-		(pts
 			(xy 54.61 153.67) (xy 54.61 156.21)
 		)
 		(stroke
@@ -2310,16 +2350,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 38.1) (xy 247.65 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cb86741-927e-4c71-a2ab-965aea23f0eb")
-	)
-	(wire
-		(pts
 			(xy 162.56 144.78) (xy 171.45 144.78)
 		)
 		(stroke
@@ -2330,7 +2360,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 38.1) (xy 236.22 38.1)
+			(xy 212.09 38.1) (xy 247.65 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2477,16 +2507,6 @@
 			(type default)
 		)
 		(uuid "6b9ea065-0f20-42d5-b2e7-71b434104f84")
-	)
-	(wire
-		(pts
-			(xy 182.88 152.4) (xy 191.77 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e44a2bd-aa36-40a7-84c2-06881bba3536")
 	)
 	(wire
 		(pts
@@ -2730,16 +2750,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 157.48) (xy 186.69 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cfe2bca-1e3c-41a8-abfc-7886d7e41818")
-	)
-	(wire
-		(pts
 			(xy 187.96 90.17) (xy 187.96 95.25)
 		)
 		(stroke
@@ -2787,16 +2797,6 @@
 			(type default)
 		)
 		(uuid "93c5702b-af0a-45fe-bf7e-c8ec3a0d03ed")
-	)
-	(wire
-		(pts
-			(xy 186.69 157.48) (xy 191.77 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93d30e18-4c27-4a07-9955-1bd885089c1a")
 	)
 	(wire
 		(pts
@@ -2850,16 +2850,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 144.78) (xy 191.77 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a058ed00-726d-4eee-8306-d2bb4bf9ab6f")
-	)
-	(wire
-		(pts
 			(xy 166.37 162.56) (xy 166.37 163.83)
 		)
 		(stroke
@@ -2887,16 +2877,6 @@
 			(type default)
 		)
 		(uuid "a9779222-873e-4689-a11f-11f1c531a266")
-	)
-	(wire
-		(pts
-			(xy 191.77 147.32) (xy 186.69 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9f407fa-3702-4343-8830-3a799c6a9919")
 	)
 	(wire
 		(pts
@@ -2970,26 +2950,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 142.24) (xy 182.88 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae2ddce9-4395-4bc3-a487-5a179d59f24b")
-	)
-	(wire
-		(pts
-			(xy 196.85 165.1) (xy 191.77 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afa0799a-6d60-43a4-ba26-71dcf259b15b")
-	)
-	(wire
-		(pts
 			(xy 208.28 149.86) (xy 213.36 149.86)
 		)
 		(stroke
@@ -3030,7 +2990,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 95.25) (xy 236.22 95.25)
+			(xy 212.09 95.25) (xy 247.65 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3050,26 +3010,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 149.86) (xy 186.69 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bccf5608-e763-49f5-9bed-e433c98b90c3")
-	)
-	(wire
-		(pts
-			(xy 186.69 162.56) (xy 186.69 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcea27b5-f2bd-4da5-8bac-70e5778bde04")
-	)
-	(wire
-		(pts
 			(xy 140.97 90.17) (xy 140.97 95.25)
 		)
 		(stroke
@@ -3077,16 +3017,6 @@
 			(type default)
 		)
 		(uuid "bf92214f-2cf0-4934-844c-618c089fb87e")
-	)
-	(wire
-		(pts
-			(xy 186.69 147.32) (xy 186.69 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c15883fd-75c8-422c-b9f6-b6113f7979b9")
 	)
 	(wire
 		(pts
@@ -3160,16 +3090,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 62.23) (xy 236.22 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6aea922-5505-46c6-94ef-9f38a9113270")
-	)
-	(wire
-		(pts
 			(xy 77.47 184.15) (xy 77.47 186.69)
 		)
 		(stroke
@@ -3200,16 +3120,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 90.17) (xy 236.22 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbbb7670-a5dd-42eb-8ded-7825b2527f67")
-	)
-	(wire
-		(pts
 			(xy 116.84 62.23) (xy 116.84 68.58)
 		)
 		(stroke
@@ -3217,16 +3127,6 @@
 			(type default)
 		)
 		(uuid "dd7801aa-7206-408b-aae6-daf16ada21f9")
-	)
-	(wire
-		(pts
-			(xy 247.65 95.25) (xy 236.22 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "def8a01f-83cc-41e2-89ad-f01a7a47e30a")
 	)
 	(wire
 		(pts
@@ -3270,16 +3170,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 48.26) (xy 236.22 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4b156b0-57ac-4779-8022-d16111a201b3")
-	)
-	(wire
-		(pts
 			(xy 24.13 34.29) (xy 24.13 38.1)
 		)
 		(stroke
@@ -3297,16 +3187,6 @@
 			(type default)
 		)
 		(uuid "e74e69b1-de77-4d85-935d-c1819ba515b7")
-	)
-	(wire
-		(pts
-			(xy 191.77 165.1) (xy 191.77 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eaeff509-37e8-42b5-8b61-48621300b831")
 	)
 	(wire
 		(pts
@@ -3330,16 +3210,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 149.86) (xy 191.77 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0e38648-78ce-421c-85ec-e2b3ca3e3bf8")
-	)
-	(wire
-		(pts
 			(xy 166.37 62.23) (xy 166.37 68.58)
 		)
 		(stroke
@@ -3357,16 +3227,6 @@
 			(type default)
 		)
 		(uuid "f37b3396-7861-4eff-8008-ea897ebd47ce")
-	)
-	(wire
-		(pts
-			(xy 182.88 144.78) (xy 182.88 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f436bc29-2e94-4f7a-93aa-77cf3dd639e0")
 	)
 	(wire
 		(pts
@@ -3437,145 +3297,6 @@
 			(type default)
 		)
 		(uuid "ff353ed8-c530-4e89-ad29-9e108442f74d")
-	)
-	(wire
-		(pts
-			(xy 236.22 76.2) (xy 236.22 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffb2e2bb-488b-40f0-b7e8-c053b0bd4ee8")
-	)
-	(rectangle
-		(start 15.24 21.59)
-		(end 262.89 102.87)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 489c92b3-610c-4ab8-b72a-c5a766cafe40)
-	)
-	(rectangle
-		(start 17.78 114.3)
-		(end 152.4 201.93)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 7ff35718-2a88-4a9e-986a-896947932e15)
-	)
-	(rectangle
-		(start 158.75 105.41)
-		(end 247.65 170.18)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ef687753-f040-4999-9339-fbca9352906b)
-	)
-	(text_box "Diodes above the 3 solar cells connected to VDC are blocking diodes which is intended to be used as a way to prevent the battery from discharging while allowing current to flow.\n\nDiode(s) that are parallel to the cells are bypass diodes used in case one of the cells is \"faulty\" to allow an alternate way for current to flow.\n"
-		(exclude_from_sim no)
-		(at 120.65 22.86 0)
-		(size 54.61 13.97)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "08539b46-0ed2-440c-8732-5f7cc7beaae9")
-	)
-	(text_box "Connector: Solar panels to the EPS's MPPT inputs.\n\nPico-Lock (1.5mm Pitch)\n   Connector on PCB: Molex 504050-0891.\n   Mates with cable Molex 504051-0801.\n\nPins 1, 2, 5, and 6 are +V, and the rest are GND.\n\nExtra connectors are for options and debugging. Only 1 will be used."
-		(exclude_from_sim no)
-		(at 194.31 106.68 0)
-		(size 46.99 20.32)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "65604667-34dd-4573-b516-e774ee66005a")
-	)
-	(text_box "Assuming diodes operate at maximum forward voltage (770mv) and solar cells operate at maximum power (2.33 volts), voltage at VDC should be approximately 6.22 volts\n"
-		(exclude_from_sim no)
-		(at 81.28 22.86 0)
-		(size 38.1 7.62)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "e45877ca-4b7e-48ab-b7a8-f9eafa55c2a3")
-	)
-	(text "Power\nConnector"
-		(exclude_from_sim no)
-		(at 174.244 112.776 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.762)
-				(bold yes)
-			)
-		)
-		(uuid "085f77a3-a39b-4fb2-9f26-dbcb87b53367")
-	)
-	(text "Mounting Holes"
-		(exclude_from_sim no)
-		(at 46.736 126.238 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.762)
-				(bold yes)
-			)
-		)
-		(uuid "1107e867-77a3-4a72-bd48-e90592027967")
-	)
-	(text "Solar Cells"
-		(exclude_from_sim no)
-		(at 55.118 27.178 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.762)
-				(bold yes)
-			)
-		)
-		(uuid "fcc58471-eee4-4faa-bade-5a92fff84197")
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
@@ -3675,7 +3396,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 187.96 72.136 90)
 			(effects
 				(font
@@ -3744,7 +3465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 166.37 86.106 90)
 			(effects
 				(font
@@ -4344,7 +4065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 48.26 58.166 90)
 			(effects
 				(font
@@ -4413,7 +4134,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 212.09 86.106 90)
 			(effects
 				(font
@@ -4482,7 +4203,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 116.84 58.166 90)
 			(effects
 				(font
@@ -4621,7 +4342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 92.71 58.166 90)
 			(effects
 				(font
@@ -4690,7 +4411,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 69.85 72.136 90)
 			(effects
 				(font
@@ -4866,75 +4587,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 236.22 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "38be5db2-ab5d-43f3-9b84-0e8556af311f")
-		(property "Reference" "SC28"
-			(at 229.87 52.324 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 227.584 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 236.22 58.166 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 58.166 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 236.22 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "61d77e08-8357-488e-8606-ebbda2f018dd")
-		)
-		(pin "1"
-			(uuid "d5f64384-d12f-4e81-a065-a8387c02e6c0")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "SC28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 30.48 148.59 270)
 		(unit 1)
@@ -5070,75 +4722,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 236.22 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "41f8acee-1b9d-4462-aece-65efde507731")
-		(property "Reference" "SC29"
-			(at 229.87 66.294 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 228.092 74.676 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 236.22 72.136 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 72.136 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 236.22 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ce0dc440-d7d6-4f92-89ee-0a61e303c2f4")
-		)
-		(pin "1"
-			(uuid "ac034803-e45a-4cff-965e-372231170e29")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "SC29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 54.61 186.69 0)
 		(unit 1)
@@ -5231,7 +4814,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 69.85 58.166 90)
 			(effects
 				(font
@@ -5300,7 +4883,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 140.97 58.166 90)
 			(effects
 				(font
@@ -5369,7 +4952,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 69.85 86.106 90)
 			(effects
 				(font
@@ -5438,7 +5021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 212.09 58.166 90)
 			(effects
 				(font
@@ -5573,7 +5156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 187.96 86.106 90)
 			(effects
 				(font
@@ -5642,7 +5225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 92.71 86.106 90)
 			(effects
 				(font
@@ -5711,7 +5294,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 140.97 72.136 90)
 			(effects
 				(font
@@ -6156,71 +5739,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 186.69 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7215629a-ab22-455e-ab39-fb97402a97e1")
-		(property "Reference" "#PWR014"
-			(at 186.69 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 186.69 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "68fedfb0-3696-4a2d-85c6-06a3637dcb7a")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Lib:S3B_R1_00001")
 		(at 247.65 76.2 90)
 		(unit 1)
@@ -6455,7 +5973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 24.13 86.106 90)
 			(effects
 				(font
@@ -6524,7 +6042,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 212.09 72.136 90)
 			(effects
 				(font
@@ -6797,7 +6315,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 187.96 58.166 90)
 			(effects
 				(font
@@ -6834,98 +6352,6 @@
 			(project "Solar Panels"
 				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
 					(reference "SC22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x08_MountingPin")
-		(at 196.85 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "8d5c4bb0-98fd-410a-8e4a-eb4f801be73b")
-		(property "Reference" "J2"
-			(at 199.39 150.2155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x08_MountingPin"
-			(at 199.39 152.7555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal"
-			(at 196.85 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 196.85 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "be007672-0b2c-460f-8c05-d6bbfedc3b67")
-		)
-		(pin "MP"
-			(uuid "c686eb52-8a97-4103-9e30-92fc396335a8")
-		)
-		(pin "3"
-			(uuid "7f9c0199-e488-431e-add8-e8e7315ffa3a")
-		)
-		(pin "4"
-			(uuid "2757dd86-f1df-4307-91e8-3e979507662f")
-		)
-		(pin "8"
-			(uuid "3f289b1b-fef0-4546-a85f-a744583530e9")
-		)
-		(pin "1"
-			(uuid "0d93c9fa-d7a7-48a3-a832-02d1df00e48e")
-		)
-		(pin "5"
-			(uuid "94ea883c-d279-42ef-8730-75ba51703139")
-		)
-		(pin "6"
-			(uuid "c0cec388-da75-4744-bf1f-3530de99a43e")
-		)
-		(pin "7"
-			(uuid "13519873-b800-4aa7-b318-051745690f92")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -7202,75 +6628,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 236.22 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "98fa4e99-10b1-4b62-9074-3856f906d226")
-		(property "Reference" "SC30"
-			(at 228.6 82.804 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 228.092 88.646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 236.22 86.106 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 86.106 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 236.22 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4f59c33e-8abc-451b-97a8-45e1fb972a39")
-		)
-		(pin "1"
-			(uuid "3b6cb289-9f5f-450c-91e9-07dc3b5fe4b4")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "SC30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+VDC")
 		(at 162.56 139.7 0)
 		(unit 1)
@@ -7400,71 +6757,6 @@
 			(project "Solar Panels"
 				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
 					(reference "JP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+VDC")
-		(at 182.88 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a2057772-d542-4e62-997f-832491fabfee")
-		(property "Reference" "#PWR03"
-			(at 182.88 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VDC"
-			(at 182.626 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 182.88 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c117ccd5-6c78-41dd-a947-7e7bb08a9a36")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7726,7 +7018,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 116.84 72.136 90)
 			(effects
 				(font
@@ -7795,7 +7087,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 166.37 58.166 90)
 			(effects
 				(font
@@ -7864,7 +7156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 166.37 72.136 90)
 			(effects
 				(font
@@ -7933,7 +7225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 24.13 72.136 90)
 			(effects
 				(font
@@ -8067,7 +7359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 48.26 72.136 90)
 			(effects
 				(font
@@ -8110,77 +7402,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 236.22 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ca225aea-234b-46c3-bdaf-a768864f5fa1")
-		(property "Reference" "D10"
-			(at 229.362 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 228.346 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 236.22 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 236.22 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 236.22 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a84c306-38ac-4f53-837f-5ea1c1f7bef5")
-		)
-		(pin "2"
-			(uuid "29312c70-4d9e-4f09-bf40-ade3afc47b13")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Solar_Cell")
 		(at 24.13 59.69 0)
 		(unit 1)
@@ -8207,7 +7428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 24.13 58.166 90)
 			(effects
 				(font
@@ -8346,7 +7567,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 140.97 86.106 90)
 			(effects
 				(font
@@ -8550,7 +7771,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 116.84 86.106 90)
 			(effects
 				(font
@@ -8686,7 +7907,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 92.71 72.136 90)
 			(effects
 				(font
@@ -9021,7 +8242,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
 			(at 48.26 86.106 90)
 			(effects
 				(font
@@ -9276,4 +8497,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
