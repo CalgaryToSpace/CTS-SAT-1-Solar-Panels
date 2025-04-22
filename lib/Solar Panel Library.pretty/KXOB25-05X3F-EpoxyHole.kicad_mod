@@ -1,11 +1,11 @@
-(footprint "KXOB25-05X3F"
+(footprint "KXOB25-05X3F-EpoxyHole"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Monocrystalline Solar Cell 30.7mW 2.07V 8mm x 23mm")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at -4.8 2.6 0)
 		(layer "F.SilkS")
 		(uuid "1c368245-6ddd-4fe1-bc18-e0ee5019b1aa")
 		(effects
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "KXOB25-05X3F"
+	(property "Value" "KXOB25-05X3F-EpoxyHole"
 		(at 0 -1.1 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -55,18 +55,8 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -12 -2.6)
-		(end -11.6 -2.6)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "f2b23b16-5e9b-4ad7-8164-37f9165c49e6")
-	)
-	(fp_line
-		(start -12 2.6)
-		(end -11.6 2.6)
+		(start -12 0)
+		(end -11.6 0)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -75,18 +65,8 @@
 		(uuid "48d7815a-ed20-441a-8ce7-12a220a40cab")
 	)
 	(fp_line
-		(start -11.8 -2.4)
-		(end -11.8 -2.8)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "adda68cc-93e1-49a2-8333-fb8db4a1e9d2")
-	)
-	(fp_line
-		(start -11.8 2.8)
-		(end -11.8 2.4)
+		(start -11.8 0.2)
+		(end -11.8 -0.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -95,84 +75,25 @@
 		(uuid "17b6c018-44d7-42cd-a9b6-ae7445f4d259")
 	)
 	(fp_line
-		(start -11.5 -4)
-		(end 11.5 -4)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "b3fc7125-733c-4057-a299-eb1d19b93374")
-	)
-	(fp_line
-		(start -11.5 -1.8)
-		(end -11.5 -4)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "79c2f648-8c01-4ad6-955d-ef125c853228")
-	)
-	(fp_line
-		(start -11.5 4)
-		(end -11.5 1.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "bfcba5a3-7c23-4436-8acd-e0e9ca847531")
-	)
-	(fp_line
-		(start -11.5 4)
-		(end 11.5 4)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "05c11660-7d6e-48ee-b222-c3c0f00e3fe0")
-	)
-	(fp_line
-		(start 11.5 -1.8)
-		(end 11.5 -4)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "a7857be4-c09c-48c5-ab70-d6ccbb31e407")
-	)
-	(fp_line
-		(start 11.5 4)
-		(end 11.5 1.8)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "645f1be4-204a-4e0c-b9da-ed4a62922f90")
-	)
-	(fp_line
-		(start 11.8 -3.6)
-		(end 11.8 -1.8)
-		(stroke
-			(width 0.4)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "c3d65880-0695-476d-bb15-85e84d96d276")
-	)
-	(fp_line
-		(start 11.8 1.8)
-		(end 11.8 3.6)
+		(start 11.8 -1.4)
+		(end 11.8 1.4)
 		(stroke
 			(width 0.4)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "d302ae64-fa40-4246-ac19-93b48f5842fb")
+	)
+	(fp_rect
+		(start -11.5 -4)
+		(end 11.5 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "268819a0-3a44-4978-8f94-fd00579a9bb6")
 	)
 	(fp_rect
 		(start -11.8 -4.2)
@@ -223,14 +144,6 @@
 			)
 		)
 	)
-	(pad "1" smd roundrect
-		(at -11 0)
-		(size 2.4 3)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(roundrect_rratio 0.15)
-		(thermal_bridge_angle 45)
-		(uuid "5238d7d0-bcdc-4249-953e-6c869f0cb97e")
-	)
 	(pad "1" smd rect
 		(at -9.5 0)
 		(size 3.8 7.8)
@@ -245,21 +158,13 @@
 		(thermal_bridge_angle 45)
 		(uuid "61f23019-1fbf-4d80-bf5d-017de98cb7e2")
 	)
-	(pad "2" smd roundrect
-		(at 11 0)
-		(size 2.4 3)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(roundrect_rratio 0.15)
-		(thermal_bridge_angle 45)
-		(uuid "5545255e-9239-4fce-8242-57676cc7a818")
-	)
-	(group ""
-		(uuid "431cdc01-80b5-46a6-9b1b-8a8636fe8653")
-		(members "17b6c018-44d7-42cd-a9b6-ae7445f4d259" "48d7815a-ed20-441a-8ce7-12a220a40cab")
-	)
-	(group ""
-		(uuid "45d9d2cf-f48a-4625-b643-186cc4e75ad9")
-		(members "adda68cc-93e1-49a2-8333-fb8db4a1e9d2" "f2b23b16-5e9b-4ad7-8164-37f9165c49e6")
+	(pad "3" thru_hole circle
+		(at 0 0)
+		(size 5.5 5.5)
+		(drill 4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "215b782d-577e-4e63-8d3e-3801b59ba851")
 	)
 	(embedded_fonts no)
 )

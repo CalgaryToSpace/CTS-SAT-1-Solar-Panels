@@ -1553,8 +1553,8 @@
 		)
 	)
 	(rectangle
-		(start 15.24 21.59)
-		(end 262.89 102.87)
+		(start 153.67 12.7)
+		(end 198.12 64.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -1562,7 +1562,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 489c92b3-610c-4ab8-b72a-c5a766cafe40)
+		(uuid 062ed9bc-4c53-4d7e-9739-fc4015f09c14)
 	)
 	(rectangle
 		(start 17.78 138.43)
@@ -1575,6 +1575,18 @@
 			(type none)
 		)
 		(uuid 7ff35718-2a88-4a9e-986a-896947932e15)
+	)
+	(rectangle
+		(start 13.97 12.7)
+		(end 152.4 137.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8d5913f1-e186-4728-86dd-c5e20f69c983)
 	)
 	(rectangle
 		(start 158.75 105.41)
@@ -1612,9 +1624,21 @@
 		)
 		(uuid "1107e867-77a3-4a72-bd48-e90592027967")
 	)
-	(text "Solar Cells"
+	(text "Bypass Diode"
 		(exclude_from_sim no)
-		(at 55.118 27.178 0)
+		(at 174.752 18.034 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "7d45622e-1dc6-48ad-8c39-c0a3e8429084")
+	)
+	(text "Solar Cells (6S5P)"
+		(exclude_from_sim no)
+		(at 107.95 20.066 0)
 		(effects
 			(font
 				(size 3.81 3.81)
@@ -1626,8 +1650,8 @@
 	)
 	(text_box "Diodes above each string are blocking diodes, which are intended to prevent current flowing back into the cells and heating them.\n\nThe diode that is parallel to the strings is a bypass diode. It allows the panel to be connected in series with other panels, where panels have varying operating conditions."
 		(exclude_from_sim no)
-		(at 120.65 22.86 0)
-		(size 54.61 13.97)
+		(at 153.67 66.04 0)
+		(size 44.45 17.78)
 		(margins 0.762 0.762 0.762 0.762)
 		(stroke
 			(width 0)
@@ -1664,14 +1688,14 @@
 		)
 		(uuid "65604667-34dd-4573-b516-e774ee66005a")
 	)
-	(text_box "Assuming diodes operate at maximum forward voltage (770mv) and solar cells operate at maximum power (2.33 volts), voltage at VDC should be approximately 6.22 volts\n"
+	(text_box "Solar cell = KXOB25-05X3F\nDiode = PMEG10020\nConfiguration: 6S5P (parallel strings)\n\nDiode maximum forward voltage = 770mV\nSolar cell voltage at maximum power = 1.67 V\nSolar cell max power = 30.7 mW\n\nPanel voltage at max power = (6 * 1.67V - 0.77V) = 9.25 V\nPanel max power = 6 * 5 * 30.7 mW = 1.11 W"
 		(exclude_from_sim no)
-		(at 81.28 22.86 0)
-		(size 38.1 7.62)
+		(at 199.39 25.4 0)
+		(size 64.77 21.59)
 		(margins 0.762 0.762 0.762 0.762)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -1683,12 +1707,6 @@
 			(justify left top)
 		)
 		(uuid "e45877ca-4b7e-48ab-b7a8-f9eafa55c2a3")
-	)
-	(junction
-		(at 69.85 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05680fa8-b57a-4e9d-a314-482045b8c703")
 	)
 	(junction
 		(at 208.28 162.56)
@@ -1709,34 +1727,28 @@
 		(uuid "11f3042e-351e-412b-9ae9-993eb04e118f")
 	)
 	(junction
-		(at 116.84 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16114ad0-4bd5-4018-802c-11e565fee8e3")
-	)
-	(junction
-		(at 166.37 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1b509c7e-b0f2-4b2a-af86-85a3a48f59b0")
-	)
-	(junction
 		(at 208.28 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25564029-e4db-4211-a8a6-ccf6ca72a5ae")
 	)
 	(junction
-		(at 187.96 38.1)
+		(at 55.88 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "31506cb5-01b8-4ab7-a0ed-ea778ae2cbb0")
+		(uuid "31d50651-7be5-425f-bc72-1bb8cb95d5d4")
 	)
 	(junction
 		(at 204.47 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3301b80e-d975-4a00-b5dd-8d54629e4eaa")
+	)
+	(junction
+		(at 109.22 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39d042aa-22d5-484d-ab0f-aa3e7082c48e")
 	)
 	(junction
 		(at 166.37 162.56)
@@ -1757,22 +1769,10 @@
 		(uuid "3dd8385f-e704-446f-95ed-7eebbfd41951")
 	)
 	(junction
-		(at 212.09 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4dc1d663-1699-4efc-97b2-1a2a4e732b5f")
-	)
-	(junction
 		(at 224.79 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55771c86-b2a4-4b71-ab02-1458631f6c6d")
-	)
-	(junction
-		(at 48.26 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "562a02cb-28bf-41d0-ba0b-84a9daee6f81")
 	)
 	(junction
 		(at 208.28 160.02)
@@ -1781,10 +1781,34 @@
 		(uuid "66e0b4c4-94e0-40fa-917e-01035ffd2f2f")
 	)
 	(junction
+		(at 81.28 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74864223-2211-401e-bc6e-1cbe6296878f")
+	)
+	(junction
 		(at 224.79 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b6a0aa8-cdac-45ba-b9c4-6761e3bb844e")
+	)
+	(junction
+		(at 66.04 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e69a359-be6a-407f-ac07-92625d6c28e8")
+	)
+	(junction
+		(at 81.28 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "868edd2c-8aee-45bd-8629-aeba3caab77d")
+	)
+	(junction
+		(at 109.22 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87b02fbf-3de0-4750-8d52-8c4d3a787caf")
 	)
 	(junction
 		(at 228.6 162.56)
@@ -1811,22 +1835,10 @@
 		(uuid "a83ecd97-cb58-4854-91a9-82b1b72ec435")
 	)
 	(junction
-		(at 69.85 95.25)
+		(at 55.88 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "abbe1511-0b35-44b2-9595-d564f3f661ea")
-	)
-	(junction
-		(at 212.09 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae1a4a15-3e91-46fc-adc4-7dedd14cdd94")
-	)
-	(junction
-		(at 92.71 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b38af62b-92c2-4699-811b-8894eeb3779c")
+		(uuid "a97b2dfb-baa9-440f-a980-a0b630502bc7")
 	)
 	(junction
 		(at 162.56 152.4)
@@ -1835,64 +1847,22 @@
 		(uuid "b4a44717-342a-48e2-8565-addcbdf468af")
 	)
 	(junction
-		(at 187.96 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b55f5c60-e45b-4f35-af05-568abdf26800")
-	)
-	(junction
-		(at 24.13 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b5a7c431-50cf-4267-b681-937b0a5e811d")
-	)
-	(junction
 		(at 166.37 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b91ca99c-6562-479c-8317-6251cb3afd87")
 	)
 	(junction
-		(at 140.97 38.1)
+		(at 67.31 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b949523f-00ac-42bf-9a00-01756b218b32")
-	)
-	(junction
-		(at 48.26 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba61711b-d868-494d-8ff1-5f57cb6c6b7f")
+		(uuid "bcfb038d-2104-4a9a-8d6f-36456cd4b7ba")
 	)
 	(junction
 		(at 166.37 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be25db42-fa2c-474a-be58-af3a1682587d")
-	)
-	(junction
-		(at 166.37 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1c3d4a3-3909-4457-9c55-792292e96e73")
-	)
-	(junction
-		(at 116.84 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3eaaaea-9349-4369-ab87-063637466239")
-	)
-	(junction
-		(at 43.18 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cdcd2b7e-1f04-4adf-9f91-a5cce09f8b90")
-	)
-	(junction
-		(at 92.71 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cf981a20-0044-4644-91b9-04202f656da4")
 	)
 	(junction
 		(at 166.37 149.86)
@@ -1907,12 +1877,6 @@
 		(uuid "ebcecb5f-5007-4ece-a1e6-416ab30e5077")
 	)
 	(junction
-		(at 140.97 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "efeb56f3-979b-4836-aaa4-0d0e8cb8dfc6")
-	)
-	(junction
 		(at 162.56 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1920,13 +1884,23 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 48.26) (xy 69.85 54.61)
+			(xy 55.88 80.01) (xy 55.88 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "02390e8c-c876-4647-9f8c-793ac03ca5c9")
+	)
+	(wire
+		(pts
+			(xy 55.88 130.81) (xy 67.31 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02499e6f-7b09-4114-bf01-26ae054c55cc")
 	)
 	(wire
 		(pts
@@ -1940,23 +1914,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 48.26) (xy 92.71 54.61)
+			(xy 55.88 38.1) (xy 55.88 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0ccef569-468a-4c56-aeb9-2f865a6cf8b1")
-	)
-	(wire
-		(pts
-			(xy 166.37 48.26) (xy 166.37 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0df9b65f-cb05-4a20-a4e3-a0e60a33c376")
 	)
 	(wire
 		(pts
@@ -2000,7 +1964,17 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 38.1) (xy 247.65 66.04)
+			(xy 135.89 55.88) (xy 135.89 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12683997-e9b5-42b4-a8f3-914c72a81438")
+	)
+	(wire
+		(pts
+			(xy 179.07 31.75) (xy 179.07 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2010,33 +1984,13 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 95.25) (xy 212.09 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "150b14de-16ed-41d9-9fbd-b55120bdfc44")
-	)
-	(wire
-		(pts
-			(xy 187.96 62.23) (xy 187.96 68.58)
+			(xy 109.22 52.07) (xy 109.22 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "174a1d80-65bf-4d86-a2a4-3e0b89017db6")
-	)
-	(wire
-		(pts
-			(xy 166.37 38.1) (xy 187.96 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "182a215a-afff-43b2-ab07-386862fa8fba")
 	)
 	(wire
 		(pts
@@ -2070,7 +2024,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 62.23) (xy 212.09 68.58)
+			(xy 135.89 76.2) (xy 135.89 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2080,7 +2034,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 76.2) (xy 48.26 82.55)
+			(xy 29.21 66.04) (xy 29.21 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2090,33 +2044,13 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 90.17) (xy 24.13 95.25)
+			(xy 29.21 125.73) (xy 29.21 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "24ec791f-4b7a-4656-9cd6-dc411a947788")
-	)
-	(wire
-		(pts
-			(xy 24.13 95.25) (xy 43.18 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "285e9f0e-ce6f-4a78-a44c-c3d37fb313da")
-	)
-	(wire
-		(pts
-			(xy 69.85 38.1) (xy 92.71 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "292c0672-395e-4d6c-92e6-4517c36ece8b")
 	)
 	(wire
 		(pts
@@ -2130,7 +2064,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 76.2) (xy 166.37 82.55)
+			(xy 109.22 111.76) (xy 109.22 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2170,16 +2104,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 38.1) (xy 48.26 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "372acbea-188b-4663-bc97-44efd78d55fa")
-	)
-	(wire
-		(pts
 			(xy 213.36 147.32) (xy 208.28 147.32)
 		)
 		(stroke
@@ -2190,7 +2114,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 48.26) (xy 48.26 54.61)
+			(xy 29.21 38.1) (xy 29.21 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2200,7 +2124,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 90.17) (xy 212.09 95.25)
+			(xy 135.89 99.06) (xy 135.89 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2220,7 +2144,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 76.2) (xy 24.13 82.55)
+			(xy 29.21 111.76) (xy 29.21 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2240,13 +2164,43 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 76.2) (xy 187.96 82.55)
+			(xy 135.89 27.94) (xy 135.89 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47cff250-0a5d-4ad4-9b00-ac4d8e8c9fb1")
+	)
+	(wire
+		(pts
+			(xy 109.22 66.04) (xy 109.22 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "48b96025-776b-45b3-ab16-f2e42c4fec07")
+	)
+	(wire
+		(pts
+			(xy 135.89 116.84) (xy 135.89 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "499d86f3-2b9e-4c93-9d32-6ef47a817b60")
+	)
+	(wire
+		(pts
+			(xy 29.21 25.4) (xy 55.88 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a426eac-07ba-445a-ad02-dd98383890e4")
 	)
 	(wire
 		(pts
@@ -2360,16 +2314,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 38.1) (xy 247.65 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "623f06a7-de7d-442e-9d87-309ed76f2032")
-	)
-	(wire
-		(pts
 			(xy 224.79 154.94) (xy 224.79 152.4)
 		)
 		(stroke
@@ -2390,23 +2334,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 76.2) (xy 116.84 82.55)
+			(xy 81.28 111.76) (xy 81.28 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "62d9f787-c316-4b8a-8085-5bdb9fa3690a")
-	)
-	(wire
-		(pts
-			(xy 92.71 95.25) (xy 116.84 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63b75531-0063-4222-b5cc-e10d88a43dd6")
 	)
 	(wire
 		(pts
@@ -2430,16 +2364,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 95.25) (xy 187.96 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64e55bde-6558-4cfc-aed9-bb5a72d7f204")
-	)
-	(wire
-		(pts
 			(xy 170.18 128.27) (xy 170.18 127)
 		)
 		(stroke
@@ -2450,7 +2374,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 76.2) (xy 140.97 82.55)
+			(xy 81.28 66.04) (xy 81.28 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2460,7 +2384,27 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 90.17) (xy 116.84 95.25)
+			(xy 66.04 22.86) (xy 66.04 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66fb7af8-d95d-41d1-92d3-eccf40d3f55e")
+	)
+	(wire
+		(pts
+			(xy 29.21 27.94) (xy 29.21 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6700065e-7889-47c1-9b30-b1b0db6b9ad3")
+	)
+	(wire
+		(pts
+			(xy 81.28 125.73) (xy 81.28 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2477,16 +2421,6 @@
 			(type default)
 		)
 		(uuid "690b15e7-d33f-48ed-aa1a-0f60b428419b")
-	)
-	(wire
-		(pts
-			(xy 48.26 95.25) (xy 69.85 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a795061-ae94-4505-8cb5-8b22b77e1ad2")
 	)
 	(wire
 		(pts
@@ -2540,7 +2474,17 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 90.17) (xy 69.85 95.25)
+			(xy 109.22 25.4) (xy 135.89 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709e7ff2-3702-4fa0-b37d-d8dda9853cb1")
+	)
+	(wire
+		(pts
+			(xy 55.88 125.73) (xy 55.88 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2640,16 +2584,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 38.1) (xy 116.84 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82c3b7c5-e414-4398-8311-1ea1c5102fae")
-	)
-	(wire
-		(pts
 			(xy 228.6 149.86) (xy 228.6 157.48)
 		)
 		(stroke
@@ -2680,16 +2614,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 38.1) (xy 212.09 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85890c8b-8842-45d8-8ccf-840a57e69b0f")
-	)
-	(wire
-		(pts
 			(xy 69.85 179.07) (xy 69.85 181.61)
 		)
 		(stroke
@@ -2710,7 +2634,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 90.17) (xy 48.26 95.25)
+			(xy 29.21 80.01) (xy 29.21 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2730,7 +2654,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 76.2) (xy 92.71 82.55)
+			(xy 55.88 66.04) (xy 55.88 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2740,7 +2664,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 62.23) (xy 92.71 68.58)
+			(xy 55.88 52.07) (xy 55.88 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2750,27 +2674,27 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 90.17) (xy 187.96 95.25)
+			(xy 55.88 25.4) (xy 55.88 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8f7bca4f-ef1b-491d-a652-b2f259f64261")
+		(uuid "8c51ca39-71a9-462b-b3e8-1ab4bc7259ec")
 	)
 	(wire
 		(pts
-			(xy 92.71 90.17) (xy 92.71 95.25)
+			(xy 67.31 132.08) (xy 67.31 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "902faf26-e73b-4f4d-a934-366e2227ed4d")
+		(uuid "912f7f22-d0c3-48fc-b69f-9e5fd64c5372")
 	)
 	(wire
 		(pts
-			(xy 69.85 62.23) (xy 69.85 68.58)
+			(xy 55.88 97.79) (xy 55.88 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2800,7 +2724,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 62.23) (xy 140.97 68.58)
+			(xy 81.28 52.07) (xy 81.28 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2830,7 +2754,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 90.17) (xy 166.37 95.25)
+			(xy 109.22 125.73) (xy 109.22 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2870,7 +2794,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 62.23) (xy 24.13 68.58)
+			(xy 29.21 97.79) (xy 29.21 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2890,17 +2814,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 48.26) (xy 116.84 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa44d7cb-cbf5-4f9c-880d-225692f06c45")
-	)
-	(wire
-		(pts
-			(xy 48.26 62.23) (xy 48.26 68.58)
+			(xy 29.21 52.07) (xy 29.21 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2910,7 +2824,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 48.26) (xy 140.97 54.61)
+			(xy 81.28 38.1) (xy 81.28 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2937,6 +2851,16 @@
 			(type default)
 		)
 		(uuid "aca2b7d3-3234-4a73-8b99-eacb397d0dbb")
+	)
+	(wire
+		(pts
+			(xy 109.22 25.4) (xy 109.22 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad518af8-2e78-4899-89b5-a567ee042428")
 	)
 	(wire
 		(pts
@@ -2970,16 +2894,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 95.25) (xy 48.26 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b26a3e43-a03e-4cfc-9b0e-785ddb2fe315")
-	)
-	(wire
-		(pts
 			(xy 96.52 191.77) (xy 96.52 194.31)
 		)
 		(stroke
@@ -2987,16 +2901,6 @@
 			(type default)
 		)
 		(uuid "b2973d39-74ee-4878-9159-589dcefe2918")
-	)
-	(wire
-		(pts
-			(xy 212.09 95.25) (xy 247.65 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4b41cf1-a721-482c-8b83-2fca7149fc03")
 	)
 	(wire
 		(pts
@@ -3010,13 +2914,33 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 90.17) (xy 140.97 95.25)
+			(xy 81.28 25.4) (xy 109.22 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b958a761-e1fd-4f89-80f0-741a92248f9e")
+	)
+	(wire
+		(pts
+			(xy 81.28 80.01) (xy 81.28 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bf92214f-2cf0-4934-844c-618c089fb87e")
+	)
+	(wire
+		(pts
+			(xy 109.22 80.01) (xy 109.22 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0128546-f762-442e-b5b8-cfb6d11ecc3b")
 	)
 	(wire
 		(pts
@@ -3027,36 +2951,6 @@
 			(type default)
 		)
 		(uuid "c2397768-7032-406b-8666-bd0430e64cd6")
-	)
-	(wire
-		(pts
-			(xy 116.84 95.25) (xy 140.97 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2e94f41-8e19-46ad-bd76-e81c84d94d10")
-	)
-	(wire
-		(pts
-			(xy 69.85 95.25) (xy 92.71 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c55d085b-209e-4843-a27f-a15c1c34f4ca")
-	)
-	(wire
-		(pts
-			(xy 116.84 38.1) (xy 140.97 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c594dfc5-168d-41cf-a0ec-6c9d83fe33ed")
 	)
 	(wire
 		(pts
@@ -3080,16 +2974,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 38.1) (xy 166.37 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c644407b-cb89-4208-916b-d646e35f5b81")
-	)
-	(wire
-		(pts
 			(xy 69.85 191.77) (xy 69.85 194.31)
 		)
 		(stroke
@@ -3100,7 +2984,47 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 48.26) (xy 187.96 54.61)
+			(xy 135.89 127) (xy 135.89 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbcc78f4-c300-46c2-993c-1c21faf4a7bc")
+	)
+	(wire
+		(pts
+			(xy 55.88 25.4) (xy 66.04 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc6361ff-b7c0-49c9-b44c-ad3ebbacf880")
+	)
+	(wire
+		(pts
+			(xy 135.89 130.81) (xy 109.22 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d072afa2-a9ae-43c3-9f06-761c34c84c40")
+	)
+	(wire
+		(pts
+			(xy 66.04 25.4) (xy 81.28 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1d8c04f-c009-4a63-902f-06d85c1d8636")
+	)
+	(wire
+		(pts
+			(xy 109.22 38.1) (xy 109.22 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3120,13 +3044,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 62.23) (xy 116.84 68.58)
+			(xy 81.28 97.79) (xy 81.28 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "dd7801aa-7206-408b-aae6-daf16ada21f9")
+	)
+	(wire
+		(pts
+			(xy 81.28 130.81) (xy 109.22 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df4c147f-a094-413c-8919-6d94ce9233e2")
 	)
 	(wire
 		(pts
@@ -3137,16 +3071,6 @@
 			(type default)
 		)
 		(uuid "e0ea4e7f-c47c-444a-99dd-45951e5020be")
-	)
-	(wire
-		(pts
-			(xy 140.97 95.25) (xy 166.37 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e160d6e6-af58-4f70-afc9-b6b1b897e7df")
 	)
 	(wire
 		(pts
@@ -3170,17 +3094,17 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 34.29) (xy 24.13 38.1)
+			(xy 29.21 130.81) (xy 55.88 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e520b762-47ab-4ee9-8354-5e57a46e472b")
+		(uuid "e4e40d95-2d9c-449d-80e7-db528f99586b")
 	)
 	(wire
 		(pts
-			(xy 69.85 76.2) (xy 69.85 82.55)
+			(xy 55.88 111.76) (xy 55.88 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3190,7 +3114,17 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 76.2) (xy 212.09 82.55)
+			(xy 81.28 25.4) (xy 81.28 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb506bf8-b70f-4d6e-bd13-62ddb73cf7bc")
+	)
+	(wire
+		(pts
+			(xy 135.89 88.9) (xy 135.89 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3200,13 +3134,23 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 62.23) (xy 166.37 68.58)
+			(xy 109.22 97.79) (xy 109.22 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f184d19e-24cf-49df-ba61-cb0a0333012d")
+	)
+	(wire
+		(pts
+			(xy 67.31 130.81) (xy 81.28 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f324734a-a5db-4808-97a7-97d145f67785")
 	)
 	(wire
 		(pts
@@ -3217,16 +3161,6 @@
 			(type default)
 		)
 		(uuid "f37b3396-7861-4eff-8008-ea897ebd47ce")
-	)
-	(wire
-		(pts
-			(xy 24.13 38.1) (xy 24.13 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3e0882b-f422-46dc-8ad3-44791c9d544b")
 	)
 	(wire
 		(pts
@@ -3250,7 +3184,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 48.26) (xy 212.09 54.61)
+			(xy 135.89 38.1) (xy 135.89 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3260,7 +3194,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 76.2) (xy 247.65 95.25)
+			(xy 179.07 46.99) (xy 179.07 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3280,16 +3214,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 38.1) (xy 69.85 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa84557f-9f35-48ca-8b95-f1c29c81a204")
-	)
-	(wire
-		(pts
 			(xy 224.79 152.4) (xy 233.68 152.4)
 		)
 		(stroke
@@ -3299,7 +3223,7 @@
 		(uuid "ff353ed8-c530-4e89-ad29-9e108442f74d")
 	)
 	(image
-		(at 208.28 26.67)
+		(at 231.14 20.32)
 		(scale 0.212112)
 		(uuid "01000ec8-c30a-4ae9-b69c-b4e345a24d7c")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA24AAACBCAIAAAA3yX76AAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -3690,7 +3614,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 187.96 48.26 90)
+		(at 109.22 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3698,7 +3622,7 @@
 		(dnp no)
 		(uuid "02070207-0ee8-48af-a1ce-e68219d98d84")
 		(property "Reference" "D8"
-			(at 181.102 41.148 90)
+			(at 102.362 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3707,7 +3631,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 180.086 49.784 90)
+			(at 101.346 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3716,7 +3640,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 187.96 48.26 0)
+			(at 109.22 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3726,7 +3650,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 187.96 48.26 0)
+			(at 109.22 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3736,7 +3660,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 187.96 48.26 0)
+			(at 109.22 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3761,7 +3685,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 187.96 73.66 0)
+		(at 109.22 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3769,7 +3693,7 @@
 		(dnp no)
 		(uuid "05021741-26bf-48ff-ba20-6bd3c78b99b3")
 		(property "Reference" "SC23"
-			(at 181.61 66.294 0)
+			(at 102.87 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +3702,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 179.832 74.676 0)
+			(at 101.092 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3787,7 +3711,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 187.96 72.136 90)
+			(at 109.22 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3796,7 +3720,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 72.136 90)
+			(at 109.22 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3805,7 +3729,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 187.96 73.66 0)
+			(at 109.22 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3830,7 +3754,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 166.37 87.63 0)
+		(at 109.22 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3838,7 +3762,7 @@
 		(dnp no)
 		(uuid "06a8abf7-68f9-4b8c-acd5-7c6e5cee6071")
 		(property "Reference" "SC21"
-			(at 158.75 82.804 0)
+			(at 101.6 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3847,7 +3771,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 158.242 88.646 0)
+			(at 101.092 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +3780,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 166.37 86.106 90)
+			(at 109.22 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3865,7 +3789,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 86.106 90)
+			(at 109.22 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3874,7 +3798,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 166.37 87.63 0)
+			(at 109.22 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3968,54 +3892,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 116.84 48.26 90)
+		(lib_id "Device:Solar_Cell")
+		(at 135.89 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "08dd6f9c-670b-4a94-a9ae-cdaf72907782")
-		(property "Reference" "D5"
-			(at 109.982 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 110.236 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 116.84 48.26 0)
+		(uuid "0c594238-fde6-4a19-8228-6a191301927c")
+		(property "Reference" "SC30"
+			(at 129.54 45.974 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 116.84 48.26 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 127.254 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Description" ""
-			(at 116.84 48.26 0)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 135.89 51.816 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4023,16 +3927,34 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "2649d5ff-1b73-443f-a7a2-ba31ad7533f6")
+		(property "Datasheet" "~"
+			(at 135.89 51.816 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 135.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "8c077d66-ed0a-41f9-ae0b-d165b54a7464")
+			(uuid "b9ad5e10-775c-4816-abc2-4814b708244c")
+		)
+		(pin "1"
+			(uuid "78b301e8-6de9-44c3-a4b3-19089a9b3a3b")
 		)
 		(instances
-			(project "Solar Panels"
+			(project "Solar_Panels_1p25U"
 				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D5")
+					(reference "SC30")
 					(unit 1)
 				)
 			)
@@ -4223,6 +4145,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+VDC")
+		(at 179.07 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e11e900-5efd-499f-b82b-6f1a03968ca5")
+		(property "Reference" "#PWR023"
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VDC"
+			(at 178.816 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VDC\""
+			(at 179.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e445ff2-3eb5-441b-8a29-127a245db755")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 69.85 163.83 0)
 		(unit 1)
@@ -4359,7 +4346,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 140.97 48.26 90)
+		(at 81.28 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4367,7 +4354,7 @@
 		(dnp no)
 		(uuid "14b821d3-fdde-40f9-85c0-cbc1dad3b870")
 		(property "Reference" "D6"
-			(at 134.112 41.148 90)
+			(at 74.422 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4376,7 +4363,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 136.398 49.784 90)
+			(at 76.708 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4385,7 +4372,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 140.97 48.26 0)
+			(at 81.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4395,7 +4382,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 140.97 48.26 0)
+			(at 81.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4405,7 +4392,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 48.26 0)
+			(at 81.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4430,7 +4417,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 48.26 59.69 0)
+		(at 29.21 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4438,7 +4425,7 @@
 		(dnp no)
 		(uuid "17baf8e5-1178-48fa-afad-4e237f8da014")
 		(property "Reference" "SC4"
-			(at 41.91 52.324 0)
+			(at 22.86 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4447,7 +4434,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 39.624 60.96 0)
+			(at 20.574 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4456,7 +4443,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 48.26 58.166 90)
+			(at 29.21 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4465,7 +4452,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 58.166 90)
+			(at 29.21 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4474,7 +4461,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 48.26 59.69 0)
+			(at 29.21 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4499,7 +4486,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 212.09 87.63 0)
+		(at 135.89 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4507,7 +4494,7 @@
 		(dnp no)
 		(uuid "186a5c8d-b6e1-4edf-a92a-6b7ee05c2e02")
 		(property "Reference" "SC27"
-			(at 204.47 82.804 0)
+			(at 128.27 91.694 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,7 +4503,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 203.962 88.646 0)
+			(at 127.762 97.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4525,7 +4512,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 212.09 86.106 90)
+			(at 135.89 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4534,7 +4521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 86.106 90)
+			(at 135.89 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4543,7 +4530,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 212.09 87.63 0)
+			(at 135.89 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +4555,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 116.84 59.69 0)
+		(at 81.28 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4576,7 +4563,7 @@
 		(dnp no)
 		(uuid "2c4bd16c-739e-44e7-a789-97c50feb279e")
 		(property "Reference" "SC13"
-			(at 110.49 52.324 0)
+			(at 74.93 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +4572,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 108.204 60.96 0)
+			(at 72.644 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4594,7 +4581,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 116.84 58.166 90)
+			(at 81.28 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4603,7 +4590,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 58.166 90)
+			(at 81.28 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4612,7 +4599,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 116.84 59.69 0)
+			(at 81.28 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4707,7 +4694,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 92.71 59.69 0)
+		(at 55.88 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4715,7 +4702,7 @@
 		(dnp no)
 		(uuid "31ce88ab-e51d-4497-8414-001e076f567a")
 		(property "Reference" "SC10"
-			(at 86.36 52.324 0)
+			(at 49.53 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4724,7 +4711,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 84.074 60.96 0)
+			(at 47.244 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4733,7 +4720,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 92.71 58.166 90)
+			(at 55.88 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4742,7 +4729,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 58.166 90)
+			(at 55.88 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4751,7 +4738,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 92.71 59.69 0)
+			(at 55.88 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4775,8 +4762,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 179.07 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35fe5b94-2a03-4306-b7eb-880a9c8e231d")
+		(property "Reference" "#PWR022"
+			(at 179.07 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3404f5e-13a1-4131-87f6-588188205117")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 69.85 73.66 0)
+		(at 55.88 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4784,7 +4836,7 @@
 		(dnp no)
 		(uuid "36f6332a-0855-4301-b2c2-86d52ff65ad5")
 		(property "Reference" "SC8"
-			(at 63.5 66.294 0)
+			(at 49.53 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4793,7 +4845,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 61.722 74.676 0)
+			(at 47.752 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4802,7 +4854,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 69.85 72.136 90)
+			(at 55.88 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4811,7 +4863,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 72.136 90)
+			(at 55.88 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4820,7 +4872,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 69.85 73.66 0)
+			(at 55.88 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5179,7 +5231,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 69.85 59.69 0)
+		(at 55.88 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5187,7 +5239,7 @@
 		(dnp no)
 		(uuid "4d3ed7ff-12ed-449a-b3af-854fd51d585b")
 		(property "Reference" "SC7"
-			(at 63.5 52.324 0)
+			(at 49.53 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,7 +5248,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 61.214 60.96 0)
+			(at 47.244 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5205,7 +5257,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 69.85 58.166 90)
+			(at 55.88 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5214,7 +5266,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 58.166 90)
+			(at 55.88 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5223,7 +5275,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 69.85 59.69 0)
+			(at 55.88 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5248,7 +5300,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 140.97 59.69 0)
+		(at 81.28 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5256,7 +5308,7 @@
 		(dnp no)
 		(uuid "4f4b5262-5502-41e3-a306-e455635548b9")
 		(property "Reference" "SC16"
-			(at 134.62 52.324 0)
+			(at 74.93 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5265,7 +5317,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 132.334 60.96 0)
+			(at 72.644 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5274,7 +5326,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 140.97 58.166 90)
+			(at 81.28 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5283,7 +5335,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 58.166 90)
+			(at 81.28 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5292,7 +5344,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 140.97 59.69 0)
+			(at 81.28 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5317,7 +5369,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 69.85 87.63 0)
+		(at 55.88 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5325,7 +5377,7 @@
 		(dnp no)
 		(uuid "5aad6c7f-8ba2-4aa0-9b00-d0f4b557aae6")
 		(property "Reference" "SC9"
-			(at 62.23 82.804 0)
+			(at 48.26 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5334,7 +5386,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 61.722 88.646 0)
+			(at 47.752 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5343,7 +5395,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 69.85 86.106 90)
+			(at 55.88 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5352,7 +5404,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 86.106 90)
+			(at 55.88 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5361,7 +5413,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 69.85 87.63 0)
+			(at 55.88 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5386,7 +5438,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 212.09 59.69 0)
+		(at 135.89 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5394,7 +5446,7 @@
 		(dnp no)
 		(uuid "5ad274e2-aba7-46a8-94a3-e8f5ffdf87d6")
 		(property "Reference" "SC25"
-			(at 205.74 52.324 0)
+			(at 129.54 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5403,7 +5455,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 203.454 60.96 0)
+			(at 127.254 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5412,7 +5464,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 212.09 58.166 90)
+			(at 135.89 72.136 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5421,7 +5473,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 58.166 90)
+			(at 135.89 72.136 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5482,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 212.09 59.69 0)
+			(at 135.89 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5521,7 +5573,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 187.96 87.63 0)
+		(at 109.22 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5529,7 +5581,7 @@
 		(dnp no)
 		(uuid "5cfad3d6-ab08-4cf8-9ed5-7c987c57b1bd")
 		(property "Reference" "SC24"
-			(at 180.34 82.804 0)
+			(at 101.6 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5538,7 +5590,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 179.832 88.646 0)
+			(at 101.092 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5547,7 +5599,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 187.96 86.106 90)
+			(at 109.22 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5556,7 +5608,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 86.106 90)
+			(at 109.22 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5565,7 +5617,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 187.96 87.63 0)
+			(at 109.22 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5590,7 +5642,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 92.71 87.63 0)
+		(at 55.88 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5598,7 +5650,7 @@
 		(dnp no)
 		(uuid "5f533ed4-879b-43da-8f2d-e76508aaaf72")
 		(property "Reference" "SC12"
-			(at 85.09 82.804 0)
+			(at 48.26 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5607,7 +5659,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 84.582 88.646 0)
+			(at 47.752 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5616,7 +5668,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 92.71 86.106 90)
+			(at 55.88 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5625,7 +5677,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 86.106 90)
+			(at 55.88 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5634,7 +5686,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 92.71 87.63 0)
+			(at 55.88 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5659,7 +5711,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 140.97 73.66 0)
+		(at 81.28 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5667,7 +5719,7 @@
 		(dnp no)
 		(uuid "601fcd84-941a-46a2-94e8-0f53d9cfac99")
 		(property "Reference" "SC17"
-			(at 134.62 66.294 0)
+			(at 74.93 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5676,7 +5728,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 132.842 74.676 0)
+			(at 73.152 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5685,7 +5737,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 140.97 72.136 90)
+			(at 81.28 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5694,7 +5746,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 72.136 90)
+			(at 81.28 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5703,7 +5755,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 140.97 73.66 0)
+			(at 81.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6059,78 +6111,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 166.37 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "71957f70-1cc7-420c-96f0-479032175a57")
-		(property "Reference" "D7"
-			(at 159.512 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 158.496 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 166.37 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 166.37 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 166.37 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18eac20c-7806-4fe8-b618-55e572c6e66b")
-		)
-		(pin "2"
-			(uuid "66362023-cb03-49ec-b923-213ea512e1da")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 247.65 76.2 90)
+		(at 179.07 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6138,7 +6119,7 @@
 		(dnp no)
 		(uuid "746aa7fb-105b-4b1a-a304-ac035beca003")
 		(property "Reference" "D11"
-			(at 240.792 69.088 90)
+			(at 172.212 39.878 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6147,7 +6128,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 239.776 77.724 90)
+			(at 171.196 48.514 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6156,7 +6137,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 247.65 76.2 0)
+			(at 179.07 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6166,7 +6147,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 247.65 76.2 0)
+			(at 179.07 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6176,7 +6157,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 247.65 76.2 0)
+			(at 179.07 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6337,8 +6318,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 67.31 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8144c877-4eeb-4e3e-898c-733cf66a85df")
+		(property "Reference" "#PWR021"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 135.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "909a8bda-a7eb-467d-abdb-6de2198c6511")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 24.13 87.63 0)
+		(at 29.21 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6346,7 +6392,7 @@
 		(dnp no)
 		(uuid "82324861-aec2-4b8d-857f-5df514f815e1")
 		(property "Reference" "SC3"
-			(at 16.51 82.804 0)
+			(at 21.59 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6355,7 +6401,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 16.002 88.646 0)
+			(at 21.082 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6364,7 +6410,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 24.13 86.106 90)
+			(at 29.21 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6373,7 +6419,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 86.106 90)
+			(at 29.21 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6382,7 +6428,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 24.13 87.63 0)
+			(at 29.21 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6407,7 +6453,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 212.09 73.66 0)
+		(at 135.89 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6415,7 +6461,7 @@
 		(dnp no)
 		(uuid "8304db61-5119-45c4-a18e-b8347822c3eb")
 		(property "Reference" "SC26"
-			(at 205.74 66.294 0)
+			(at 129.54 78.994 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6424,7 +6470,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 203.962 74.676 0)
+			(at 127.762 87.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6433,7 +6479,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 212.09 72.136 90)
+			(at 135.89 84.836 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6442,7 +6488,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 72.136 90)
+			(at 135.89 84.836 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6451,7 +6497,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 212.09 73.66 0)
+			(at 135.89 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6543,7 +6589,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 212.09 48.26 90)
+		(at 135.89 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6551,7 +6597,7 @@
 		(dnp no)
 		(uuid "868f8888-07f4-4b3f-a98f-ad5781127bd7")
 		(property "Reference" "D9"
-			(at 205.232 41.148 90)
+			(at 129.032 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6560,7 +6606,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 204.216 49.784 90)
+			(at 128.016 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6569,7 +6615,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 212.09 48.26 0)
+			(at 135.89 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6579,7 +6625,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 212.09 48.26 0)
+			(at 135.89 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6589,7 +6635,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 48.26 0)
+			(at 135.89 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6680,7 +6726,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 187.96 59.69 0)
+		(at 109.22 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6688,7 +6734,7 @@
 		(dnp no)
 		(uuid "8ab7ab17-5cf4-411c-8f1b-2cfef5a213e9")
 		(property "Reference" "SC22"
-			(at 181.61 52.324 0)
+			(at 102.87 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,7 +6743,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 179.324 60.96 0)
+			(at 100.584 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6706,7 +6752,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 187.96 58.166 90)
+			(at 109.22 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6715,7 +6761,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 58.166 90)
+			(at 109.22 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6724,7 +6770,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 187.96 59.69 0)
+			(at 109.22 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6816,72 +6862,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91f55a99-ec6a-4351-b8e7-909d2b2a2532")
-		(property "Reference" "#PWR01"
-			(at 43.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 43.18 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3289010f-1456-4c82-a47d-630c21207188")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 69.85 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6948,7 +6928,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 48.26 48.26 90)
+		(at 29.21 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6956,7 +6936,7 @@
 		(dnp no)
 		(uuid "981a0b50-6c7d-4370-a7cf-84cd84347305")
 		(property "Reference" "D2"
-			(at 41.402 41.148 90)
+			(at 22.352 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6965,7 +6945,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 40.386 49.784 90)
+			(at 21.336 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6974,7 +6954,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 48.26 48.26 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6984,7 +6964,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 48.26 48.26 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6994,7 +6974,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 48.26 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7312,7 +7292,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 116.84 73.66 0)
+		(at 81.28 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7320,7 +7300,7 @@
 		(dnp no)
 		(uuid "b3f34c73-e703-4607-8a73-b1f6cb06dcdc")
 		(property "Reference" "SC14"
-			(at 110.49 66.294 0)
+			(at 74.93 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7329,7 +7309,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 108.712 74.676 0)
+			(at 73.152 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7338,7 +7318,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 116.84 72.136 90)
+			(at 81.28 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7347,7 +7327,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 72.136 90)
+			(at 81.28 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7356,7 +7336,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 116.84 73.66 0)
+			(at 81.28 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7381,7 +7361,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 166.37 59.69 0)
+		(at 109.22 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7389,7 +7369,7 @@
 		(dnp no)
 		(uuid "b5fc0f5c-44aa-4601-b775-a5c6941d7c79")
 		(property "Reference" "SC19"
-			(at 160.02 52.324 0)
+			(at 102.87 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7398,7 +7378,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 157.734 60.96 0)
+			(at 100.584 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7407,7 +7387,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 166.37 58.166 90)
+			(at 109.22 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7416,7 +7396,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 58.166 90)
+			(at 109.22 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7425,7 +7405,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 166.37 59.69 0)
+			(at 109.22 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7450,7 +7430,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 166.37 73.66 0)
+		(at 109.22 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7458,7 +7438,7 @@
 		(dnp no)
 		(uuid "b7a2b8e6-55e6-4f20-9dcc-aac5f30b7f84")
 		(property "Reference" "SC20"
-			(at 160.02 66.294 0)
+			(at 102.87 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7467,7 +7447,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 158.242 74.676 0)
+			(at 101.092 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7476,7 +7456,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 166.37 72.136 90)
+			(at 109.22 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7485,7 +7465,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 72.136 90)
+			(at 109.22 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7494,7 +7474,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 166.37 73.66 0)
+			(at 109.22 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7519,7 +7499,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 24.13 73.66 0)
+		(at 29.21 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7527,7 +7507,7 @@
 		(dnp no)
 		(uuid "bb4e9a77-d579-41c3-ba86-6d774cc88aee")
 		(property "Reference" "SC2"
-			(at 17.78 66.294 0)
+			(at 22.86 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7536,7 +7516,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 16.002 74.676 0)
+			(at 21.082 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7545,7 +7525,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 24.13 72.136 90)
+			(at 29.21 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7554,7 +7534,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 72.136 90)
+			(at 29.21 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7563,7 +7543,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 24.13 73.66 0)
+			(at 29.21 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7653,7 +7633,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 48.26 73.66 0)
+		(at 29.21 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7661,7 +7641,7 @@
 		(dnp no)
 		(uuid "c57e562b-5405-4d02-adef-464ac5aef337")
 		(property "Reference" "SC5"
-			(at 41.91 66.294 0)
+			(at 22.86 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7670,7 +7650,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 40.132 74.676 0)
+			(at 21.082 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7679,7 +7659,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 48.26 72.136 90)
+			(at 29.21 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7688,7 +7668,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 72.136 90)
+			(at 29.21 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7697,7 +7677,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 48.26 73.66 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7722,7 +7702,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 24.13 59.69 0)
+		(at 29.21 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7730,7 +7710,7 @@
 		(dnp no)
 		(uuid "cc804d38-9f22-443e-9264-e6f61c565ecf")
 		(property "Reference" "SC1"
-			(at 17.78 52.324 0)
+			(at 22.86 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7739,7 +7719,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 15.494 60.96 0)
+			(at 20.574 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7748,7 +7728,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 24.13 58.166 90)
+			(at 29.21 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7757,7 +7737,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 58.166 90)
+			(at 29.21 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7766,7 +7746,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 24.13 59.69 0)
+			(at 29.21 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7861,7 +7841,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 140.97 87.63 0)
+		(at 81.28 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7869,7 +7849,7 @@
 		(dnp no)
 		(uuid "d18d4c3b-5e94-4486-acba-d8be7eeb377d")
 		(property "Reference" "SC18"
-			(at 133.35 82.804 0)
+			(at 73.66 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7878,7 +7858,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 132.842 88.646 0)
+			(at 73.152 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7887,7 +7867,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 140.97 86.106 90)
+			(at 81.28 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7896,7 +7876,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 86.106 90)
+			(at 81.28 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7905,7 +7885,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 140.97 87.63 0)
+			(at 81.28 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8065,7 +8045,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 116.84 87.63 0)
+		(at 81.28 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8073,7 +8053,7 @@
 		(dnp no)
 		(uuid "e2c3ca52-fe4f-45e5-b57a-94ab2452db0a")
 		(property "Reference" "SC15"
-			(at 109.22 82.804 0)
+			(at 73.66 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8082,7 +8062,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 108.712 88.646 0)
+			(at 73.152 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8091,7 +8071,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 116.84 86.106 90)
+			(at 81.28 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8100,7 +8080,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 86.106 90)
+			(at 81.28 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8109,7 +8089,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 116.84 87.63 0)
+			(at 81.28 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8201,7 +8181,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 92.71 73.66 0)
+		(at 55.88 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8209,7 +8189,7 @@
 		(dnp no)
 		(uuid "e610f052-b88d-4de0-af37-e685c38226ec")
 		(property "Reference" "SC11"
-			(at 86.36 66.294 0)
+			(at 49.53 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8218,7 +8198,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 84.582 74.676 0)
+			(at 47.752 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8227,7 +8207,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 92.71 72.136 90)
+			(at 55.88 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8236,7 +8216,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 72.136 90)
+			(at 55.88 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8245,7 +8225,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 92.71 73.66 0)
+			(at 55.88 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8404,6 +8384,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 135.89 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee5ce92a-c494-4c97-9562-5e5268465dc9")
+		(property "Reference" "SC29"
+			(at 128.27 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KXOB25-05X3F"
+			(at 127.762 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 135.89 122.936 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 122.936 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 135.89 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6d86cb93-071e-47de-b09b-a88c779c49ed")
+		)
+		(pin "1"
+			(uuid "aec6a83c-d5da-4bc4-b000-abc368aec64e")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "SC29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 170.18 128.27 0)
 		(unit 1)
@@ -8536,15 +8585,15 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 48.26 87.63 0)
+		(at 135.89 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f7eb2307-17bc-4fe5-b228-66b669df5b45")
-		(property "Reference" "SC6"
-			(at 40.64 82.804 0)
+		(uuid "f50c707a-69d2-4922-bb37-d415a2521f63")
+		(property "Reference" "SC28"
+			(at 128.27 109.474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8553,7 +8602,7 @@
 			)
 		)
 		(property "Value" "KXOB25-05X3F"
-			(at 40.132 88.646 0)
+			(at 127.762 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8562,7 +8611,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
-			(at 48.26 86.106 90)
+			(at 135.89 112.776 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8571,7 +8620,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 86.106 90)
+			(at 135.89 112.776 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8580,7 +8629,76 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 48.26 87.63 0)
+			(at 135.89 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bade2fe3-911f-4ee1-a8c5-5eb0a1a7fe6b")
+		)
+		(pin "1"
+			(uuid "5cdf3942-4e1c-42db-9c86-23533cec4770")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "SC28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 29.21 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7eb2307-17bc-4fe5-b228-66b669df5b45")
+		(property "Reference" "SC6"
+			(at 21.59 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KXOB25-05X3F"
+			(at 21.082 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 29.21 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 29.21 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8605,7 +8723,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 92.71 48.26 90)
+		(at 55.88 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8613,7 +8731,7 @@
 		(dnp no)
 		(uuid "f865b1b9-c476-4faa-98d8-a2cf54f609bc")
 		(property "Reference" "D4"
-			(at 85.852 41.148 90)
+			(at 49.022 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8622,7 +8740,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 84.836 49.784 90)
+			(at 48.006 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8631,7 +8749,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 92.71 48.26 0)
+			(at 55.88 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8641,7 +8759,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 92.71 48.26 0)
+			(at 55.88 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8651,7 +8769,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 48.26 0)
+			(at 55.88 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8676,16 +8794,15 @@
 	)
 	(symbol
 		(lib_id "power:+VDC")
-		(at 24.13 34.29 0)
+		(at 66.04 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb7f5dcf-6867-42f2-be4a-6fdd5539da32")
-		(property "Reference" "#PWR04"
-			(at 24.13 36.83 0)
+		(uuid "feaa116c-b955-4823-af81-4ea86d792a61")
+		(property "Reference" "#PWR014"
+			(at 66.04 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8694,7 +8811,7 @@
 			)
 		)
 		(property "Value" "+VDC"
-			(at 24.13 26.67 0)
+			(at 65.786 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8702,7 +8819,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 24.13 34.29 0)
+			(at 66.04 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8711,7 +8828,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.13 34.29 0)
+			(at 66.04 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8720,7 +8837,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 24.13 34.29 0)
+			(at 66.04 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8729,83 +8846,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f97962f7-6560-4fad-a02c-7b152abb41cc")
+			(uuid "0e417e2f-46b6-4bd0-ae02-8659b0eb7dc2")
 		)
 		(instances
-			(project "Solar Panels"
+			(project "Solar_Panels_1p25U"
 				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 69.85 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ffa81114-7797-47ad-90b7-abc92ac77ce5")
-		(property "Reference" "D3"
-			(at 62.992 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 61.976 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 69.85 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 69.85 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3d227300-0249-4958-9d20-4b8b837c3dc2")
-		)
-		(pin "2"
-			(uuid "9de5078c-85e5-4385-914c-b878dae93e43")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D3")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
