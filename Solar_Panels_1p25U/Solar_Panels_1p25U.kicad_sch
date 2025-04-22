@@ -5,9 +5,9 @@
 	(uuid "a9ef5d2b-7ce1-4231-ba73-009f8d0b2537")
 	(paper "USLetter")
 	(title_block
-		(title "TriSolX 1.25U Solar Panel")
-		(date "2024-08-27")
-		(rev "1")
+		(title "1.25U Solar Panel")
+		(date "2025-04-21")
+		(rev "2")
 		(company "CalgaryToSpace")
 	)
 	(lib_symbols
@@ -1565,7 +1565,7 @@
 		(uuid 489c92b3-610c-4ab8-b72a-c5a766cafe40)
 	)
 	(rectangle
-		(start 17.78 114.3)
+		(start 17.78 138.43)
 		(end 152.4 201.93)
 		(stroke
 			(width 0)
@@ -1602,7 +1602,7 @@
 	)
 	(text "Mounting Holes"
 		(exclude_from_sim no)
-		(at 46.736 126.238 0)
+		(at 125.476 195.58 0)
 		(effects
 			(font
 				(size 3.81 3.81)
@@ -1624,14 +1624,14 @@
 		)
 		(uuid "fcc58471-eee4-4faa-bade-5a92fff84197")
 	)
-	(text_box "Diodes above the 3 solar cells connected to VDC are blocking diodes which is intended to be used as a way to prevent the battery from discharging while allowing current to flow.\n\nDiode(s) that are parallel to the cells are bypass diodes used in case one of the cells is \"faulty\" to allow an alternate way for current to flow.\n"
+	(text_box "Diodes above each string are blocking diodes, which are intended to prevent current flowing back into the cells and heating them.\n\nThe diode that is parallel to the strings is a bypass diode. It allows the panel to be connected in series with other panels, where panels have varying operating conditions."
 		(exclude_from_sim no)
 		(at 120.65 22.86 0)
 		(size 54.61 13.97)
 		(margins 0.762 0.762 0.762 0.762)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -1841,6 +1841,12 @@
 		(uuid "b55f5c60-e45b-4f35-af05-568abdf26800")
 	)
 	(junction
+		(at 24.13 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5a7c431-50cf-4267-b681-937b0a5e811d")
+	)
+	(junction
 		(at 166.37 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1869,12 +1875,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1c3d4a3-3909-4457-9c55-792292e96e73")
-	)
-	(junction
-		(at 24.13 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3a6b7d7-63df-426d-9820-00e791985d60")
 	)
 	(junction
 		(at 116.84 38.1)
@@ -1990,7 +1990,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 140.97) (xy 77.47 143.51)
+			(xy 69.85 148.59) (xy 69.85 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2140,7 +2140,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 153.67) (xy 77.47 156.21)
+			(xy 69.85 161.29) (xy 69.85 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2210,7 +2210,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 140.97) (xy 54.61 143.51)
+			(xy 46.99 148.59) (xy 46.99 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2260,7 +2260,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 153.67) (xy 54.61 156.21)
+			(xy 46.99 161.29) (xy 46.99 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2270,7 +2270,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 140.97) (xy 30.48 143.51)
+			(xy 22.86 148.59) (xy 22.86 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2280,7 +2280,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 184.15) (xy 30.48 186.69)
+			(xy 22.86 191.77) (xy 22.86 194.31)
 		)
 		(stroke
 			(width 0)
@@ -2380,7 +2380,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 140.97) (xy 104.14 143.51)
+			(xy 96.52 148.59) (xy 96.52 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2420,7 +2420,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 171.45) (xy 104.14 173.99)
+			(xy 96.52 179.07) (xy 96.52 181.61)
 		)
 		(stroke
 			(width 0)
@@ -2630,7 +2630,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 153.67) (xy 30.48 156.21)
+			(xy 22.86 161.29) (xy 22.86 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2690,7 +2690,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 171.45) (xy 77.47 173.99)
+			(xy 69.85 179.07) (xy 69.85 181.61)
 		)
 		(stroke
 			(width 0)
@@ -2720,7 +2720,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 153.67) (xy 104.14 156.21)
+			(xy 96.52 161.29) (xy 96.52 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2820,7 +2820,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 171.45) (xy 30.48 173.99)
+			(xy 22.86 179.07) (xy 22.86 181.61)
 		)
 		(stroke
 			(width 0)
@@ -2980,7 +2980,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 184.15) (xy 104.14 186.69)
+			(xy 96.52 191.77) (xy 96.52 194.31)
 		)
 		(stroke
 			(width 0)
@@ -3090,7 +3090,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 184.15) (xy 77.47 186.69)
+			(xy 69.85 191.77) (xy 69.85 194.31)
 		)
 		(stroke
 			(width 0)
@@ -3150,7 +3150,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 171.45) (xy 54.61 173.99)
+			(xy 46.99 179.07) (xy 46.99 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3190,16 +3190,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 48.26) (xy 24.13 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef50de06-61cb-41a0-a5eb-d3b8e62e1dbf")
-	)
-	(wire
-		(pts
 			(xy 212.09 76.2) (xy 212.09 82.55)
 		)
 		(stroke
@@ -3220,13 +3210,23 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 184.15) (xy 54.61 186.69)
+			(xy 46.99 191.77) (xy 46.99 194.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f37b3396-7861-4eff-8008-ea897ebd47ce")
+	)
+	(wire
+		(pts
+			(xy 24.13 38.1) (xy 24.13 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3e0882b-f422-46dc-8ad3-44791c9d544b")
 	)
 	(wire
 		(pts
@@ -3297,6 +3297,396 @@
 			(type default)
 		)
 		(uuid "ff353ed8-c530-4e89-ad29-9e108442f74d")
+	)
+	(image
+		(at 208.28 26.67)
+		(scale 0.212112)
+		(uuid "01000ec8-c30a-4ae9-b69c-b4e345a24d7c")
+		(data "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"
+		)
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
@@ -3387,7 +3777,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 179.832 74.676 0)
 			(effects
 				(font
@@ -3456,7 +3846,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 158.242 88.646 0)
 			(effects
 				(font
@@ -3509,7 +3899,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 104.14 148.59 270)
+		(at 96.52 156.21 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3518,7 +3908,7 @@
 		(fields_autoplaced yes)
 		(uuid "0844d929-acf4-41ae-b469-dadd70379589")
 		(property "Reference" "JP4"
-			(at 106.68 147.3199 90)
+			(at 99.06 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3527,7 +3917,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 106.68 149.8599 90)
+			(at 99.06 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3536,7 +3926,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 104.14 148.59 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3545,7 +3935,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 148.59 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3554,7 +3944,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 104.14 148.59 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3834,7 +4224,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 77.47 156.21 0)
+		(at 69.85 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3843,7 +4233,7 @@
 		(fields_autoplaced yes)
 		(uuid "12c07895-7f4a-4f12-be07-f8ca03dce91a")
 		(property "Reference" "#PWR08"
-			(at 77.47 162.56 0)
+			(at 69.85 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3852,7 +4242,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.47 161.29 0)
+			(at 69.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3860,7 +4250,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 156.21 0)
+			(at 69.85 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3869,7 +4259,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 156.21 0)
+			(at 69.85 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3878,7 +4268,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 156.21 0)
+			(at 69.85 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4056,7 +4446,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 39.624 60.96 0)
 			(effects
 				(font
@@ -4125,7 +4515,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 203.962 88.646 0)
 			(effects
 				(font
@@ -4194,7 +4584,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 108.204 60.96 0)
 			(effects
 				(font
@@ -4247,7 +4637,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 104.14 179.07 270)
+		(at 96.52 186.69 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -4256,7 +4646,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c662bcb-54ae-473b-9e4a-2c113e41a3bc")
 		(property "Reference" "JP8"
-			(at 106.68 177.7999 90)
+			(at 99.06 185.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +4655,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 106.68 180.3399 90)
+			(at 99.06 187.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +4664,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 104.14 179.07 0)
+			(at 96.52 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +4673,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 179.07 0)
+			(at 96.52 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4682,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 104.14 179.07 0)
+			(at 96.52 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4333,7 +4723,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 84.074 60.96 0)
 			(effects
 				(font
@@ -4402,7 +4792,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 61.722 74.676 0)
 			(effects
 				(font
@@ -4455,7 +4845,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 104.14 168.91 0)
+		(at 96.52 176.53 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4464,7 +4854,7 @@
 		(fields_autoplaced yes)
 		(uuid "386041e0-d11d-4d6e-8d08-22614efa3771")
 		(property "Reference" "H8"
-			(at 106.68 166.3699 0)
+			(at 99.06 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4473,7 +4863,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 106.68 168.9099 0)
+			(at 99.06 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4482,7 +4872,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 104.14 168.91 0)
+			(at 96.52 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4491,7 +4881,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 168.91 0)
+			(at 96.52 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4500,7 +4890,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 104.14 168.91 0)
+			(at 96.52 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4522,7 +4912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 186.69 0)
+		(at 22.86 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4531,7 +4921,7 @@
 		(fields_autoplaced yes)
 		(uuid "388dab4a-810a-4d92-bed9-77df8556a5d8")
 		(property "Reference" "#PWR010"
-			(at 30.48 193.04 0)
+			(at 22.86 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4540,7 +4930,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 191.77 0)
+			(at 22.86 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4548,7 +4938,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 186.69 0)
+			(at 22.86 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,7 +4947,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 186.69 0)
+			(at 22.86 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4566,7 +4956,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 186.69 0)
+			(at 22.86 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4588,7 +4978,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 30.48 148.59 270)
+		(at 22.86 156.21 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -4597,7 +4987,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f1fc421-a4d4-4af5-bf7c-b171a4d87a3b")
 		(property "Reference" "JP1"
-			(at 33.02 147.3199 90)
+			(at 25.4 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4606,7 +4996,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 33.02 149.8599 90)
+			(at 25.4 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4615,7 +5005,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 30.48 148.59 0)
+			(at 22.86 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4624,7 +5014,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 148.59 0)
+			(at 22.86 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4633,7 +5023,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 30.48 148.59 0)
+			(at 22.86 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4723,7 +5113,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 186.69 0)
+		(at 46.99 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4732,7 +5122,7 @@
 		(fields_autoplaced yes)
 		(uuid "4793e23c-02d8-4243-b531-92757e69dbcf")
 		(property "Reference" "#PWR011"
-			(at 54.61 193.04 0)
+			(at 46.99 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,7 +5131,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 191.77 0)
+			(at 46.99 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4749,7 +5139,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 186.69 0)
+			(at 46.99 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4758,7 +5148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 186.69 0)
+			(at 46.99 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4767,7 +5157,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 186.69 0)
+			(at 46.99 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4805,7 +5195,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 61.214 60.96 0)
 			(effects
 				(font
@@ -4874,7 +5264,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 132.334 60.96 0)
 			(effects
 				(font
@@ -4943,7 +5333,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 61.722 88.646 0)
 			(effects
 				(font
@@ -5012,7 +5402,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 203.454 60.96 0)
 			(effects
 				(font
@@ -5065,7 +5455,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 186.69 0)
+		(at 96.52 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5074,7 +5464,7 @@
 		(fields_autoplaced yes)
 		(uuid "5cc2b052-bda1-468a-8ff6-e4c77f8d7c95")
 		(property "Reference" "#PWR013"
-			(at 104.14 193.04 0)
+			(at 96.52 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5083,7 +5473,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 191.77 0)
+			(at 96.52 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5091,7 +5481,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 186.69 0)
+			(at 96.52 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5100,7 +5490,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 186.69 0)
+			(at 96.52 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5109,7 +5499,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 186.69 0)
+			(at 96.52 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5147,7 +5537,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 179.832 88.646 0)
 			(effects
 				(font
@@ -5216,7 +5606,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 84.582 88.646 0)
 			(effects
 				(font
@@ -5285,7 +5675,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 132.842 74.676 0)
 			(effects
 				(font
@@ -5403,7 +5793,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 30.48 138.43 0)
+		(at 22.86 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5412,7 +5802,7 @@
 		(fields_autoplaced yes)
 		(uuid "695a0ac5-6a30-4709-8ec8-1055c7340a39")
 		(property "Reference" "H1"
-			(at 33.02 135.8899 0)
+			(at 25.4 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5421,7 +5811,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 33.02 138.4299 0)
+			(at 25.4 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5820,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 30.48 138.43 0)
+			(at 22.86 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5439,7 +5829,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 138.43 0)
+			(at 22.86 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +5838,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 30.48 138.43 0)
+			(at 22.86 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5470,7 +5860,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 54.61 168.91 0)
+		(at 46.99 176.53 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5479,7 +5869,7 @@
 		(fields_autoplaced yes)
 		(uuid "6981760c-fabe-45ba-961b-2bd5d039af6d")
 		(property "Reference" "H6"
-			(at 57.15 166.3699 0)
+			(at 49.53 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5488,7 +5878,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 168.9099 0)
+			(at 49.53 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5497,7 +5887,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 54.61 168.91 0)
+			(at 46.99 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5506,7 +5896,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 168.91 0)
+			(at 46.99 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5515,7 +5905,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 54.61 168.91 0)
+			(at 46.99 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5537,7 +5927,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 104.14 138.43 0)
+		(at 96.52 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5546,7 +5936,7 @@
 		(fields_autoplaced yes)
 		(uuid "6c7d0b48-80e5-4518-bc73-584a25ed4341")
 		(property "Reference" "H4"
-			(at 106.68 135.8899 0)
+			(at 99.06 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5555,7 +5945,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 106.68 138.4299 0)
+			(at 99.06 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5564,7 +5954,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 104.14 138.43 0)
+			(at 96.52 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5573,7 +5963,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 138.43 0)
+			(at 96.52 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5582,7 +5972,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 104.14 138.43 0)
+			(at 96.52 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5811,7 +6201,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 77.47 168.91 0)
+		(at 69.85 176.53 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5820,7 +6210,7 @@
 		(fields_autoplaced yes)
 		(uuid "78f51cc8-678d-4f70-9f18-139cd92eee1e")
 		(property "Reference" "H7"
-			(at 80.01 166.3699 0)
+			(at 72.39 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5829,7 +6219,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 80.01 168.9099 0)
+			(at 72.39 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5838,7 +6228,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 77.47 168.91 0)
+			(at 69.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5847,7 +6237,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 168.91 0)
+			(at 69.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,7 +6246,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 77.47 168.91 0)
+			(at 69.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5878,7 +6268,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 54.61 179.07 270)
+		(at 46.99 186.69 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -5887,7 +6277,7 @@
 		(fields_autoplaced yes)
 		(uuid "80dc7916-9632-486c-92c0-d1f34bf04f2b")
 		(property "Reference" "JP6"
-			(at 57.15 177.7999 90)
+			(at 49.53 185.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5896,7 +6286,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 57.15 180.3399 90)
+			(at 49.53 187.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5905,7 +6295,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 54.61 179.07 0)
+			(at 46.99 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5914,7 +6304,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 179.07 0)
+			(at 46.99 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5923,7 +6313,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 54.61 179.07 0)
+			(at 46.99 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5964,7 +6354,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 16.002 88.646 0)
 			(effects
 				(font
@@ -6033,7 +6423,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 203.962 74.676 0)
 			(effects
 				(font
@@ -6086,7 +6476,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 30.48 168.91 0)
+		(at 22.86 176.53 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6095,7 +6485,7 @@
 		(fields_autoplaced yes)
 		(uuid "8344b53e-1e84-4b1e-a62a-a892042d7dc0")
 		(property "Reference" "H5"
-			(at 33.02 166.3699 0)
+			(at 25.4 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6104,7 +6494,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 33.02 168.9099 0)
+			(at 25.4 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6113,7 +6503,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 30.48 168.91 0)
+			(at 22.86 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6122,7 +6512,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 168.91 0)
+			(at 22.86 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6131,7 +6521,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 30.48 168.91 0)
+			(at 22.86 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6224,7 +6614,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 156.21 0)
+		(at 22.86 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6233,7 +6623,7 @@
 		(fields_autoplaced yes)
 		(uuid "88df3362-6885-4893-aac1-b01ae4c4bdaa")
 		(property "Reference" "#PWR06"
-			(at 30.48 162.56 0)
+			(at 22.86 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6242,7 +6632,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 161.29 0)
+			(at 22.86 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6250,7 +6640,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 156.21 0)
+			(at 22.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6259,7 +6649,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 156.21 0)
+			(at 22.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6268,7 +6658,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 156.21 0)
+			(at 22.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6306,7 +6696,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 179.324 60.96 0)
 			(effects
 				(font
@@ -6359,7 +6749,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 77.47 138.43 0)
+		(at 69.85 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6368,7 +6758,7 @@
 		(fields_autoplaced yes)
 		(uuid "90ee8502-cb4b-43e0-b3d3-beded3dc5593")
 		(property "Reference" "H3"
-			(at 80.01 135.8899 0)
+			(at 72.39 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6377,7 +6767,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 80.01 138.4299 0)
+			(at 72.39 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6386,7 +6776,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 77.47 138.43 0)
+			(at 69.85 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6395,7 +6785,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 138.43 0)
+			(at 69.85 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6404,7 +6794,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 77.47 138.43 0)
+			(at 69.85 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6492,7 +6882,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 77.47 186.69 0)
+		(at 69.85 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6501,7 +6891,7 @@
 		(fields_autoplaced yes)
 		(uuid "97209e3e-9bba-4794-9f87-67f12e899bb2")
 		(property "Reference" "#PWR012"
-			(at 77.47 193.04 0)
+			(at 69.85 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6510,7 +6900,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.47 191.77 0)
+			(at 69.85 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6518,7 +6908,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 186.69 0)
+			(at 69.85 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +6917,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 186.69 0)
+			(at 69.85 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6536,7 +6926,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 186.69 0)
+			(at 69.85 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6694,7 +7084,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 30.48 179.07 270)
+		(at 22.86 186.69 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -6703,7 +7093,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f6366af-4a1e-4df9-8adc-0f82a9974ea3")
 		(property "Reference" "JP5"
-			(at 33.02 177.7999 90)
+			(at 25.4 185.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6712,7 +7102,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 33.02 180.3399 90)
+			(at 25.4 187.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6721,7 +7111,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 30.48 179.07 0)
+			(at 22.86 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6730,7 +7120,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 179.07 0)
+			(at 22.86 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6739,7 +7129,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 30.48 179.07 0)
+			(at 22.86 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6855,79 +7245,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 24.13 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "acade4c4-fb11-43ec-8020-47dcdc233ad9")
-		(property "Reference" "D1"
-			(at 17.272 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 16.256 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e04dab43-d70a-41ff-a766-23543fad108c")
-		)
-		(pin "2"
-			(uuid "acdab730-3c91-409e-af89-12a9f6ad8ef7")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 104.14 156.21 0)
+		(at 96.52 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6936,7 +7255,7 @@
 		(fields_autoplaced yes)
 		(uuid "adef5306-553a-4f43-959c-52121256ecb8")
 		(property "Reference" "#PWR09"
-			(at 104.14 162.56 0)
+			(at 96.52 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6945,7 +7264,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 161.29 0)
+			(at 96.52 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6953,7 +7272,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 156.21 0)
+			(at 96.52 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6962,7 +7281,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 156.21 0)
+			(at 96.52 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6971,7 +7290,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 156.21 0)
+			(at 96.52 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7009,7 +7328,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 108.712 74.676 0)
 			(effects
 				(font
@@ -7078,7 +7397,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 157.734 60.96 0)
 			(effects
 				(font
@@ -7147,7 +7466,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 158.242 74.676 0)
 			(effects
 				(font
@@ -7216,7 +7535,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 16.002 74.676 0)
 			(effects
 				(font
@@ -7350,7 +7669,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 40.132 74.676 0)
 			(effects
 				(font
@@ -7419,7 +7738,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 15.494 60.96 0)
 			(effects
 				(font
@@ -7472,7 +7791,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 77.47 179.07 270)
+		(at 69.85 186.69 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7481,7 +7800,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc917f9a-59b0-4987-9621-5b1802d420d8")
 		(property "Reference" "JP7"
-			(at 80.01 177.7999 90)
+			(at 72.39 185.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7490,7 +7809,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 80.01 180.3399 90)
+			(at 72.39 187.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7499,7 +7818,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 77.47 179.07 0)
+			(at 69.85 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7508,7 +7827,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 179.07 0)
+			(at 69.85 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7517,7 +7836,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 77.47 179.07 0)
+			(at 69.85 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7558,7 +7877,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 132.842 88.646 0)
 			(effects
 				(font
@@ -7611,7 +7930,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 54.61 148.59 270)
+		(at 46.99 156.21 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7620,7 +7939,7 @@
 		(fields_autoplaced yes)
 		(uuid "e12315c0-d722-4802-9fe5-00cb3ee20bca")
 		(property "Reference" "JP2"
-			(at 57.15 147.3199 90)
+			(at 49.53 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7629,7 +7948,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 57.15 149.8599 90)
+			(at 49.53 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7638,7 +7957,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 54.61 148.59 0)
+			(at 46.99 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7647,7 +7966,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 148.59 0)
+			(at 46.99 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7656,7 +7975,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 54.61 148.59 0)
+			(at 46.99 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7762,7 +8081,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 108.712 88.646 0)
 			(effects
 				(font
@@ -7815,7 +8134,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 54.61 138.43 0)
+		(at 46.99 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -7824,7 +8143,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5b24c5c-8e2a-418a-9cbe-18756a5e5c9f")
 		(property "Reference" "H2"
-			(at 57.15 135.8899 0)
+			(at 49.53 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7833,7 +8152,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 138.4299 0)
+			(at 49.53 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7842,7 +8161,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 54.61 138.43 0)
+			(at 46.99 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7851,7 +8170,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 138.43 0)
+			(at 46.99 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7860,7 +8179,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 54.61 138.43 0)
+			(at 46.99 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7898,7 +8217,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 84.582 74.676 0)
 			(effects
 				(font
@@ -7951,7 +8270,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 77.47 148.59 270)
+		(at 69.85 156.21 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7960,7 +8279,7 @@
 		(fields_autoplaced yes)
 		(uuid "e91865e7-c759-4b77-9f74-cf3f4902e077")
 		(property "Reference" "JP3"
-			(at 80.01 147.3199 90)
+			(at 72.39 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7969,7 +8288,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 80.01 149.8599 90)
+			(at 72.39 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7978,7 +8297,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 77.47 148.59 0)
+			(at 69.85 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7987,7 +8306,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 148.59 0)
+			(at 69.85 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7996,7 +8315,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 77.47 148.59 0)
+			(at 69.85 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8151,7 +8470,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 156.21 0)
+		(at 46.99 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8160,7 +8479,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4ae2592-bd83-4df8-aa0e-94ffa4176d72")
 		(property "Reference" "#PWR07"
-			(at 54.61 162.56 0)
+			(at 46.99 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8169,7 +8488,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 161.29 0)
+			(at 46.99 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8177,7 +8496,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 156.21 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8186,7 +8505,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 156.21 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8195,7 +8514,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 156.21 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8233,7 +8552,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
+		(property "Value" "KXOB25-05X3F"
 			(at 40.132 88.646 0)
 			(effects
 				(font
