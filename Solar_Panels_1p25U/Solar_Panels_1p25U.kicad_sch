@@ -1,19 +1,21 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "a9ef5d2b-7ce1-4231-ba73-009f8d0b2537")
 	(paper "USLetter")
 	(title_block
-		(title "TriSolX 1.25U Solar Panel")
-		(date "2024-08-27")
-		(rev "1")
+		(title "1.25U Solar Panel")
+		(date "2025-04-21")
+		(rev "2")
 		(company "CalgaryToSpace")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -80,14 +82,14 @@
 			)
 			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -102,14 +104,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -149,10 +151,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic_MountingPin:Conn_01x08_MountingPin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -220,63 +225,19 @@
 			)
 			(symbol "Conn_01x08_MountingPin_1_1"
 				(rectangle
-					(start -1.27 -10.033)
-					(end 0 -10.287)
+					(start -1.27 8.89)
+					(end 1.27 -11.43)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+					(start -1.27 7.747)
+					(end 0 7.493)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -297,8 +258,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 7.747)
-					(end 0 7.493)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -308,14 +269,58 @@
 					)
 				)
 				(rectangle
-					(start -1.27 8.89)
-					(end 1.27 -11.43)
+					(start -1.27 0.127)
+					(end 0 -0.127)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -501,11 +506,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Solar_Cell"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -564,6 +574,30 @@
 				)
 			)
 			(symbol "Solar_Cell_0_1"
+				(polyline
+					(pts
+						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 2.286) (xy -3.556 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -2.032 1.778)
 					(end 2.032 1.524)
@@ -588,7 +622,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 2.286) (xy -3.556 3.81)
+						(xy -0.762 3.556) (xy -0.762 2.794) (xy -1.524 2.794)
 					)
 					(stroke
 						(width 0)
@@ -612,7 +646,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 1.778) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -624,7 +658,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -652,30 +686,6 @@
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 3.556) (xy -0.762 2.794) (xy -1.524 2.794)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -721,11 +731,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Jumper:Jumper_2_Open"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom yes)
 			(on_board yes)
@@ -816,9 +831,9 @@
 			)
 			(symbol "Jumper_2_Open_0_1"
 				(arc
-					(start 1.524 1.27)
+					(start -1.524 1.27)
 					(mid 0 1.778)
-					(end -1.524 1.27)
+					(end 1.524 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -866,6 +881,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Lib:S3B_R1_00001"
 			(pin_names
@@ -972,18 +988,6 @@
 				)
 				(polyline
 					(pts
-						(xy 3.81 -1.905) (xy 6.35 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 3.81 1.905) (xy 3.81 -1.905)
 					)
 					(stroke
@@ -996,7 +1000,7 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 -1.905) (xy 6.35 1.905)
+						(xy 3.81 -1.905) (xy 6.35 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -1030,22 +1034,16 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 6.35 -1.905) (xy 6.35 1.905)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin unspecified line
@@ -1066,35 +1064,29 @@
 						)
 					)
 				)
+				(pin unspecified line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(symbol "S3B_R1_00001_1_2"
 				(polyline
 					(pts
 						(xy -1.905 3.81) (xy 1.905 3.81)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 3.4798)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.175) (xy 0 3.81)
 					)
 					(stroke
 						(width 0.2032)
@@ -1130,7 +1122,19 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 3.81) (xy 0 6.35)
+						(xy 0 3.175) (xy 0 3.81)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 3.4798)
 					)
 					(stroke
 						(width 0.2032)
@@ -1143,6 +1147,18 @@
 				(polyline
 					(pts
 						(xy 1.905 6.35) (xy -1.905 6.35)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 3.81) (xy 0 6.35)
 					)
 					(stroke
 						(width 0.2032)
@@ -1189,11 +1205,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
@@ -1291,12 +1312,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+VDC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1366,12 +1392,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27)
-					)
+				(circle
+					(center 0 3.175)
+					(radius 1.905)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1390,11 +1415,12 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 3.175)
-					(radius 1.905)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1422,12 +1448,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1518,13 +1549,164 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 69.85 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05680fa8-b57a-4e9d-a314-482045b8c703")
+	(rectangle
+		(start 153.67 12.7)
+		(end 198.12 64.77)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 062ed9bc-4c53-4d7e-9739-fc4015f09c14)
+	)
+	(rectangle
+		(start 17.78 138.43)
+		(end 152.4 201.93)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7ff35718-2a88-4a9e-986a-896947932e15)
+	)
+	(rectangle
+		(start 13.97 12.7)
+		(end 152.4 137.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8d5913f1-e186-4728-86dd-c5e20f69c983)
+	)
+	(rectangle
+		(start 158.75 105.41)
+		(end 247.65 170.18)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ef687753-f040-4999-9339-fbca9352906b)
+	)
+	(text "Power\nConnector"
+		(exclude_from_sim no)
+		(at 174.244 112.776 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "085f77a3-a39b-4fb2-9f26-dbcb87b53367")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 125.476 195.58 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "1107e867-77a3-4a72-bd48-e90592027967")
+	)
+	(text "Bypass Diode"
+		(exclude_from_sim no)
+		(at 174.752 18.034 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "7d45622e-1dc6-48ad-8c39-c0a3e8429084")
+	)
+	(text "Solar Cells (6S5P)"
+		(exclude_from_sim no)
+		(at 107.95 20.066 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "fcc58471-eee4-4faa-bade-5a92fff84197")
+	)
+	(text_box "Diodes above each string are blocking diodes, which are intended to prevent current flowing back into the cells and heating them.\n\nThe diode that is parallel to the strings is a bypass diode. It allows the panel to be connected in series with other panels, where panels have varying operating conditions."
+		(exclude_from_sim no)
+		(at 153.67 66.04 0)
+		(size 44.45 17.78)
+		(margins 0.762 0.762 0.762 0.762)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "08539b46-0ed2-440c-8732-5f7cc7beaae9")
+	)
+	(text_box "Connector: Solar panels to the EPS's MPPT inputs.\n\nPico-Lock (1.5mm Pitch)\n   Connector on PCB: Molex 504050-0891.\n   Mates with cable Molex 504051-0801.\n\nPins 1, 2, 5, and 6 are +V, and the rest are GND.\n\nExtra connectors are for options and debugging. Only 1 will be used."
+		(exclude_from_sim no)
+		(at 194.31 106.68 0)
+		(size 46.99 20.32)
+		(margins 0.762 0.762 0.762 0.762)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "65604667-34dd-4573-b516-e774ee66005a")
+	)
+	(text_box "Solar cell = KXOB25-05X3F\nDiode = PMEG10020\nConfiguration: 6S5P (parallel strings)\n\nDiode maximum forward voltage = 770mV\nSolar cell voltage at maximum power = 1.67 V\nSolar cell max power = 30.7 mW\n\nPanel voltage at max power = (6 * 1.67V - 0.77V) = 9.25 V\nPanel max power = 6 * 5 * 30.7 mW = 1.11 W"
+		(exclude_from_sim no)
+		(at 199.39 25.4 0)
+		(size 64.77 21.59)
+		(margins 0.762 0.762 0.762 0.762)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "e45877ca-4b7e-48ab-b7a8-f9eafa55c2a3")
 	)
 	(junction
 		(at 208.28 162.56)
@@ -1545,40 +1727,28 @@
 		(uuid "11f3042e-351e-412b-9ae9-993eb04e118f")
 	)
 	(junction
-		(at 116.84 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16114ad0-4bd5-4018-802c-11e565fee8e3")
-	)
-	(junction
-		(at 166.37 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1b509c7e-b0f2-4b2a-af86-85a3a48f59b0")
-	)
-	(junction
-		(at 182.88 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c490fba-d43b-4fc0-ab2d-17f724e0f7ad")
-	)
-	(junction
 		(at 208.28 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25564029-e4db-4211-a8a6-ccf6ca72a5ae")
 	)
 	(junction
-		(at 187.96 38.1)
+		(at 55.88 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "31506cb5-01b8-4ab7-a0ed-ea778ae2cbb0")
+		(uuid "31d50651-7be5-425f-bc72-1bb8cb95d5d4")
 	)
 	(junction
 		(at 204.47 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3301b80e-d975-4a00-b5dd-8d54629e4eaa")
+	)
+	(junction
+		(at 109.22 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39d042aa-22d5-484d-ab0f-aa3e7082c48e")
 	)
 	(junction
 		(at 166.37 162.56)
@@ -1599,28 +1769,10 @@
 		(uuid "3dd8385f-e704-446f-95ed-7eebbfd41951")
 	)
 	(junction
-		(at 212.09 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4dc1d663-1699-4efc-97b2-1a2a4e732b5f")
-	)
-	(junction
 		(at 224.79 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55771c86-b2a4-4b71-ab02-1458631f6c6d")
-	)
-	(junction
-		(at 48.26 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "562a02cb-28bf-41d0-ba0b-84a9daee6f81")
-	)
-	(junction
-		(at 182.88 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59671b8e-ef54-401e-be20-d4fcd4bc00ba")
 	)
 	(junction
 		(at 208.28 160.02)
@@ -1629,28 +1781,34 @@
 		(uuid "66e0b4c4-94e0-40fa-917e-01035ffd2f2f")
 	)
 	(junction
+		(at 81.28 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74864223-2211-401e-bc6e-1cbe6296878f")
+	)
+	(junction
 		(at 224.79 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b6a0aa8-cdac-45ba-b9c4-6761e3bb844e")
 	)
 	(junction
-		(at 182.88 152.4)
+		(at 66.04 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7c6a862c-8bf6-4309-b8f6-bcb2ab889a1d")
+		(uuid "7e69a359-be6a-407f-ac07-92625d6c28e8")
 	)
 	(junction
-		(at 236.22 38.1)
+		(at 81.28 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "82a4d383-b10a-42e1-8025-98371db5043e")
+		(uuid "868edd2c-8aee-45bd-8629-aeba3caab77d")
 	)
 	(junction
-		(at 186.69 162.56)
+		(at 109.22 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "854ce76d-49d0-481e-a3b2-01b2e0e6a3b9")
+		(uuid "87b02fbf-3de0-4750-8d52-8c4d3a787caf")
 	)
 	(junction
 		(at 228.6 162.56)
@@ -1677,40 +1835,10 @@
 		(uuid "a83ecd97-cb58-4854-91a9-82b1b72ec435")
 	)
 	(junction
-		(at 236.22 95.25)
+		(at 55.88 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "aa608585-f11a-4b7a-8d18-473390be3bd8")
-	)
-	(junction
-		(at 69.85 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "abbe1511-0b35-44b2-9595-d564f3f661ea")
-	)
-	(junction
-		(at 212.09 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae1a4a15-3e91-46fc-adc4-7dedd14cdd94")
-	)
-	(junction
-		(at 186.69 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b27cb1b1-228d-4479-9017-8fab7c113119")
-	)
-	(junction
-		(at 186.69 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b33263e4-5803-43dc-9453-ebcb2dc7774d")
-	)
-	(junction
-		(at 92.71 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b38af62b-92c2-4699-811b-8894eeb3779c")
+		(uuid "a97b2dfb-baa9-440f-a980-a0b630502bc7")
 	)
 	(junction
 		(at 162.56 152.4)
@@ -1719,70 +1847,22 @@
 		(uuid "b4a44717-342a-48e2-8565-addcbdf468af")
 	)
 	(junction
-		(at 187.96 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b55f5c60-e45b-4f35-af05-568abdf26800")
-	)
-	(junction
 		(at 166.37 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b91ca99c-6562-479c-8317-6251cb3afd87")
 	)
 	(junction
-		(at 140.97 38.1)
+		(at 67.31 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b949523f-00ac-42bf-9a00-01756b218b32")
-	)
-	(junction
-		(at 48.26 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba61711b-d868-494d-8ff1-5f57cb6c6b7f")
+		(uuid "bcfb038d-2104-4a9a-8d6f-36456cd4b7ba")
 	)
 	(junction
 		(at 166.37 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be25db42-fa2c-474a-be58-af3a1682587d")
-	)
-	(junction
-		(at 166.37 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1c3d4a3-3909-4457-9c55-792292e96e73")
-	)
-	(junction
-		(at 24.13 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3a6b7d7-63df-426d-9820-00e791985d60")
-	)
-	(junction
-		(at 116.84 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3eaaaea-9349-4369-ab87-063637466239")
-	)
-	(junction
-		(at 43.18 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cdcd2b7e-1f04-4adf-9f91-a5cce09f8b90")
-	)
-	(junction
-		(at 92.71 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cf981a20-0044-4644-91b9-04202f656da4")
-	)
-	(junction
-		(at 186.69 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3ce85da-0e0b-49df-aa4a-2b8af0735022")
 	)
 	(junction
 		(at 166.37 149.86)
@@ -1797,12 +1877,6 @@
 		(uuid "ebcecb5f-5007-4ece-a1e6-416ab30e5077")
 	)
 	(junction
-		(at 140.97 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "efeb56f3-979b-4836-aaa4-0d0e8cb8dfc6")
-	)
-	(junction
 		(at 162.56 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1810,7 +1884,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 48.26) (xy 69.85 54.61)
+			(xy 55.88 80.01) (xy 55.88 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1820,13 +1894,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 154.94) (xy 182.88 152.4)
+			(xy 55.88 130.81) (xy 67.31 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "024aee8c-dc79-4850-a7be-730b67671a46")
+		(uuid "02499e6f-7b09-4114-bf01-26ae054c55cc")
 	)
 	(wire
 		(pts
@@ -1840,33 +1914,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 142.24) (xy 191.77 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a363078-efd3-46f2-a3fc-ae10f1c8cace")
-	)
-	(wire
-		(pts
-			(xy 92.71 48.26) (xy 92.71 54.61)
+			(xy 55.88 38.1) (xy 55.88 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0ccef569-468a-4c56-aeb9-2f865a6cf8b1")
-	)
-	(wire
-		(pts
-			(xy 166.37 48.26) (xy 166.37 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0df9b65f-cb05-4a20-a4e3-a0e60a33c376")
 	)
 	(wire
 		(pts
@@ -1900,7 +1954,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 140.97) (xy 77.47 143.51)
+			(xy 69.85 148.59) (xy 69.85 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1910,7 +1964,17 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 38.1) (xy 247.65 66.04)
+			(xy 135.89 55.88) (xy 135.89 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12683997-e9b5-42b4-a8f3-914c72a81438")
+	)
+	(wire
+		(pts
+			(xy 179.07 31.75) (xy 179.07 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1920,33 +1984,13 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 95.25) (xy 212.09 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "150b14de-16ed-41d9-9fbd-b55120bdfc44")
-	)
-	(wire
-		(pts
-			(xy 187.96 62.23) (xy 187.96 68.58)
+			(xy 109.22 52.07) (xy 109.22 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "174a1d80-65bf-4d86-a2a4-3e0b89017db6")
-	)
-	(wire
-		(pts
-			(xy 166.37 38.1) (xy 187.96 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "182a215a-afff-43b2-ab07-386862fa8fba")
 	)
 	(wire
 		(pts
@@ -1980,7 +2024,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 62.23) (xy 212.09 68.58)
+			(xy 135.89 76.2) (xy 135.89 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1990,7 +2034,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 76.2) (xy 48.26 82.55)
+			(xy 29.21 66.04) (xy 29.21 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2000,43 +2044,13 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 90.17) (xy 24.13 95.25)
+			(xy 29.21 125.73) (xy 29.21 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "24ec791f-4b7a-4656-9cd6-dc411a947788")
-	)
-	(wire
-		(pts
-			(xy 24.13 95.25) (xy 43.18 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "285e9f0e-ce6f-4a78-a44c-c3d37fb313da")
-	)
-	(wire
-		(pts
-			(xy 69.85 38.1) (xy 92.71 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "292c0672-395e-4d6c-92e6-4517c36ece8b")
-	)
-	(wire
-		(pts
-			(xy 182.88 139.7) (xy 182.88 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "295180f0-faf5-4135-b478-f21ceabe4e28")
 	)
 	(wire
 		(pts
@@ -2050,7 +2064,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 76.2) (xy 166.37 82.55)
+			(xy 109.22 111.76) (xy 109.22 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2060,27 +2074,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 154.94) (xy 182.88 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e2f7108-6d79-4cf7-8f3a-a21a0992ef5f")
-	)
-	(wire
-		(pts
-			(xy 186.69 160.02) (xy 186.69 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e9e94b8-37cd-4c9c-9a38-340d829ef10d")
-	)
-	(wire
-		(pts
-			(xy 77.47 153.67) (xy 77.47 156.21)
+			(xy 69.85 161.29) (xy 69.85 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2110,26 +2104,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 160.02) (xy 191.77 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32fac051-e7a9-48bb-8ff7-7411e1a66318")
-	)
-	(wire
-		(pts
-			(xy 24.13 38.1) (xy 48.26 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "372acbea-188b-4663-bc97-44efd78d55fa")
-	)
-	(wire
-		(pts
 			(xy 213.36 147.32) (xy 208.28 147.32)
 		)
 		(stroke
@@ -2140,7 +2114,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 48.26) (xy 48.26 54.61)
+			(xy 29.21 38.1) (xy 29.21 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2150,7 +2124,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 90.17) (xy 212.09 95.25)
+			(xy 135.89 99.06) (xy 135.89 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2160,7 +2134,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 140.97) (xy 54.61 143.51)
+			(xy 46.99 148.59) (xy 46.99 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2170,7 +2144,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 76.2) (xy 24.13 82.55)
+			(xy 29.21 111.76) (xy 29.21 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2190,13 +2164,43 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 76.2) (xy 187.96 82.55)
+			(xy 135.89 27.94) (xy 135.89 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47cff250-0a5d-4ad4-9b00-ac4d8e8c9fb1")
+	)
+	(wire
+		(pts
+			(xy 109.22 66.04) (xy 109.22 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "48b96025-776b-45b3-ab16-f2e42c4fec07")
+	)
+	(wire
+		(pts
+			(xy 135.89 116.84) (xy 135.89 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "499d86f3-2b9e-4c93-9d32-6ef47a817b60")
+	)
+	(wire
+		(pts
+			(xy 29.21 25.4) (xy 55.88 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a426eac-07ba-445a-ad02-dd98383890e4")
 	)
 	(wire
 		(pts
@@ -2210,17 +2214,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 162.56) (xy 191.77 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e5011aa-019e-4d40-9339-d6ec657cf0a5")
-	)
-	(wire
-		(pts
-			(xy 54.61 153.67) (xy 54.61 156.21)
+			(xy 46.99 161.29) (xy 46.99 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2230,7 +2224,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 140.97) (xy 30.48 143.51)
+			(xy 22.86 148.59) (xy 22.86 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2240,7 +2234,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 184.15) (xy 30.48 186.69)
+			(xy 22.86 191.77) (xy 22.86 194.31)
 		)
 		(stroke
 			(width 0)
@@ -2310,16 +2304,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 38.1) (xy 247.65 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cb86741-927e-4c71-a2ab-965aea23f0eb")
-	)
-	(wire
-		(pts
 			(xy 162.56 144.78) (xy 171.45 144.78)
 		)
 		(stroke
@@ -2327,16 +2311,6 @@
 			(type default)
 		)
 		(uuid "615847e0-460c-4ba5-a562-9177c1f0d1a0")
-	)
-	(wire
-		(pts
-			(xy 212.09 38.1) (xy 236.22 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "623f06a7-de7d-442e-9d87-309ed76f2032")
 	)
 	(wire
 		(pts
@@ -2350,7 +2324,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 140.97) (xy 104.14 143.51)
+			(xy 96.52 148.59) (xy 96.52 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2360,23 +2334,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 76.2) (xy 116.84 82.55)
+			(xy 81.28 111.76) (xy 81.28 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "62d9f787-c316-4b8a-8085-5bdb9fa3690a")
-	)
-	(wire
-		(pts
-			(xy 92.71 95.25) (xy 116.84 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63b75531-0063-4222-b5cc-e10d88a43dd6")
 	)
 	(wire
 		(pts
@@ -2390,23 +2354,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 171.45) (xy 104.14 173.99)
+			(xy 96.52 179.07) (xy 96.52 181.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "64709a78-4d36-4858-914e-2f0fde1a0299")
-	)
-	(wire
-		(pts
-			(xy 166.37 95.25) (xy 187.96 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64e55bde-6558-4cfc-aed9-bb5a72d7f204")
 	)
 	(wire
 		(pts
@@ -2420,7 +2374,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 76.2) (xy 140.97 82.55)
+			(xy 81.28 66.04) (xy 81.28 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2430,7 +2384,27 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 90.17) (xy 116.84 95.25)
+			(xy 66.04 22.86) (xy 66.04 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66fb7af8-d95d-41d1-92d3-eccf40d3f55e")
+	)
+	(wire
+		(pts
+			(xy 29.21 27.94) (xy 29.21 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6700065e-7889-47c1-9b30-b1b0db6b9ad3")
+	)
+	(wire
+		(pts
+			(xy 81.28 125.73) (xy 81.28 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2447,16 +2421,6 @@
 			(type default)
 		)
 		(uuid "690b15e7-d33f-48ed-aa1a-0f60b428419b")
-	)
-	(wire
-		(pts
-			(xy 48.26 95.25) (xy 69.85 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a795061-ae94-4505-8cb5-8b22b77e1ad2")
 	)
 	(wire
 		(pts
@@ -2477,16 +2441,6 @@
 			(type default)
 		)
 		(uuid "6b9ea065-0f20-42d5-b2e7-71b434104f84")
-	)
-	(wire
-		(pts
-			(xy 182.88 152.4) (xy 191.77 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e44a2bd-aa36-40a7-84c2-06881bba3536")
 	)
 	(wire
 		(pts
@@ -2520,7 +2474,17 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 90.17) (xy 69.85 95.25)
+			(xy 109.22 25.4) (xy 135.89 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709e7ff2-3702-4fa0-b37d-d8dda9853cb1")
+	)
+	(wire
+		(pts
+			(xy 55.88 125.73) (xy 55.88 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2610,23 +2574,13 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 153.67) (xy 30.48 156.21)
+			(xy 22.86 161.29) (xy 22.86 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "81a655e5-aa1b-4fc1-b327-4475887a62fc")
-	)
-	(wire
-		(pts
-			(xy 92.71 38.1) (xy 116.84 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82c3b7c5-e414-4398-8311-1ea1c5102fae")
 	)
 	(wire
 		(pts
@@ -2660,17 +2614,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 38.1) (xy 212.09 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85890c8b-8842-45d8-8ccf-840a57e69b0f")
-	)
-	(wire
-		(pts
-			(xy 77.47 171.45) (xy 77.47 173.99)
+			(xy 69.85 179.07) (xy 69.85 181.61)
 		)
 		(stroke
 			(width 0)
@@ -2690,7 +2634,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 90.17) (xy 48.26 95.25)
+			(xy 29.21 80.01) (xy 29.21 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2700,7 +2644,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 153.67) (xy 104.14 156.21)
+			(xy 96.52 161.29) (xy 96.52 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2710,7 +2654,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 76.2) (xy 92.71 82.55)
+			(xy 55.88 66.04) (xy 55.88 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2720,7 +2664,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 62.23) (xy 92.71 68.58)
+			(xy 55.88 52.07) (xy 55.88 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2730,37 +2674,27 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 157.48) (xy 186.69 160.02)
+			(xy 55.88 25.4) (xy 55.88 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8cfe2bca-1e3c-41a8-abfc-7886d7e41818")
+		(uuid "8c51ca39-71a9-462b-b3e8-1ab4bc7259ec")
 	)
 	(wire
 		(pts
-			(xy 187.96 90.17) (xy 187.96 95.25)
+			(xy 67.31 132.08) (xy 67.31 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8f7bca4f-ef1b-491d-a652-b2f259f64261")
+		(uuid "912f7f22-d0c3-48fc-b69f-9e5fd64c5372")
 	)
 	(wire
 		(pts
-			(xy 92.71 90.17) (xy 92.71 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "902faf26-e73b-4f4d-a934-366e2227ed4d")
-	)
-	(wire
-		(pts
-			(xy 69.85 62.23) (xy 69.85 68.58)
+			(xy 55.88 97.79) (xy 55.88 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2790,17 +2724,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 157.48) (xy 191.77 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93d30e18-4c27-4a07-9955-1bd885089c1a")
-	)
-	(wire
-		(pts
-			(xy 140.97 62.23) (xy 140.97 68.58)
+			(xy 81.28 52.07) (xy 81.28 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2820,7 +2744,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 171.45) (xy 30.48 173.99)
+			(xy 22.86 179.07) (xy 22.86 181.61)
 		)
 		(stroke
 			(width 0)
@@ -2830,7 +2754,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 90.17) (xy 166.37 95.25)
+			(xy 109.22 125.73) (xy 109.22 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2847,16 +2771,6 @@
 			(type default)
 		)
 		(uuid "9f68581b-c599-4570-8ff3-3e4fec5718eb")
-	)
-	(wire
-		(pts
-			(xy 182.88 144.78) (xy 191.77 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a058ed00-726d-4eee-8306-d2bb4bf9ab6f")
 	)
 	(wire
 		(pts
@@ -2880,23 +2794,13 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 62.23) (xy 24.13 68.58)
+			(xy 29.21 97.79) (xy 29.21 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a9779222-873e-4689-a11f-11f1c531a266")
-	)
-	(wire
-		(pts
-			(xy 191.77 147.32) (xy 186.69 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9f407fa-3702-4343-8830-3a799c6a9919")
 	)
 	(wire
 		(pts
@@ -2910,17 +2814,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 48.26) (xy 116.84 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa44d7cb-cbf5-4f9c-880d-225692f06c45")
-	)
-	(wire
-		(pts
-			(xy 48.26 62.23) (xy 48.26 68.58)
+			(xy 29.21 52.07) (xy 29.21 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2930,7 +2824,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 48.26) (xy 140.97 54.61)
+			(xy 81.28 38.1) (xy 81.28 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2960,6 +2854,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 25.4) (xy 109.22 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad518af8-2e78-4899-89b5-a567ee042428")
+	)
+	(wire
+		(pts
 			(xy 166.37 160.02) (xy 171.45 160.02)
 		)
 		(stroke
@@ -2967,26 +2871,6 @@
 			(type default)
 		)
 		(uuid "ad957409-4121-49f9-b4ac-4519f28c6214")
-	)
-	(wire
-		(pts
-			(xy 182.88 142.24) (xy 182.88 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae2ddce9-4395-4bc3-a487-5a179d59f24b")
-	)
-	(wire
-		(pts
-			(xy 196.85 165.1) (xy 191.77 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afa0799a-6d60-43a4-ba26-71dcf259b15b")
 	)
 	(wire
 		(pts
@@ -3010,33 +2894,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 95.25) (xy 48.26 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b26a3e43-a03e-4cfc-9b0e-785ddb2fe315")
-	)
-	(wire
-		(pts
-			(xy 104.14 184.15) (xy 104.14 186.69)
+			(xy 96.52 191.77) (xy 96.52 194.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b2973d39-74ee-4878-9159-589dcefe2918")
-	)
-	(wire
-		(pts
-			(xy 212.09 95.25) (xy 236.22 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4b41cf1-a721-482c-8b83-2fca7149fc03")
 	)
 	(wire
 		(pts
@@ -3050,27 +2914,17 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 149.86) (xy 186.69 157.48)
+			(xy 81.28 25.4) (xy 109.22 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bccf5608-e763-49f5-9bed-e433c98b90c3")
+		(uuid "b958a761-e1fd-4f89-80f0-741a92248f9e")
 	)
 	(wire
 		(pts
-			(xy 186.69 162.56) (xy 186.69 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcea27b5-f2bd-4da5-8bac-70e5778bde04")
-	)
-	(wire
-		(pts
-			(xy 140.97 90.17) (xy 140.97 95.25)
+			(xy 81.28 80.01) (xy 81.28 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3080,13 +2934,13 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 147.32) (xy 186.69 149.86)
+			(xy 109.22 80.01) (xy 109.22 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c15883fd-75c8-422c-b9f6-b6113f7979b9")
+		(uuid "c0128546-f762-442e-b5b8-cfb6d11ecc3b")
 	)
 	(wire
 		(pts
@@ -3097,36 +2951,6 @@
 			(type default)
 		)
 		(uuid "c2397768-7032-406b-8666-bd0430e64cd6")
-	)
-	(wire
-		(pts
-			(xy 116.84 95.25) (xy 140.97 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2e94f41-8e19-46ad-bd76-e81c84d94d10")
-	)
-	(wire
-		(pts
-			(xy 69.85 95.25) (xy 92.71 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c55d085b-209e-4843-a27f-a15c1c34f4ca")
-	)
-	(wire
-		(pts
-			(xy 116.84 38.1) (xy 140.97 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c594dfc5-168d-41cf-a0ec-6c9d83fe33ed")
 	)
 	(wire
 		(pts
@@ -3150,27 +2974,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 38.1) (xy 166.37 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c644407b-cb89-4208-916b-d646e35f5b81")
-	)
-	(wire
-		(pts
-			(xy 236.22 62.23) (xy 236.22 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6aea922-5505-46c6-94ef-9f38a9113270")
-	)
-	(wire
-		(pts
-			(xy 77.47 184.15) (xy 77.47 186.69)
+			(xy 69.85 191.77) (xy 69.85 194.31)
 		)
 		(stroke
 			(width 0)
@@ -3180,7 +2984,47 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 48.26) (xy 187.96 54.61)
+			(xy 135.89 127) (xy 135.89 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbcc78f4-c300-46c2-993c-1c21faf4a7bc")
+	)
+	(wire
+		(pts
+			(xy 55.88 25.4) (xy 66.04 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc6361ff-b7c0-49c9-b44c-ad3ebbacf880")
+	)
+	(wire
+		(pts
+			(xy 135.89 130.81) (xy 109.22 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d072afa2-a9ae-43c3-9f06-761c34c84c40")
+	)
+	(wire
+		(pts
+			(xy 66.04 25.4) (xy 81.28 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1d8c04f-c009-4a63-902f-06d85c1d8636")
+	)
+	(wire
+		(pts
+			(xy 109.22 38.1) (xy 109.22 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3200,17 +3044,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 90.17) (xy 236.22 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbbb7670-a5dd-42eb-8ded-7825b2527f67")
-	)
-	(wire
-		(pts
-			(xy 116.84 62.23) (xy 116.84 68.58)
+			(xy 81.28 97.79) (xy 81.28 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3220,13 +3054,13 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 95.25) (xy 236.22 95.25)
+			(xy 81.28 130.81) (xy 109.22 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "def8a01f-83cc-41e2-89ad-f01a7a47e30a")
+		(uuid "df4c147f-a094-413c-8919-6d94ce9233e2")
 	)
 	(wire
 		(pts
@@ -3240,17 +3074,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 95.25) (xy 166.37 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e160d6e6-af58-4f70-afc9-b6b1b897e7df")
-	)
-	(wire
-		(pts
-			(xy 54.61 171.45) (xy 54.61 173.99)
+			(xy 46.99 179.07) (xy 46.99 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3270,27 +3094,17 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 48.26) (xy 236.22 54.61)
+			(xy 29.21 130.81) (xy 55.88 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e4b156b0-57ac-4779-8022-d16111a201b3")
+		(uuid "e4e40d95-2d9c-449d-80e7-db528f99586b")
 	)
 	(wire
 		(pts
-			(xy 24.13 34.29) (xy 24.13 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e520b762-47ab-4ee9-8354-5e57a46e472b")
-	)
-	(wire
-		(pts
-			(xy 69.85 76.2) (xy 69.85 82.55)
+			(xy 55.88 111.76) (xy 55.88 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3300,27 +3114,17 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 165.1) (xy 191.77 162.56)
+			(xy 81.28 25.4) (xy 81.28 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eaeff509-37e8-42b5-8b61-48621300b831")
+		(uuid "eb506bf8-b70f-4d6e-bd13-62ddb73cf7bc")
 	)
 	(wire
 		(pts
-			(xy 24.13 48.26) (xy 24.13 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef50de06-61cb-41a0-a5eb-d3b8e62e1dbf")
-	)
-	(wire
-		(pts
-			(xy 212.09 76.2) (xy 212.09 82.55)
+			(xy 135.89 88.9) (xy 135.89 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3330,17 +3134,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 149.86) (xy 191.77 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0e38648-78ce-421c-85ec-e2b3ca3e3bf8")
-	)
-	(wire
-		(pts
-			(xy 166.37 62.23) (xy 166.37 68.58)
+			(xy 109.22 97.79) (xy 109.22 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3350,23 +3144,23 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 184.15) (xy 54.61 186.69)
+			(xy 67.31 130.81) (xy 81.28 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f324734a-a5db-4808-97a7-97d145f67785")
+	)
+	(wire
+		(pts
+			(xy 46.99 191.77) (xy 46.99 194.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f37b3396-7861-4eff-8008-ea897ebd47ce")
-	)
-	(wire
-		(pts
-			(xy 182.88 144.78) (xy 182.88 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f436bc29-2e94-4f7a-93aa-77cf3dd639e0")
 	)
 	(wire
 		(pts
@@ -3390,7 +3184,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 48.26) (xy 212.09 54.61)
+			(xy 135.89 38.1) (xy 135.89 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3400,7 +3194,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 76.2) (xy 247.65 95.25)
+			(xy 179.07 46.99) (xy 179.07 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3420,16 +3214,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 38.1) (xy 69.85 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa84557f-9f35-48ca-8b95-f1c29c81a204")
-	)
-	(wire
-		(pts
 			(xy 224.79 152.4) (xy 233.68 152.4)
 		)
 		(stroke
@@ -3438,148 +3222,399 @@
 		)
 		(uuid "ff353ed8-c530-4e89-ad29-9e108442f74d")
 	)
-	(wire
-		(pts
-			(xy 236.22 76.2) (xy 236.22 82.55)
+	(image
+		(at 231.14 20.32)
+		(scale 0.212112)
+		(uuid "01000ec8-c30a-4ae9-b69c-b4e345a24d7c")
+		(data "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"
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffb2e2bb-488b-40f0-b7e8-c053b0bd4ee8")
-	)
-	(rectangle
-		(start 15.24 21.59)
-		(end 262.89 102.87)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 489c92b3-610c-4ab8-b72a-c5a766cafe40)
-	)
-	(rectangle
-		(start 17.78 114.3)
-		(end 152.4 201.93)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 7ff35718-2a88-4a9e-986a-896947932e15)
-	)
-	(rectangle
-		(start 158.75 105.41)
-		(end 247.65 170.18)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ef687753-f040-4999-9339-fbca9352906b)
-	)
-	(text_box "Diodes above the 3 solar cells connected to VDC are blocking diodes which is intended to be used as a way to prevent the battery from discharging while allowing current to flow.\n\nDiode(s) that are parallel to the cells are bypass diodes used in case one of the cells is \"faulty\" to allow an alternate way for current to flow.\n"
-		(exclude_from_sim no)
-		(at 120.65 22.86 0)
-		(size 54.61 13.97)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "08539b46-0ed2-440c-8732-5f7cc7beaae9")
-	)
-	(text_box "Connector: Solar panels to the EPS's MPPT inputs.\n\nPico-Lock (1.5mm Pitch)\n   Connector on PCB: Molex 504050-0891.\n   Mates with cable Molex 504051-0801.\n\nPins 1, 2, 5, and 6 are +V, and the rest are GND.\n\nExtra connectors are for options and debugging. Only 1 will be used."
-		(exclude_from_sim no)
-		(at 194.31 106.68 0)
-		(size 46.99 20.32)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "65604667-34dd-4573-b516-e774ee66005a")
-	)
-	(text_box "Assuming diodes operate at maximum forward voltage (770mv) and solar cells operate at maximum power (2.33 volts), voltage at VDC should be approximately 6.22 volts\n"
-		(exclude_from_sim no)
-		(at 81.28 22.86 0)
-		(size 38.1 7.62)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "e45877ca-4b7e-48ab-b7a8-f9eafa55c2a3")
-	)
-	(text "Power\nConnector"
-		(exclude_from_sim no)
-		(at 174.244 112.776 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.762)
-				(bold yes)
-			)
-		)
-		(uuid "085f77a3-a39b-4fb2-9f26-dbcb87b53367")
-	)
-	(text "Mounting Holes"
-		(exclude_from_sim no)
-		(at 46.736 126.238 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.762)
-				(bold yes)
-			)
-		)
-		(uuid "1107e867-77a3-4a72-bd48-e90592027967")
-	)
-	(text "Solar Cells"
-		(exclude_from_sim no)
-		(at 55.118 27.178 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.762)
-				(bold yes)
-			)
-		)
-		(uuid "fcc58471-eee4-4faa-bade-5a92fff84197")
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 187.96 48.26 90)
+		(at 109.22 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3587,7 +3622,7 @@
 		(dnp no)
 		(uuid "02070207-0ee8-48af-a1ce-e68219d98d84")
 		(property "Reference" "D8"
-			(at 181.102 41.148 90)
+			(at 102.362 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3596,7 +3631,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 180.086 49.784 90)
+			(at 101.346 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3605,7 +3640,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 187.96 48.26 0)
+			(at 109.22 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3615,7 +3650,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 187.96 48.26 0)
+			(at 109.22 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3625,7 +3660,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 187.96 48.26 0)
+			(at 109.22 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3650,7 +3685,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 187.96 73.66 0)
+		(at 109.22 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3658,7 +3693,7 @@
 		(dnp no)
 		(uuid "05021741-26bf-48ff-ba20-6bd3c78b99b3")
 		(property "Reference" "SC23"
-			(at 181.61 66.294 0)
+			(at 102.87 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3666,8 +3701,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 179.832 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 101.092 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3675,8 +3710,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 187.96 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 109.22 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3685,7 +3720,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 72.136 90)
+			(at 109.22 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3694,7 +3729,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 187.96 73.66 0)
+			(at 109.22 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3719,7 +3754,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 166.37 87.63 0)
+		(at 109.22 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3727,7 +3762,7 @@
 		(dnp no)
 		(uuid "06a8abf7-68f9-4b8c-acd5-7c6e5cee6071")
 		(property "Reference" "SC21"
-			(at 158.75 82.804 0)
+			(at 101.6 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3735,8 +3770,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 158.242 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 101.092 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,8 +3779,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 166.37 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 109.22 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3754,7 +3789,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 86.106 90)
+			(at 109.22 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3763,7 +3798,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 166.37 87.63 0)
+			(at 109.22 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3788,7 +3823,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 104.14 148.59 270)
+		(at 96.52 156.21 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3797,7 +3832,7 @@
 		(fields_autoplaced yes)
 		(uuid "0844d929-acf4-41ae-b469-dadd70379589")
 		(property "Reference" "JP4"
-			(at 106.68 147.3199 90)
+			(at 99.06 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3806,7 +3841,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 106.68 149.8599 90)
+			(at 99.06 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3815,7 +3850,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 104.14 148.59 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3824,7 +3859,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 148.59 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,7 +3868,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 104.14 148.59 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3857,54 +3892,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 116.84 48.26 90)
+		(lib_id "Device:Solar_Cell")
+		(at 135.89 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "08dd6f9c-670b-4a94-a9ae-cdaf72907782")
-		(property "Reference" "D5"
-			(at 109.982 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 110.236 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 116.84 48.26 0)
+		(uuid "0c594238-fde6-4a19-8228-6a191301927c")
+		(property "Reference" "SC30"
+			(at 129.54 45.974 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 116.84 48.26 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 127.254 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Description" ""
-			(at 116.84 48.26 0)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 135.89 51.816 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3912,16 +3927,34 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "2649d5ff-1b73-443f-a7a2-ba31ad7533f6")
+		(property "Datasheet" "~"
+			(at 135.89 51.816 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 135.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "8c077d66-ed0a-41f9-ae0b-d165b54a7464")
+			(uuid "b9ad5e10-775c-4816-abc2-4814b708244c")
+		)
+		(pin "1"
+			(uuid "78b301e8-6de9-44c3-a4b3-19089a9b3a3b")
 		)
 		(instances
-			(project "Solar Panels"
+			(project "Solar_Panels_1p25U"
 				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D5")
+					(reference "SC30")
 					(unit 1)
 				)
 			)
@@ -4112,17 +4145,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 77.47 156.21 0)
+		(lib_id "power:+VDC")
+		(at 179.07 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "12c07895-7f4a-4f12-be07-f8ca03dce91a")
-		(property "Reference" "#PWR08"
-			(at 77.47 162.56 0)
+		(uuid "0e11e900-5efd-499f-b82b-6f1a03968ca5")
+		(property "Reference" "#PWR023"
+			(at 179.07 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4130,8 +4162,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 77.47 161.29 0)
+		(property "Value" "+VDC"
+			(at 178.816 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4139,7 +4171,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 156.21 0)
+			(at 179.07 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4148,7 +4180,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 156.21 0)
+			(at 179.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VDC\""
+			(at 179.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e445ff2-3eb5-441b-8a29-127a245db755")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12c07895-7f4a-4f12-be07-f8ca03dce91a")
+		(property "Reference" "#PWR08"
+			(at 69.85 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4157,7 +4255,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 156.21 0)
+			(at 69.85 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +4346,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 140.97 48.26 90)
+		(at 81.28 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4256,7 +4354,7 @@
 		(dnp no)
 		(uuid "14b821d3-fdde-40f9-85c0-cbc1dad3b870")
 		(property "Reference" "D6"
-			(at 134.112 41.148 90)
+			(at 74.422 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4265,7 +4363,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 136.398 49.784 90)
+			(at 76.708 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4274,7 +4372,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 140.97 48.26 0)
+			(at 81.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4284,7 +4382,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 140.97 48.26 0)
+			(at 81.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4294,7 +4392,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 48.26 0)
+			(at 81.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4319,7 +4417,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 48.26 59.69 0)
+		(at 29.21 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4327,7 +4425,7 @@
 		(dnp no)
 		(uuid "17baf8e5-1178-48fa-afad-4e237f8da014")
 		(property "Reference" "SC4"
-			(at 41.91 52.324 0)
+			(at 22.86 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4335,8 +4433,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 39.624 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 20.574 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4344,8 +4442,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 48.26 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 29.21 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4354,7 +4452,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 58.166 90)
+			(at 29.21 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4363,7 +4461,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 48.26 59.69 0)
+			(at 29.21 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4388,7 +4486,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 212.09 87.63 0)
+		(at 135.89 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4396,7 +4494,7 @@
 		(dnp no)
 		(uuid "186a5c8d-b6e1-4edf-a92a-6b7ee05c2e02")
 		(property "Reference" "SC27"
-			(at 204.47 82.804 0)
+			(at 128.27 91.694 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,8 +4502,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 203.962 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 127.762 97.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,8 +4511,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 212.09 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 135.89 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4423,7 +4521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 86.106 90)
+			(at 135.89 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4432,7 +4530,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 212.09 87.63 0)
+			(at 135.89 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4457,7 +4555,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 116.84 59.69 0)
+		(at 81.28 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4465,7 +4563,7 @@
 		(dnp no)
 		(uuid "2c4bd16c-739e-44e7-a789-97c50feb279e")
 		(property "Reference" "SC13"
-			(at 110.49 52.324 0)
+			(at 74.93 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4473,8 +4571,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 108.204 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 72.644 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4482,8 +4580,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 116.84 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 81.28 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4492,7 +4590,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 58.166 90)
+			(at 81.28 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4501,7 +4599,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 116.84 59.69 0)
+			(at 81.28 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4526,7 +4624,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 104.14 179.07 270)
+		(at 96.52 186.69 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -4535,7 +4633,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c662bcb-54ae-473b-9e4a-2c113e41a3bc")
 		(property "Reference" "JP8"
-			(at 106.68 177.7999 90)
+			(at 99.06 185.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4544,7 +4642,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 106.68 180.3399 90)
+			(at 99.06 187.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4553,7 +4651,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 104.14 179.07 0)
+			(at 96.52 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4562,7 +4660,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 179.07 0)
+			(at 96.52 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4571,7 +4669,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 104.14 179.07 0)
+			(at 96.52 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4596,7 +4694,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 92.71 59.69 0)
+		(at 55.88 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4604,7 +4702,7 @@
 		(dnp no)
 		(uuid "31ce88ab-e51d-4497-8414-001e076f567a")
 		(property "Reference" "SC10"
-			(at 86.36 52.324 0)
+			(at 49.53 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4612,8 +4710,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 84.074 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 47.244 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,8 +4719,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 92.71 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 55.88 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4729,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 58.166 90)
+			(at 55.88 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4640,7 +4738,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 92.71 59.69 0)
+			(at 55.88 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4664,8 +4762,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 179.07 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35fe5b94-2a03-4306-b7eb-880a9c8e231d")
+		(property "Reference" "#PWR022"
+			(at 179.07 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3404f5e-13a1-4131-87f6-588188205117")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 69.85 73.66 0)
+		(at 55.88 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4673,7 +4836,7 @@
 		(dnp no)
 		(uuid "36f6332a-0855-4301-b2c2-86d52ff65ad5")
 		(property "Reference" "SC8"
-			(at 63.5 66.294 0)
+			(at 49.53 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4681,8 +4844,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 61.722 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 47.752 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4690,8 +4853,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 69.85 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 55.88 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4700,7 +4863,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 72.136 90)
+			(at 55.88 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4709,7 +4872,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 69.85 73.66 0)
+			(at 55.88 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4734,7 +4897,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 104.14 168.91 0)
+		(at 96.52 176.53 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4743,7 +4906,7 @@
 		(fields_autoplaced yes)
 		(uuid "386041e0-d11d-4d6e-8d08-22614efa3771")
 		(property "Reference" "H8"
-			(at 106.68 166.3699 0)
+			(at 99.06 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4752,7 +4915,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 106.68 168.9099 0)
+			(at 99.06 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4761,7 +4924,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 104.14 168.91 0)
+			(at 96.52 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4770,7 +4933,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 168.91 0)
+			(at 96.52 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4779,7 +4942,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 104.14 168.91 0)
+			(at 96.52 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4801,7 +4964,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 186.69 0)
+		(at 22.86 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4810,7 +4973,7 @@
 		(fields_autoplaced yes)
 		(uuid "388dab4a-810a-4d92-bed9-77df8556a5d8")
 		(property "Reference" "#PWR010"
-			(at 30.48 193.04 0)
+			(at 22.86 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4819,7 +4982,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 191.77 0)
+			(at 22.86 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4827,7 +4990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 186.69 0)
+			(at 22.86 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4836,7 +4999,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 186.69 0)
+			(at 22.86 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4845,7 +5008,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 186.69 0)
+			(at 22.86 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4866,77 +5029,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 236.22 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "38be5db2-ab5d-43f3-9b84-0e8556af311f")
-		(property "Reference" "SC28"
-			(at 229.87 52.324 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 227.584 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 236.22 58.166 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 58.166 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 236.22 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "61d77e08-8357-488e-8606-ebbda2f018dd")
-		)
-		(pin "1"
-			(uuid "d5f64384-d12f-4e81-a065-a8387c02e6c0")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "SC28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 30.48 148.59 270)
+		(at 22.86 156.21 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -4945,7 +5039,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f1fc421-a4d4-4af5-bf7c-b171a4d87a3b")
 		(property "Reference" "JP1"
-			(at 33.02 147.3199 90)
+			(at 25.4 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4954,7 +5048,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 33.02 149.8599 90)
+			(at 25.4 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4963,7 +5057,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 30.48 148.59 0)
+			(at 22.86 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4972,7 +5066,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 148.59 0)
+			(at 22.86 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4981,7 +5075,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 30.48 148.59 0)
+			(at 22.86 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5070,77 +5164,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 236.22 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "41f8acee-1b9d-4462-aece-65efde507731")
-		(property "Reference" "SC29"
-			(at 229.87 66.294 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 228.092 74.676 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 236.22 72.136 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 72.136 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 236.22 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ce0dc440-d7d6-4f92-89ee-0a61e303c2f4")
-		)
-		(pin "1"
-			(uuid "ac034803-e45a-4cff-965e-372231170e29")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "SC29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 54.61 186.69 0)
+		(at 46.99 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5149,7 +5174,7 @@
 		(fields_autoplaced yes)
 		(uuid "4793e23c-02d8-4243-b531-92757e69dbcf")
 		(property "Reference" "#PWR011"
-			(at 54.61 193.04 0)
+			(at 46.99 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5158,7 +5183,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 191.77 0)
+			(at 46.99 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5166,7 +5191,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 186.69 0)
+			(at 46.99 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5175,7 +5200,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 186.69 0)
+			(at 46.99 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5184,7 +5209,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 186.69 0)
+			(at 46.99 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5206,7 +5231,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 69.85 59.69 0)
+		(at 55.88 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5214,7 +5239,7 @@
 		(dnp no)
 		(uuid "4d3ed7ff-12ed-449a-b3af-854fd51d585b")
 		(property "Reference" "SC7"
-			(at 63.5 52.324 0)
+			(at 49.53 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5222,8 +5247,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 61.214 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 47.244 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,8 +5256,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 69.85 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 55.88 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5241,7 +5266,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 58.166 90)
+			(at 55.88 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5250,7 +5275,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 69.85 59.69 0)
+			(at 55.88 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5275,7 +5300,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 140.97 59.69 0)
+		(at 81.28 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5283,7 +5308,7 @@
 		(dnp no)
 		(uuid "4f4b5262-5502-41e3-a306-e455635548b9")
 		(property "Reference" "SC16"
-			(at 134.62 52.324 0)
+			(at 74.93 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5291,8 +5316,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 132.334 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 72.644 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5300,8 +5325,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 140.97 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 81.28 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5310,7 +5335,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 58.166 90)
+			(at 81.28 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5319,7 +5344,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 140.97 59.69 0)
+			(at 81.28 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5344,7 +5369,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 69.85 87.63 0)
+		(at 55.88 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5352,7 +5377,7 @@
 		(dnp no)
 		(uuid "5aad6c7f-8ba2-4aa0-9b00-d0f4b557aae6")
 		(property "Reference" "SC9"
-			(at 62.23 82.804 0)
+			(at 48.26 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5360,8 +5385,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 61.722 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 47.752 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5369,8 +5394,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 69.85 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 55.88 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5379,7 +5404,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 86.106 90)
+			(at 55.88 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5388,7 +5413,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 69.85 87.63 0)
+			(at 55.88 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5413,7 +5438,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 212.09 59.69 0)
+		(at 135.89 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5421,7 +5446,7 @@
 		(dnp no)
 		(uuid "5ad274e2-aba7-46a8-94a3-e8f5ffdf87d6")
 		(property "Reference" "SC25"
-			(at 205.74 52.324 0)
+			(at 129.54 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5429,8 +5454,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 203.454 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 127.254 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5438,8 +5463,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 212.09 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 135.89 72.136 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +5473,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 58.166 90)
+			(at 135.89 72.136 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5457,7 +5482,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 212.09 59.69 0)
+			(at 135.89 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5482,7 +5507,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 186.69 0)
+		(at 96.52 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5491,7 +5516,7 @@
 		(fields_autoplaced yes)
 		(uuid "5cc2b052-bda1-468a-8ff6-e4c77f8d7c95")
 		(property "Reference" "#PWR013"
-			(at 104.14 193.04 0)
+			(at 96.52 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5500,7 +5525,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 191.77 0)
+			(at 96.52 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5508,7 +5533,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 186.69 0)
+			(at 96.52 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5517,7 +5542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 186.69 0)
+			(at 96.52 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5526,7 +5551,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 186.69 0)
+			(at 96.52 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5548,7 +5573,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 187.96 87.63 0)
+		(at 109.22 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5556,7 +5581,7 @@
 		(dnp no)
 		(uuid "5cfad3d6-ab08-4cf8-9ed5-7c987c57b1bd")
 		(property "Reference" "SC24"
-			(at 180.34 82.804 0)
+			(at 101.6 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5564,8 +5589,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 179.832 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 101.092 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5573,8 +5598,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 187.96 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 109.22 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5583,7 +5608,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 86.106 90)
+			(at 109.22 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5592,7 +5617,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 187.96 87.63 0)
+			(at 109.22 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5617,7 +5642,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 92.71 87.63 0)
+		(at 55.88 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5625,7 +5650,7 @@
 		(dnp no)
 		(uuid "5f533ed4-879b-43da-8f2d-e76508aaaf72")
 		(property "Reference" "SC12"
-			(at 85.09 82.804 0)
+			(at 48.26 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5633,8 +5658,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 84.582 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 47.752 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5642,8 +5667,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 92.71 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 55.88 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5652,7 +5677,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 86.106 90)
+			(at 55.88 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5661,7 +5686,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 92.71 87.63 0)
+			(at 55.88 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5686,7 +5711,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 140.97 73.66 0)
+		(at 81.28 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5694,7 +5719,7 @@
 		(dnp no)
 		(uuid "601fcd84-941a-46a2-94e8-0f53d9cfac99")
 		(property "Reference" "SC17"
-			(at 134.62 66.294 0)
+			(at 74.93 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5702,8 +5727,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 132.842 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 73.152 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5711,8 +5736,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 140.97 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 81.28 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5721,7 +5746,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 72.136 90)
+			(at 81.28 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5730,7 +5755,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 140.97 73.66 0)
+			(at 81.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5820,7 +5845,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 30.48 138.43 0)
+		(at 22.86 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5829,7 +5854,7 @@
 		(fields_autoplaced yes)
 		(uuid "695a0ac5-6a30-4709-8ec8-1055c7340a39")
 		(property "Reference" "H1"
-			(at 33.02 135.8899 0)
+			(at 25.4 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5838,7 +5863,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 33.02 138.4299 0)
+			(at 25.4 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5847,7 +5872,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 30.48 138.43 0)
+			(at 22.86 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,7 +5881,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 138.43 0)
+			(at 22.86 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5865,7 +5890,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 30.48 138.43 0)
+			(at 22.86 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5887,7 +5912,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 54.61 168.91 0)
+		(at 46.99 176.53 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5896,7 +5921,7 @@
 		(fields_autoplaced yes)
 		(uuid "6981760c-fabe-45ba-961b-2bd5d039af6d")
 		(property "Reference" "H6"
-			(at 57.15 166.3699 0)
+			(at 49.53 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5905,7 +5930,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 168.9099 0)
+			(at 49.53 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5914,7 +5939,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 54.61 168.91 0)
+			(at 46.99 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5923,7 +5948,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 168.91 0)
+			(at 46.99 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5932,7 +5957,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 54.61 168.91 0)
+			(at 46.99 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5954,7 +5979,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 104.14 138.43 0)
+		(at 96.52 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5963,7 +5988,7 @@
 		(fields_autoplaced yes)
 		(uuid "6c7d0b48-80e5-4518-bc73-584a25ed4341")
 		(property "Reference" "H4"
-			(at 106.68 135.8899 0)
+			(at 99.06 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5972,7 +5997,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 106.68 138.4299 0)
+			(at 99.06 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5981,7 +6006,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 104.14 138.43 0)
+			(at 96.52 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5990,7 +6015,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 138.43 0)
+			(at 96.52 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5999,7 +6024,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 104.14 138.43 0)
+			(at 96.52 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6086,143 +6111,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 166.37 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "71957f70-1cc7-420c-96f0-479032175a57")
-		(property "Reference" "D7"
-			(at 159.512 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 158.496 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 166.37 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 166.37 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 166.37 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18eac20c-7806-4fe8-b618-55e572c6e66b")
-		)
-		(pin "2"
-			(uuid "66362023-cb03-49ec-b923-213ea512e1da")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 186.69 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7215629a-ab22-455e-ab39-fb97402a97e1")
-		(property "Reference" "#PWR014"
-			(at 186.69 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 186.69 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "68fedfb0-3696-4a2d-85c6-06a3637dcb7a")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 247.65 76.2 90)
+		(at 179.07 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6230,7 +6119,7 @@
 		(dnp no)
 		(uuid "746aa7fb-105b-4b1a-a304-ac035beca003")
 		(property "Reference" "D11"
-			(at 240.792 69.088 90)
+			(at 172.212 39.878 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6239,7 +6128,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 239.776 77.724 90)
+			(at 171.196 48.514 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6248,7 +6137,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 247.65 76.2 0)
+			(at 179.07 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6258,7 +6147,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 247.65 76.2 0)
+			(at 179.07 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6268,7 +6157,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 247.65 76.2 0)
+			(at 179.07 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6293,7 +6182,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 77.47 168.91 0)
+		(at 69.85 176.53 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6302,7 +6191,7 @@
 		(fields_autoplaced yes)
 		(uuid "78f51cc8-678d-4f70-9f18-139cd92eee1e")
 		(property "Reference" "H7"
-			(at 80.01 166.3699 0)
+			(at 72.39 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6311,7 +6200,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 80.01 168.9099 0)
+			(at 72.39 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6320,7 +6209,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 77.47 168.91 0)
+			(at 69.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6329,7 +6218,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 168.91 0)
+			(at 69.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6338,7 +6227,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 77.47 168.91 0)
+			(at 69.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6360,7 +6249,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 54.61 179.07 270)
+		(at 46.99 186.69 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -6369,7 +6258,7 @@
 		(fields_autoplaced yes)
 		(uuid "80dc7916-9632-486c-92c0-d1f34bf04f2b")
 		(property "Reference" "JP6"
-			(at 57.15 177.7999 90)
+			(at 49.53 185.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6378,7 +6267,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 57.15 180.3399 90)
+			(at 49.53 187.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6387,7 +6276,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 54.61 179.07 0)
+			(at 46.99 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6396,7 +6285,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 179.07 0)
+			(at 46.99 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6405,7 +6294,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 54.61 179.07 0)
+			(at 46.99 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6429,8 +6318,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 67.31 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8144c877-4eeb-4e3e-898c-733cf66a85df")
+		(property "Reference" "#PWR021"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 135.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "909a8bda-a7eb-467d-abdb-6de2198c6511")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 24.13 87.63 0)
+		(at 29.21 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6438,7 +6392,7 @@
 		(dnp no)
 		(uuid "82324861-aec2-4b8d-857f-5df514f815e1")
 		(property "Reference" "SC3"
-			(at 16.51 82.804 0)
+			(at 21.59 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6446,8 +6400,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 16.002 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 21.082 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6455,8 +6409,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 24.13 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 29.21 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6465,7 +6419,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 86.106 90)
+			(at 29.21 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6474,7 +6428,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 24.13 87.63 0)
+			(at 29.21 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6499,7 +6453,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 212.09 73.66 0)
+		(at 135.89 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6507,7 +6461,7 @@
 		(dnp no)
 		(uuid "8304db61-5119-45c4-a18e-b8347822c3eb")
 		(property "Reference" "SC26"
-			(at 205.74 66.294 0)
+			(at 129.54 78.994 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6515,8 +6469,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 203.962 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 127.762 87.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6524,8 +6478,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 212.09 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 135.89 84.836 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6534,7 +6488,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 72.136 90)
+			(at 135.89 84.836 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6543,7 +6497,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 212.09 73.66 0)
+			(at 135.89 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6568,7 +6522,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 30.48 168.91 0)
+		(at 22.86 176.53 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6577,7 +6531,7 @@
 		(fields_autoplaced yes)
 		(uuid "8344b53e-1e84-4b1e-a62a-a892042d7dc0")
 		(property "Reference" "H5"
-			(at 33.02 166.3699 0)
+			(at 25.4 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6586,7 +6540,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 33.02 168.9099 0)
+			(at 25.4 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6595,7 +6549,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 30.48 168.91 0)
+			(at 22.86 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6604,7 +6558,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 168.91 0)
+			(at 22.86 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6613,7 +6567,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 30.48 168.91 0)
+			(at 22.86 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6635,7 +6589,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 212.09 48.26 90)
+		(at 135.89 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6643,7 +6597,7 @@
 		(dnp no)
 		(uuid "868f8888-07f4-4b3f-a98f-ad5781127bd7")
 		(property "Reference" "D9"
-			(at 205.232 41.148 90)
+			(at 129.032 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6652,7 +6606,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 204.216 49.784 90)
+			(at 128.016 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6661,7 +6615,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 212.09 48.26 0)
+			(at 135.89 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6671,7 +6625,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 212.09 48.26 0)
+			(at 135.89 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6681,7 +6635,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 48.26 0)
+			(at 135.89 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6706,7 +6660,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 156.21 0)
+		(at 22.86 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6715,7 +6669,7 @@
 		(fields_autoplaced yes)
 		(uuid "88df3362-6885-4893-aac1-b01ae4c4bdaa")
 		(property "Reference" "#PWR06"
-			(at 30.48 162.56 0)
+			(at 22.86 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6724,7 +6678,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 161.29 0)
+			(at 22.86 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6732,7 +6686,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 156.21 0)
+			(at 22.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6741,7 +6695,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 156.21 0)
+			(at 22.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6750,7 +6704,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 156.21 0)
+			(at 22.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6772,7 +6726,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 187.96 59.69 0)
+		(at 109.22 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6780,7 +6734,7 @@
 		(dnp no)
 		(uuid "8ab7ab17-5cf4-411c-8f1b-2cfef5a213e9")
 		(property "Reference" "SC22"
-			(at 181.61 52.324 0)
+			(at 102.87 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6788,8 +6742,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 179.324 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 100.584 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6797,8 +6751,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 187.96 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 109.22 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6807,7 +6761,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 58.166 90)
+			(at 109.22 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6816,7 +6770,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 187.96 59.69 0)
+			(at 109.22 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,100 +6794,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x08_MountingPin")
-		(at 196.85 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "8d5c4bb0-98fd-410a-8e4a-eb4f801be73b")
-		(property "Reference" "J2"
-			(at 199.39 150.2155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x08_MountingPin"
-			(at 199.39 152.7555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal"
-			(at 196.85 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 196.85 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "be007672-0b2c-460f-8c05-d6bbfedc3b67")
-		)
-		(pin "MP"
-			(uuid "c686eb52-8a97-4103-9e30-92fc396335a8")
-		)
-		(pin "3"
-			(uuid "7f9c0199-e488-431e-add8-e8e7315ffa3a")
-		)
-		(pin "4"
-			(uuid "2757dd86-f1df-4307-91e8-3e979507662f")
-		)
-		(pin "8"
-			(uuid "3f289b1b-fef0-4546-a85f-a744583530e9")
-		)
-		(pin "1"
-			(uuid "0d93c9fa-d7a7-48a3-a832-02d1df00e48e")
-		)
-		(pin "5"
-			(uuid "94ea883c-d279-42ef-8730-75ba51703139")
-		)
-		(pin "6"
-			(uuid "c0cec388-da75-4744-bf1f-3530de99a43e")
-		)
-		(pin "7"
-			(uuid "13519873-b800-4aa7-b318-051745690f92")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 77.47 138.43 0)
+		(at 69.85 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6942,7 +6804,7 @@
 		(fields_autoplaced yes)
 		(uuid "90ee8502-cb4b-43e0-b3d3-beded3dc5593")
 		(property "Reference" "H3"
-			(at 80.01 135.8899 0)
+			(at 72.39 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6951,7 +6813,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 80.01 138.4299 0)
+			(at 72.39 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6960,7 +6822,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 77.47 138.43 0)
+			(at 69.85 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6969,7 +6831,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 138.43 0)
+			(at 69.85 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6978,7 +6840,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 77.47 138.43 0)
+			(at 69.85 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7000,73 +6862,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91f55a99-ec6a-4351-b8e7-909d2b2a2532")
-		(property "Reference" "#PWR01"
-			(at 43.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 43.18 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3289010f-1456-4c82-a47d-630c21207188")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 77.47 186.69 0)
+		(at 69.85 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7075,7 +6871,7 @@
 		(fields_autoplaced yes)
 		(uuid "97209e3e-9bba-4794-9f87-67f12e899bb2")
 		(property "Reference" "#PWR012"
-			(at 77.47 193.04 0)
+			(at 69.85 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7084,7 +6880,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.47 191.77 0)
+			(at 69.85 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7092,7 +6888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 186.69 0)
+			(at 69.85 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7101,7 +6897,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 186.69 0)
+			(at 69.85 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7110,7 +6906,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 186.69 0)
+			(at 69.85 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7132,7 +6928,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 48.26 48.26 90)
+		(at 29.21 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7140,7 +6936,7 @@
 		(dnp no)
 		(uuid "981a0b50-6c7d-4370-a7cf-84cd84347305")
 		(property "Reference" "D2"
-			(at 41.402 41.148 90)
+			(at 22.352 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7149,7 +6945,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 40.386 49.784 90)
+			(at 21.336 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7158,7 +6954,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 48.26 48.26 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7168,7 +6964,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 48.26 48.26 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7178,7 +6974,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 48.26 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7196,75 +6992,6 @@
 			(project "Solar Panels"
 				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 236.22 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "98fa4e99-10b1-4b62-9074-3856f906d226")
-		(property "Reference" "SC30"
-			(at 228.6 82.804 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Solar_Cell"
-			(at 228.092 88.646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 236.22 86.106 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 86.106 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 236.22 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4f59c33e-8abc-451b-97a8-45e1fb972a39")
-		)
-		(pin "1"
-			(uuid "3b6cb289-9f5f-450c-91e9-07dc3b5fe4b4")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "SC30")
 					(unit 1)
 				)
 			)
@@ -7337,7 +7064,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 30.48 179.07 270)
+		(at 22.86 186.69 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7346,7 +7073,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f6366af-4a1e-4df9-8adc-0f82a9974ea3")
 		(property "Reference" "JP5"
-			(at 33.02 177.7999 90)
+			(at 25.4 185.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7355,7 +7082,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 33.02 180.3399 90)
+			(at 25.4 187.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7364,7 +7091,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 30.48 179.07 0)
+			(at 22.86 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7373,7 +7100,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 179.07 0)
+			(at 22.86 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7382,7 +7109,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 30.48 179.07 0)
+			(at 22.86 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7400,71 +7127,6 @@
 			(project "Solar Panels"
 				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
 					(reference "JP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+VDC")
-		(at 182.88 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a2057772-d542-4e62-997f-832491fabfee")
-		(property "Reference" "#PWR03"
-			(at 182.88 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VDC"
-			(at 182.626 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 182.88 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c117ccd5-6c78-41dd-a947-7e7bb08a9a36")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7563,79 +7225,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 24.13 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "acade4c4-fb11-43ec-8020-47dcdc233ad9")
-		(property "Reference" "D1"
-			(at 17.272 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 16.256 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e04dab43-d70a-41ff-a766-23543fad108c")
-		)
-		(pin "2"
-			(uuid "acdab730-3c91-409e-af89-12a9f6ad8ef7")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 104.14 156.21 0)
+		(at 96.52 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7644,7 +7235,7 @@
 		(fields_autoplaced yes)
 		(uuid "adef5306-553a-4f43-959c-52121256ecb8")
 		(property "Reference" "#PWR09"
-			(at 104.14 162.56 0)
+			(at 96.52 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7653,7 +7244,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 161.29 0)
+			(at 96.52 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7661,7 +7252,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 156.21 0)
+			(at 96.52 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7670,7 +7261,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 156.21 0)
+			(at 96.52 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7679,7 +7270,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 156.21 0)
+			(at 96.52 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7701,7 +7292,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 116.84 73.66 0)
+		(at 81.28 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7709,7 +7300,7 @@
 		(dnp no)
 		(uuid "b3f34c73-e703-4607-8a73-b1f6cb06dcdc")
 		(property "Reference" "SC14"
-			(at 110.49 66.294 0)
+			(at 74.93 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7717,8 +7308,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 108.712 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 73.152 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7726,8 +7317,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 116.84 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 81.28 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7736,7 +7327,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 72.136 90)
+			(at 81.28 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7745,7 +7336,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 116.84 73.66 0)
+			(at 81.28 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7770,7 +7361,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 166.37 59.69 0)
+		(at 109.22 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7778,7 +7369,7 @@
 		(dnp no)
 		(uuid "b5fc0f5c-44aa-4601-b775-a5c6941d7c79")
 		(property "Reference" "SC19"
-			(at 160.02 52.324 0)
+			(at 102.87 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7786,8 +7377,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 157.734 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 100.584 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7795,8 +7386,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 166.37 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 109.22 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7805,7 +7396,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 58.166 90)
+			(at 109.22 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7814,7 +7405,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 166.37 59.69 0)
+			(at 109.22 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7839,7 +7430,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 166.37 73.66 0)
+		(at 109.22 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7847,7 +7438,7 @@
 		(dnp no)
 		(uuid "b7a2b8e6-55e6-4f20-9dcc-aac5f30b7f84")
 		(property "Reference" "SC20"
-			(at 160.02 66.294 0)
+			(at 102.87 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7855,8 +7446,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 158.242 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 101.092 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7864,8 +7455,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 166.37 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 109.22 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7874,7 +7465,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 72.136 90)
+			(at 109.22 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7883,7 +7474,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 166.37 73.66 0)
+			(at 109.22 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7908,7 +7499,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 24.13 73.66 0)
+		(at 29.21 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7916,7 +7507,7 @@
 		(dnp no)
 		(uuid "bb4e9a77-d579-41c3-ba86-6d774cc88aee")
 		(property "Reference" "SC2"
-			(at 17.78 66.294 0)
+			(at 22.86 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7924,8 +7515,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 16.002 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 21.082 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7933,8 +7524,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 24.13 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 29.21 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7943,7 +7534,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 72.136 90)
+			(at 29.21 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7952,7 +7543,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 24.13 73.66 0)
+			(at 29.21 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8042,7 +7633,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 48.26 73.66 0)
+		(at 29.21 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8050,7 +7641,7 @@
 		(dnp no)
 		(uuid "c57e562b-5405-4d02-adef-464ac5aef337")
 		(property "Reference" "SC5"
-			(at 41.91 66.294 0)
+			(at 22.86 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8058,8 +7649,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 40.132 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 21.082 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8067,8 +7658,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 48.26 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 29.21 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8077,7 +7668,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 72.136 90)
+			(at 29.21 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8086,7 +7677,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 48.26 73.66 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8110,79 +7701,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 236.22 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ca225aea-234b-46c3-bdaf-a768864f5fa1")
-		(property "Reference" "D10"
-			(at 229.362 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 228.346 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 236.22 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 236.22 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 236.22 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a84c306-38ac-4f53-837f-5ea1c1f7bef5")
-		)
-		(pin "2"
-			(uuid "29312c70-4d9e-4f09-bf40-ade3afc47b13")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 24.13 59.69 0)
+		(at 29.21 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8190,7 +7710,7 @@
 		(dnp no)
 		(uuid "cc804d38-9f22-443e-9264-e6f61c565ecf")
 		(property "Reference" "SC1"
-			(at 17.78 52.324 0)
+			(at 22.86 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8198,8 +7718,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 15.494 60.96 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 20.574 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8207,8 +7727,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 24.13 58.166 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 29.21 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8217,7 +7737,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 58.166 90)
+			(at 29.21 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8226,7 +7746,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 24.13 59.69 0)
+			(at 29.21 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8251,7 +7771,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 77.47 179.07 270)
+		(at 69.85 186.69 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8260,7 +7780,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc917f9a-59b0-4987-9621-5b1802d420d8")
 		(property "Reference" "JP7"
-			(at 80.01 177.7999 90)
+			(at 72.39 185.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8269,7 +7789,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 80.01 180.3399 90)
+			(at 72.39 187.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8278,7 +7798,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 77.47 179.07 0)
+			(at 69.85 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8287,7 +7807,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 179.07 0)
+			(at 69.85 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8296,7 +7816,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 77.47 179.07 0)
+			(at 69.85 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8321,7 +7841,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 140.97 87.63 0)
+		(at 81.28 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8329,7 +7849,7 @@
 		(dnp no)
 		(uuid "d18d4c3b-5e94-4486-acba-d8be7eeb377d")
 		(property "Reference" "SC18"
-			(at 133.35 82.804 0)
+			(at 73.66 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8337,8 +7857,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 132.842 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 73.152 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8346,8 +7866,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 140.97 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 81.28 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8356,7 +7876,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 86.106 90)
+			(at 81.28 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8365,7 +7885,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 140.97 87.63 0)
+			(at 81.28 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8390,7 +7910,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 54.61 148.59 270)
+		(at 46.99 156.21 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8399,7 +7919,7 @@
 		(fields_autoplaced yes)
 		(uuid "e12315c0-d722-4802-9fe5-00cb3ee20bca")
 		(property "Reference" "JP2"
-			(at 57.15 147.3199 90)
+			(at 49.53 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8408,7 +7928,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 57.15 149.8599 90)
+			(at 49.53 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8417,7 +7937,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 54.61 148.59 0)
+			(at 46.99 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8426,7 +7946,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 148.59 0)
+			(at 46.99 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8435,7 +7955,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 54.61 148.59 0)
+			(at 46.99 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8525,7 +8045,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 116.84 87.63 0)
+		(at 81.28 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8533,7 +8053,7 @@
 		(dnp no)
 		(uuid "e2c3ca52-fe4f-45e5-b57a-94ab2452db0a")
 		(property "Reference" "SC15"
-			(at 109.22 82.804 0)
+			(at 73.66 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8541,8 +8061,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 108.712 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 73.152 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8550,8 +8070,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 116.84 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 81.28 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8560,7 +8080,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 86.106 90)
+			(at 81.28 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8569,7 +8089,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 116.84 87.63 0)
+			(at 81.28 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8594,7 +8114,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 54.61 138.43 0)
+		(at 46.99 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -8603,7 +8123,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5b24c5c-8e2a-418a-9cbe-18756a5e5c9f")
 		(property "Reference" "H2"
-			(at 57.15 135.8899 0)
+			(at 49.53 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8612,7 +8132,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 138.4299 0)
+			(at 49.53 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8621,7 +8141,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 54.61 138.43 0)
+			(at 46.99 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8630,7 +8150,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 138.43 0)
+			(at 46.99 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8639,7 +8159,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 54.61 138.43 0)
+			(at 46.99 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8661,7 +8181,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 92.71 73.66 0)
+		(at 55.88 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8669,7 +8189,7 @@
 		(dnp no)
 		(uuid "e610f052-b88d-4de0-af37-e685c38226ec")
 		(property "Reference" "SC11"
-			(at 86.36 66.294 0)
+			(at 49.53 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8677,8 +8197,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 84.582 74.676 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 47.752 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8686,8 +8206,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 92.71 72.136 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 55.88 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8696,7 +8216,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 72.136 90)
+			(at 55.88 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8705,7 +8225,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 92.71 73.66 0)
+			(at 55.88 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8730,7 +8250,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 77.47 148.59 270)
+		(at 69.85 156.21 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8739,7 +8259,7 @@
 		(fields_autoplaced yes)
 		(uuid "e91865e7-c759-4b77-9f74-cf3f4902e077")
 		(property "Reference" "JP3"
-			(at 80.01 147.3199 90)
+			(at 72.39 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8748,7 +8268,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 80.01 149.8599 90)
+			(at 72.39 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8757,7 +8277,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 77.47 148.59 0)
+			(at 69.85 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8766,7 +8286,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 148.59 0)
+			(at 69.85 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8775,7 +8295,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 77.47 148.59 0)
+			(at 69.85 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8864,6 +8384,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 135.89 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee5ce92a-c494-4c97-9562-5e5268465dc9")
+		(property "Reference" "SC29"
+			(at 128.27 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KXOB25-05X3F"
+			(at 127.762 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 135.89 122.936 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 122.936 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 135.89 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6d86cb93-071e-47de-b09b-a88c779c49ed")
+		)
+		(pin "1"
+			(uuid "aec6a83c-d5da-4bc4-b000-abc368aec64e")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "SC29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 170.18 128.27 0)
 		(unit 1)
@@ -8930,7 +8519,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 156.21 0)
+		(at 46.99 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8939,7 +8528,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4ae2592-bd83-4df8-aa0e-94ffa4176d72")
 		(property "Reference" "#PWR07"
-			(at 54.61 162.56 0)
+			(at 46.99 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8948,7 +8537,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 161.29 0)
+			(at 46.99 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8956,7 +8545,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 156.21 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8965,7 +8554,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 156.21 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8974,7 +8563,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 156.21 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8996,15 +8585,15 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 48.26 87.63 0)
+		(at 135.89 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f7eb2307-17bc-4fe5-b228-66b669df5b45")
-		(property "Reference" "SC6"
-			(at 40.64 82.804 0)
+		(uuid "f50c707a-69d2-4922-bb37-d415a2521f63")
+		(property "Reference" "SC28"
+			(at 128.27 109.474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9012,8 +8601,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Solar_Cell"
-			(at 40.132 88.646 0)
+		(property "Value" "KXOB25-05X3F"
+			(at 127.762 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9021,8 +8610,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Solar Panel Library:TrisolX Solar Wings"
-			(at 48.26 86.106 90)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 135.89 112.776 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9031,7 +8620,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 86.106 90)
+			(at 135.89 112.776 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9040,7 +8629,76 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 48.26 87.63 0)
+			(at 135.89 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bade2fe3-911f-4ee1-a8c5-5eb0a1a7fe6b")
+		)
+		(pin "1"
+			(uuid "5cdf3942-4e1c-42db-9c86-23533cec4770")
+		)
+		(instances
+			(project "Solar_Panels_1p25U"
+				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
+					(reference "SC28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 29.21 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7eb2307-17bc-4fe5-b228-66b669df5b45")
+		(property "Reference" "SC6"
+			(at 21.59 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KXOB25-05X3F"
+			(at 21.082 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Solar Panel Library:KXOB25-05X3F"
+			(at 29.21 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 29.21 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9065,7 +8723,7 @@
 	)
 	(symbol
 		(lib_id "Lib:S3B_R1_00001")
-		(at 92.71 48.26 90)
+		(at 55.88 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9073,7 +8731,7 @@
 		(dnp no)
 		(uuid "f865b1b9-c476-4faa-98d8-a2cf54f609bc")
 		(property "Reference" "D4"
-			(at 85.852 41.148 90)
+			(at 49.022 30.988 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9082,7 +8740,7 @@
 			)
 		)
 		(property "Value" "PMEG10020AELPX"
-			(at 84.836 49.784 90)
+			(at 48.006 39.624 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9091,7 +8749,7 @@
 			)
 		)
 		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 92.71 48.26 0)
+			(at 55.88 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9101,7 +8759,7 @@
 			)
 		)
 		(property "Datasheet" "S3BB-13-F"
-			(at 92.71 48.26 0)
+			(at 55.88 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9111,7 +8769,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 48.26 0)
+			(at 55.88 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9136,16 +8794,15 @@
 	)
 	(symbol
 		(lib_id "power:+VDC")
-		(at 24.13 34.29 0)
+		(at 66.04 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb7f5dcf-6867-42f2-be4a-6fdd5539da32")
-		(property "Reference" "#PWR04"
-			(at 24.13 36.83 0)
+		(uuid "feaa116c-b955-4823-af81-4ea86d792a61")
+		(property "Reference" "#PWR014"
+			(at 66.04 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9154,7 +8811,7 @@
 			)
 		)
 		(property "Value" "+VDC"
-			(at 24.13 26.67 0)
+			(at 65.786 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9162,7 +8819,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 24.13 34.29 0)
+			(at 66.04 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9171,7 +8828,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.13 34.29 0)
+			(at 66.04 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9180,7 +8837,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 24.13 34.29 0)
+			(at 66.04 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9189,83 +8846,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f97962f7-6560-4fad-a02c-7b152abb41cc")
+			(uuid "0e417e2f-46b6-4bd0-ae02-8659b0eb7dc2")
 		)
 		(instances
-			(project "Solar Panels"
+			(project "Solar_Panels_1p25U"
 				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Lib:S3B_R1_00001")
-		(at 69.85 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ffa81114-7797-47ad-90b7-abc92ac77ce5")
-		(property "Reference" "D3"
-			(at 62.992 41.148 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PMEG10020AELPX"
-			(at 61.976 49.784 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Solar Panel Library:PMEG10020AELPX"
-			(at 69.85 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "S3BB-13-F"
-			(at 69.85 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3d227300-0249-4958-9d20-4b8b837c3dc2")
-		)
-		(pin "2"
-			(uuid "9de5078c-85e5-4385-914c-b878dae93e43")
-		)
-		(instances
-			(project "Solar Panels"
-				(path "/a9ef5d2b-7ce1-4231-ba73-009f8d0b2537"
-					(reference "D3")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -9276,4 +8862,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

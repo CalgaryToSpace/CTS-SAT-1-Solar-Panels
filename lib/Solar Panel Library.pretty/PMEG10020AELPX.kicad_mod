@@ -1,10 +1,10 @@
 (footprint "PMEG10020AELPX"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -2.5 0)
+		(at -4 0 90)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "09f656b7-57a8-43f9-aae1-25499e8519b4")
@@ -13,6 +13,7 @@
 				(size 1 1)
 				(thickness 0.1)
 			)
+			(justify bottom)
 		)
 	)
 	(property "Value" "PMEG10020AELPX"
@@ -20,19 +21,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "7c5c4d0b-da54-494b-9d48-f96eaaf60f8c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at -4 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "e71f0917-a97e-4cf9-8e9b-bff49af62841")
 		(effects
 			(font
 				(size 1 1)
@@ -108,6 +96,46 @@
 		(uuid "2a8c29b7-88c1-4c4c-b0a3-4f0b3267d72c")
 	)
 	(fp_line
+		(start -0.8 -0.8)
+		(end -0.8 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "14aa2a4e-9eb0-4ff7-87f1-6ed29403ccf4")
+	)
+	(fp_line
+		(start -0.8 0)
+		(end 1 -0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b8ddbe29-74f1-41b4-ad2a-71047821842d")
+	)
+	(fp_line
+		(start -0.8 0)
+		(end 1 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8ccac4dc-4bee-4eaf-8748-48fa65a18c00")
+	)
+	(fp_line
+		(start 1 -0.8)
+		(end 1 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4f6082e5-e950-49c5-bbad-679c1cb51b6b")
+	)
+	(fp_line
 		(start 1.9 -1.3)
 		(end 1.9 -0.9)
 		(stroke
@@ -142,14 +170,14 @@
 	(pad "1" smd rect
 		(at -2.7 0 90)
 		(size 1.443 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "37d951a1-7475-4519-a897-88a6c9686538")
 	)
 	(pad "2" smd rect
 		(at 2.8 0 90)
 		(size 1.443 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "557a8519-3be8-43d1-a6ba-e7a67a6a87a7")
 	)
@@ -172,6 +200,10 @@
 			(copperpour allowed)
 			(footprints allowed)
 		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
@@ -182,4 +214,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
