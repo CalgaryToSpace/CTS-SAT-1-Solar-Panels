@@ -14049,7 +14049,7 @@
 			)
 		)
 	)
-	(gr_text "pBlade|uLock"
+	(gr_text "pBlade|pLock"
 		(at 186.5 105 0)
 		(layer "B.SilkS")
 		(uuid "f2a84125-6869-493c-bcce-5606a37c61f5")
