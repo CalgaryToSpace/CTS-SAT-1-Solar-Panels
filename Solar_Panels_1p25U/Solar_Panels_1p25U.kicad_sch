@@ -1688,7 +1688,7 @@
 		)
 		(uuid "65604667-34dd-4573-b516-e774ee66005a")
 	)
-	(text_box "Solar cell = KXOB25-05X3F\nDiode = PMEG10020\nConfiguration: 6S5P (parallel strings)\n\nDiode maximum forward voltage = 770mV\nSolar cell voltage at maximum power = 1.67 V\nSolar cell max power = 30.7 mW\n\nPanel voltage at max power = (6 * 1.67V - 0.77V) = 9.25 V\nPanel max power = 6 * 5 * 30.7 mW = 1.11 W"
+	(text_box "Solar cell = KXOB25-05X3F\nDiode = PMEG10020\nConfiguration: 6S5P (parallel strings)\n\nDiode maximum forward voltage = 770mV\nSolar cell voltage at maximum power = 1.67 V\nSolar cell max power = 30.7 mW\n\nPanel voltage at max power = (6 * 1.67V - 0.77V) = 9.25 V\nPanel max power = 6 * 5 * 30.7 mW = 1.11 W\n\nTODO: Update for PMEG3010EP (360 mV drop)"
 		(exclude_from_sim no)
 		(at 199.39 25.4 0)
 		(size 64.77 21.59)
@@ -3609,7 +3609,25 @@
 			"AAAAEiFKAgAAAIBEiJIAAAAAIBGiJAAAAABIhCgJAAAAABIhSgIAAACARIiSAAAAACARoiQAAAAA"
 			"SCSTthil9JfdDgAAAAB45RhjL/V5vJUEAAAAAInoy2ZPAAAAAAAtvJUEAAAAAIkQJQEAAABAIkRJ"
 			"AAAAAJAIURIAAAAAJEKUBAAAAACJECUBAAAAQCJESQAAAACQCFESAAAAACRClAQAAAAAiRAlAQAA"
-			"AEAiREkAAAAAkOh/DwIXO4Usz7AAAAAASUVORK5CYII="
+			"AEAiREkAAAAAkOh/DwIXO4Usz7AAAAAASUVORK5CYIL/UCQ2XORiAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAP//////////ECY2XORiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8QJDZc5GIAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8wJzZc5GIAAAAAAAAAAAAAAAAA"
+			"AAAAAAD//////////xAnNlzkYgAA//////////9wJjZc5GIAAP//////////8CY2XORiAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAP//////////UCM2XORiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8wJDZc5GIA"
+			"AP//////////sCU2XORiAAAAAAAAAAAAAAAAAAAAAAAA///////////wJTZc5GIAAAAAAAAAAAAA"
+			"UB8/sKN6AAAAAAAAAAAAAIDSi1HkYgAA//////////9QJTZc5GIAAAAAAAAAAAAA1gAAABIAAAD/"
+			"/////////9AkNlzkYgAAAAAAAAAAAADWAAAAo3oAACAIAAAAAAAAEAQAAAAAAAAA8P///////4Bg"
+			"NlzkYgAAAPD////////gYjZc5GIAAADw////////YF82XORiAAAA8P///////wBgNlzkYgAAAPD/"
+			"//////+AYzZc5GIAAADw////////YGA2XORiAAAA8P///////yBfNlzkYgAAAPD/////////////"
+			"5GIAAADw////////IGI2XORiAAAA8P///////6BjNlzkYgAAAPD///////9AXzZc5GIAAADw////"
+			"////oF82XORiAAAA8P///////+BgNlzkYgAAAPD///////8AYzZc5GIAAADw////////wGI2XORi"
+			"AAAA8P///////wBiNlzkYgAAAPD///////+AwjRc5GIAAADw////////wGQ2XORiAAAA8P//////"
+			"/0BkNlzkYgAAAPD///////9AyTRc5GIAAADw////////YGE2XORiAAAA8P///////wIAAAD/////"
+			"APD////////I7gxG5GIAAADw////////QNokR+RiAAAA8P///////6BiNlzkYgAAAPD////////A"
+			"YDZc5GIAAADw////////IGA2XORiAAAA8P///////w=="
 		)
 	)
 	(symbol
@@ -3630,7 +3648,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 101.346 39.624 90)
 			(effects
 				(font
@@ -4362,7 +4380,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 76.708 39.624 90)
 			(effects
 				(font
@@ -6127,7 +6145,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 171.196 48.514 90)
 			(effects
 				(font
@@ -6605,7 +6623,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 128.016 39.624 90)
 			(effects
 				(font
@@ -6944,7 +6962,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 21.336 39.624 90)
 			(effects
 				(font
@@ -8739,7 +8757,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 48.006 39.624 90)
 			(effects
 				(font
