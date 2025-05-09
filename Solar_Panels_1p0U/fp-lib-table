@@ -1,4 +1,4 @@
 (fp_lib_table
   (version 7)
-  (lib (name "Solar Panels Library")(type "KiCad")(uri "${KIPRJMOD}/../lib/Solar Panels Library.pretty")(options "")(descr ""))
+  (lib (name "Solar Panel Library")(type "KiCad")(uri "${KIPRJMOD}/../lib/Solar Panel Library.pretty")(options "")(descr ""))
 )
