@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "1.25U Solar Panel")
-		(date "2025-04-21")
-		(rev "2")
+		(date "2025-05-09")
+		(rev "Rev 3")
 		(company "CalgaryToSpace")
 	)
 	(lib_symbols

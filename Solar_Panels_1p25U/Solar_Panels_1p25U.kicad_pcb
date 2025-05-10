@@ -9,8 +9,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "1.25U Solar Panel")
-		(date "2025-04-21")
-		(rev "2")
+		(date "2025-05-09")
+		(rev "Rev 3")
 		(company "CalgaryToSpace")
 	)
 	(layers
@@ -694,7 +694,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -973,7 +973,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1228,7 +1228,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1477,7 +1477,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1863,7 +1863,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2142,7 +2142,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2421,7 +2421,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2873,7 +2873,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3539,7 +3539,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3818,7 +3818,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4097,7 +4097,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4656,7 +4656,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5191,7 +5191,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 0 1 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5416,7 +5416,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 0 1 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6118,7 +6118,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6397,7 +6397,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6676,7 +6676,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6955,7 +6955,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7617,7 +7617,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7896,7 +7896,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8175,7 +8175,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8454,7 +8454,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8906,7 +8906,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9358,7 +9358,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9637,7 +9637,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9916,7 +9916,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10171,7 +10171,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 0 1 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10420,7 +10420,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10699,7 +10699,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10978,7 +10978,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11233,7 +11233,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 0 1 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11589,7 +11589,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11868,7 +11868,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12147,7 +12147,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12426,7 +12426,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single solar cell"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12681,7 +12681,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Value" "PMEG10020AELPX"
+		(property "Value" "PMEG3010EP"
 			(at 0 1 180)
 			(unlocked yes)
 			(layer "F.Fab")

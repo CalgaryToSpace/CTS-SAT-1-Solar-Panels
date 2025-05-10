@@ -5,9 +5,9 @@
 	(uuid "a9ef5d2b-7ce1-4231-ba73-009f8d0b2537")
 	(paper "USLetter")
 	(title_block
-		(title "1.25U Solar Panel")
-		(date "2025-04-21")
-		(rev "2")
+		(title "1.0U Solar Panel")
+		(date "2025-05-09")
+		(rev "3")
 		(company "CalgaryToSpace")
 	)
 	(lib_symbols
